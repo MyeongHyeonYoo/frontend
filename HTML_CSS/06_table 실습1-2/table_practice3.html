@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>table3</title>
+    <link rel="stylesheet" href="css/table_practice3.css">
+	</head>
+
+	<body>
+    <table id="SB_ev">
+      <caption class="SB_tt">학생 행동 발달 상황 평가 척도</caption>
+        <tr>
+          <th id="sub_00">영역</th>
+          <th id="sub_A0">장 면</th>
+          <th id="sub_B0">명 세 목 표</th>
+          <th id="sub_C0">배점</th>
+          <th id="sub_D0">소계</th>
+          <th id="sub_E0">평점</th>
+          <th id="sub_F0">환 산</th>
+        </tr>
+            <tr>
+              <!--(A)-->
+              <th id="SB_A" rowspan="9">근<br>면<br>성</th> 
+                <th id="SB_Aa" rowspan="3">출 석 상 황</th> <!--(a)-->
+
+                  <!--출석상황(a - row1)-->
+                  <td class="sub_m sub_m_F" headers="SB_A SB_Aa sub_B0">1개년 간 개근</td> 
+                  <td class="score sco" headers="SB_A SB_Aa sub_C0">3 ( )</td>
+
+                  <!--소계-->
+                  <td class="score" headers="SB_A SB_Aa SB_Ab SB_Ac sub_D0" rowspan="9">
+                    9점( )<br>8점( )<br>7점( )<br>
+                    6점( )<br>5점( )<br>4점( )<br>3점( )</td> 
+
+                  <!--평점-->
+                  <td class="score" headers="SB_A SB_Aa SB_Ab SB_Ac sub_E0" rowspan="9">
+                    상 ( 3 )<br>중 ( 2 )<br>하 ( 1 )</td> 
+
+                  <!--환산-->
+                  <td class="score" rowspan="54">
+                    가<br>18점 ( )<br>17점 ( )<br>16점 ( )<br>15점 ( )<br>
+                    나<br>14점 ( )<br>13점 ( )<br>12점 ( )<br>
+                    다<br>11점 ( )<br>10점 ( )<br>9점 ( )<br>8점 ( )<br>7점 ( )<br>6점 ( )<br></td> 
+           </tr>
+                <tr > <!--출석상황((a) - row2)-->
+                  <td class="sub_m" headers="SB_A SB_Aa sub_B0">1개년 간 정근</td>
+                  <td class="score sco" headers="SB_A SB_Aa sub_C0">2 ( )</td>
+                </tr>
+                <tr> <!--출석상황((a) - row3)-->
+                  <td class="sub_m" headers="SB_A SB_Aa sub_B0">결석 1일 이상</td>
+                  <td class="score sco" headers="SB_A SB_Aa sub_C0">1 ( )</td>
+                </tr> <!-- ******* (a) | END ******* -->
+
+                <!--(A)근면성-->
+                <tr> 
+                  <th id="SB_Ab" rowspan="3">청 소 활 동</th> <!--(b)-->
+
+                  <!--청소활동((b) - row1)-->
+                  <td class="sub_m" headers="SB_A SB_Ab sub_B0">자발적으로 열심히 한다.</td> 
+                  <td class="score sco" headers="SB_A SB_Ab sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                   <!--청소활동((b) - row2)-->
+                  <td class="sub_m" headers="SB_A SB_Ab sub_B0">마지 못해서 한다</td> 
+                  <td class="score sco" headers="SB_A SB_Ab sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                   <!--청소활동((b) - row3)-->
+                  <td class="sub_m" headers="SB_A SB_Ab sub_B0">가끔 안할 때가 있다</td>
+                  <td class="score sco" headers="SB_A SB_Ab sub_C0">1 ( )</td>
+                </tr> <!-- ******* (b) | END******* -->
+                
+                <!--(A)근면성-->
+                <tr>
+                  <th id="SB_Ac" rowspan="3">학 습 태 도</th> <!--(c)-->
+
+                  <!--학습태도((c) - row1)-->
+                  <td class="sub_m" headers="SB_A SB_Ac sub_B0">항상 열심히 공부한다</td>
+                  <td class="score sco" headers="SB_A SB_Ac sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--학습태도((c) - row2)-->
+                  <td class="sub_m" headers="SB_A SB_Ac sub_B0">그렇지 못할 때가 가끔 있다</td>
+                  <td class="score sco" headers="SB_A SB_Ac sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--학습태도((c) - row3)-->
+                  <td class="sub_m" headers="SB_A SB_Ac sub_B0">그렇지 못할 때가 자주 있다</td>
+                  <td class="score sco" headers="SB_A SB_Ac sub_C0">1 ( )</td>
+                </tr> <!-- ******* (c)| END ******* -->
+                <!-- ********** (A)| END ********** -->
+              
+            <tr>
+              <!--(B)-->
+              <th id="SB_B" rowspan="9">책<br>임<br>감</th>
+                <th id="SB_Ba" rowspan="3">주 변 활 동</th> <!--(a)-->
+
+                  <!--주변활동(a - row1)-->
+                  <td class="sub_m" headers="SB_B SB_Ba sub_B0">주변 활동에 자발적으로 참여한다</td>
+                  <td class="score sco" headers="SB_B SB_Ba sub_C0">3 ( )</td>
+
+                  <!--소계-->
+                  <td class="score" headers="SB_B SB_Ba SB_Bb SB_Bc sub_D0" rowspan="9">
+                      9점( )<br>8점( )<br>7점( )<br>
+                      6점( )<br>5점( )<br>4점( )<br>3점( )</td> 
+
+                  <!--평점-->
+                  <td class="score" headers="SB_B SB_Ba SB_Bb SB_Bc sub_E0" rowspan="9">
+                    상 ( 3 )<br>중 ( 2 )<br>하 ( 1 )</td> 
+            </tr>
+                <tr>
+                  <!--주변활동(a - row2)-->
+                  <td class="sub_m" headers="SB_B SB_Ba sub_B0">지시 사항만 이행한다</td>
+                  <td class="score sco" headers="SB_B SB_Ba sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--주변활동(a - row3)-->
+                  <td class="sub_m" headers="SB_B SB_Ba sub_B0">요령을 피우는 경우가 있다</td>
+                  <td class="score sco" headers="SB_B SB_Ba sub_C0">1 ( )</td>
+                </tr> <!-- ******* (a) | END ******* -->
+
+                <!--(B)책임감-->
+                <tr>
+                  <th id="SB_Bb" rowspan="3">약 속 이 행</th> <!--(b)-->
+                  
+                  <!--약속이행(b - row1)-->
+                  <td class="sub_m" headers="SB_B SB_Bb sub_B0">약속(지시)을 잘 지킨다</td>
+                  <td class="score sco" headers="SB_B SB_Bb sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--약속이행(b - row2)-->
+                  <td class="sub_m" headers="SB_B SB_Bb sub_B0">1&ndash;2회 약속 위반</td>
+                  <td class="score sco" headers="SB_B SB_Bb sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--약속이행(b - row3)-->
+                  <td class="sub_m" headers="SB_B SB_Bb sub_B0">3회 이상 약속 위반</td>
+                  <td class="score sco" headers="SB_B SB_Bb sub_C0">1 ( )</td>
+                </tr> <!-- ******* (b) | END ******* -->
+
+                <!--(B)책임감-->
+                <tr>
+                  <th id="SB_Bc" rowspan="3">과 오 인 정</th> <!--(c)-->
+
+                  <!--과오인정(c - row1)-->
+                  <td class="sub_m" headers="SB_B SB_Bc sub_B0">자기 잘못을 솔직히 인정한다</td>
+                  <td class="score sco" headers="SB_B SB_Bc sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--과오인정(c - row2)-->
+                  <td class="sub_m" headers="SB_B SB_Bc sub_B0">잘못을 감출 때가 있다</td>
+                  <td class="score sco" headers="SB_B SB_Bc sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--과오인정(c - row3)-->
+                  <td class="sub_m" headers="SB_B SB_Bc sub_B0">다른 사람의 탓으로 돌린다</td>
+                  <td class="score sco" headers="SB_B SB_Bc sub_C0">1 ( )</td>
+                </tr> <!-- ******* (c)| END ******* -->
+                <!-- ********** (B)| END ********** -->
+
+            <tr>
+              <!--(C)-->
+              <th id="SB_C" rowspan="9">자<br>주<br>성</th>
+                <th id="SB_Ca" rowspan="3">학 교 행 사</th> <!--(a)-->
+
+                  <!--학교행사(a - row1)-->
+                  <td class="sub_m" headers="SB_C SB_Ca sub_B0">스스로 적극 실천한다</td>
+                  <td class="score sco" headers="SB_C SB_Ca sub_C0">3 ( )</td>
+
+                  <!--소계-->
+                  <td class="score" headers="SB_C SB_Ca SB_Cb SB_Cc sub_D0" rowspan="9">
+                    9점( )<br>8점( )<br>7점( )<br>
+                    6점( )<br>5점( )<br>4점( )<br>3점( )</td> 
+
+                  <!--평점-->
+                  <td class="score" headers="SB_C SB_Ca SB_Cb SB_Cc sub_E0" rowspan="9">
+                    상 ( 3 )<br>중 ( 2 )<br>하 ( 1 )</td> 
+            </tr>
+                <tr>
+                  <!--학교행사(a - row2)-->
+                  <td class="sub_m" headers="SB_C SB_Ca sub_B0">마지 못해 시키는대로 따른다</td>
+                  <td class="score sco" headers="SB_C SB_Ca sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--학교행사(a - row3)-->
+                  <td class="sub_m" headers="SB_C SB_Ca sub_B0">무관심하며 가끔 불참한다</td>
+                  <td class="score sco" headers="SB_C SB_Ca sub_C0">1 ( )</td>
+                </tr> <!-- ******* (a) | END ******* -->
+
+                <!--(C)자주성-->
+                <tr>
+                  <th id="SB_Cb" rowspan="3">학 습 활 동</th> <!--(b)-->
+                  
+                  <!--학습활동(b - row1)-->
+                  <td class="sub_m" headers="SB_C SB_Cb sub_B0">학습 계획에 따라 철저히 실천한다</td>
+                  <td class="score sco" headers="SB_C SB_Cb sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--학습활동(b - row2)-->
+                  <td class="sub_m" headers="SB_C SB_Cb sub_B0">대체로 학습 계획을 따른다</td>
+                  <td class="score sco" headers="SB_C SB_Cb sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--학습활동(b - row3)-->
+                  <td class="sub_m" headers="SB_C SB_Cb sub_B0">무계획적인 학습 활동을 한다</td>
+                  <td class="score sco" headers="SB_C SB_Cb sub_C0">1 ( )</td>
+                </tr> <!-- ******* (b) | END ******* -->
+
+                <!--(C)자주성-->
+                <tr>
+                  <th id="SB_Cc" rowspan="3">쓰레기수거</th> <!--(c)-->
+
+                  <!--쓰레기수거(c - row1)-->
+                  <td class="sub_m" headers="SB_C SB_Cc sub_B0">분리 수거가 생활화 되어 있다</td>
+                  <td class="score sco" headers="SB_C SB_Cc sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--쓰레기수거(c - row2)-->
+                  <td class="sub_m" headers="SB_C SB_Cc sub_B0">무의식 중에 분리 수거를 잊는다</td>
+                  <td class="score sco" headers="SB_C SB_Cc sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--쓰레기수거(c - row3)-->
+                  <td class="sub_m" headers="SB_C SB_Cc sub_B0">쓰레기를 함부로 버린다</td>
+                  <td class="score sco" headers="SB_C SB_Cc sub_C0">1 ( )</td>
+                </tr> <!-- ******* (c)| END ******* -->
+                <!-- ********** (C)| END ********** -->
+
+            <tr>
+              <!--(D)-->
+              <th id="SB_D" rowspan="9">협<br>동<br>성</th>
+                <th id="SB_Da" rowspan="3">학급회활동</th> <!--(a)-->
+
+                  <!--학급회활동(a - row1)-->
+                  <td class="sub_m" headers="SB_D SB_Da sub_B0">결정 사항을 반드시 지킨다</td>
+                  <td class="score sco" headers="SB_D SB_Da sub_C0">3 ( )</td>
+
+                  <!--소계-->
+                  <td class="score" headers="SB_D SB_Da SB_Db SB_Dc sub_D0" rowspan="9">
+                    9점( )<br>8점( )<br>7점( )<br>
+                    6점( )<br>5점( )<br>4점( )<br>3점( )</td> 
+
+                  <!--평점-->
+                  <td class="score" headers="SB_D SB_Da SB_Db SB_Dc sub_E0" rowspan="9">
+                    상 ( 3 )<br>중 ( 2 )<br>하 ( 1 )</td> 
+            </tr>
+                <tr>
+                  <!--학급회활동(a - row2)-->
+                  <td class="sub_m" headers="SB_D SB_Da sub_B0">1&ndash;2회 결정 사항 위반</td>
+                  <td class="score sco" headers="SB_D SB_Da sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--학급회활동(a - row3)-->
+                  <td class="sub_m" headers="SB_D SB_Da sub_B0">3회 이상 결정 사항 위반</td>
+                  <td class="score sco" headers="SB_D SB_Da sub_C0">1 ( )</td>
+                </tr> <!-- ******* (a) | END ******* -->
+
+                <!--(D)협동성-->
+                <tr>
+                  <th id="SB_Db" rowspan="3">공 동 작 업</th> <!--(b)-->
+                  
+                  <!--공동작업(b - row1)-->
+                  <td class="sub_m" headers="SB_D SB_Db sub_B0">항상 친구와 도와가며 일한다</td>
+                  <td class="score sco" headers="SB_D SB_Db sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--공동작업(b - row2)-->
+                  <td class="sub_m" headers="SB_D SB_Db sub_B0">자기에게 주어진 일만 한다</td>
+                  <td class="score sco" headers="SB_D SB_Db sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--공동작업(b - row3)-->
+                  <td class="sub_m" headers="SB_D SB_Db sub_B0">자기에게 주어진 일도 게을리 한다</td>
+                  <td class="score sco" headers="SB_D SB_Db sub_C0">1 ( )</td>
+                </tr> <!-- ******* (b) | END ******* -->
+
+                <!--(D)협동성-->
+                <tr>
+                  <th id="SB_Dc" rowspan="3">학 우 돕 기</th> <!--(c)-->
+
+                  <!--학우돕기(c - row1)-->
+                  <td class="sub_m" headers="SB_D SB_Dc sub_B0">앞장서서 돕는다</td>
+                  <td class="score sco" headers="SB_D SB_Dc sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--학우돕기(c - row2)-->
+                  <td class="sub_m" headers="SB_D SB_Dc sub_B0">대체로 돕는 편이다</td>
+                  <td class="score sco" headers="SB_D SB_Dc sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--학우돕기(c - row3)-->
+                  <td class="sub_m" headers="SB_D SB_Dc sub_B0">돕지 않을 때가 있다</td>
+                  <td class="score sco" headers="SB_D SB_Dc sub_C0">1 ( )</td>
+                </tr> <!-- ******* (c)| END ******* -->
+                <!-- ********** (D)| END ********** -->
+
+            <tr>
+              <!--(E)-->
+              <th id="SB_E" rowspan="9">준<br>법<br>성</th>
+                <th id="SB_Ea" rowspan="3">공 중 도 덕</th> <!--(a)-->
+
+                  <!--공중도덕(a - row1)-->
+                  <td class="sub_m" headers="SB_E SB_Ea sub_B0">남에게 공중 도덕 준수를 권한다</td>
+                  <td class="score sco" headers="SB_E SB_Ea sub_C0">3 ( )</td>
+
+                  <!--소계-->
+                  <td class="score" headers="SB_E SB_Ea SB_Eb SB_Ec sub_D0" rowspan="9">
+                    9점( )<br>8점( )<br>7점( )<br>
+                    6점( )<br>5점( )<br>4점( )<br>3점( )</td> 
+
+                  <!--평점-->
+                  <td class="score" headers="SB_E SB_Ea SB_Eb SB_Ec sub_E0" rowspan="9">
+                    상 ( 3 )<br>중 ( 2 )<br>하 ( 1 )</td> 
+            </tr>
+                <tr>
+                  <!--공중도덕(a - row2)-->
+                  <td class="sub_m" headers="SB_E SB_Ea sub_B0">대체로 잘 지키는 편이다</td>
+                  <td class="score sco" headers="SB_E SB_Ea sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--공중도덕(a - row3)-->
+                  <td class="sub_m" headers="SB_E SB_Ea sub_B0">공중 도덕을 어길 때가 있다</td>
+                  <td class="score sco" headers="SB_E SB_Ea sub_C0">1 ( )</td>
+                </tr> <!-- ******* (a) | END ******* -->
+
+                <!--(E)준법성-->
+                <tr>
+                  <th id="SB_Eb" rowspan="3">교 칙 준 수</th> <!--(b)-->
+                  
+                  <!--교칙준수(b - row1)-->
+                  <td class="sub_m" headers="SB_E SB_Eb sub_B0">교칙을 잘 지키며 남을 선도한다</td>
+                  <td class="score sco" headers="SB_E SB_Eb sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--교칙준수(b - row2)-->
+                  <td class="sub_m" headers="SB_E SB_Eb sub_B0">교칙 위반 1회</td>
+                  <td class="score sco" headers="SB_E SB_Eb sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--교칙준수(b - row3)-->
+                  <td class="sub_m" headers="SB_E SB_Eb sub_B0">교칙 위반 2회 이상</td>
+                  <td class="score sco" headers="SB_E SB_Eb sub_C0">1 ( )</td>
+                </tr> <!-- ******* (b) | END ******* -->
+
+                <!--(E)준법성-->
+                <tr>
+                  <th id="SB_Ec" rowspan="3">용 의 단 정</th> <!--(c)-->
+
+                  <!--용의단정(c - row1)-->
+                  <td class="sub_m" headers="SB_E SB_Ec sub_B0">용의가 항상 단정하다</td>
+                  <td class="score sco" headers="SB_E SB_Ec sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--용의단정(c - row2)-->
+                  <td class="sub_m" headers="SB_E SB_Ec sub_B0">복장 위반 1&ndash;3회</td>
+                  <td class="score sco" headers="SB_E SB_Ec sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--용의단정(c - row3)-->
+                  <td class="sub_m" headers="SB_E SB_Ec sub_B0">복장 위반 4회 이상</td>
+                  <td class="score sco" headers="SB_E SB_Ec sub_C0">1 ( )</td>
+                </tr> <!-- ******* (c)| END ******* -->
+                <!-- ********** (E)| END ********** -->
+
+            <tr>
+              <!--(F)-->
+              <th id="SB_F" rowspan="9">예<br>절<br>성</th>
+                <th id="SB_Fa" rowspan="3">언 어 사 용</th> <!--(a)-->
+
+                  <!--언어사용(a - row1)-->
+                  <td class="sub_m" headers="SB_F SB_Fa sub_B0">항상 고운 말을 쓴다</td>
+                  <td class="score sco" headers="SB_F SB_Fa sub_C0">3 ( )</td>
+
+                  <!--소계-->
+                  <td class="score" headers="SB_F SB_Fa SB_Fb SB_Fc sub_D0" rowspan="9">
+                    9점( )<br>8점( )<br>7점( )<br>
+                    6점( )<br>5점( )<br>4점( )<br>3점( )</td> 
+
+                  <!--평점-->
+                  <td class="score" headers="SB_F SB_Fa SB_Fb SB_Fc sub_E0" rowspan="9">
+                    상 ( 3 )<br>중 ( 2 )<br>하 ( 1 )</td> 
+            </tr>
+                <tr>
+                  <!--언어사용(a - row2)-->
+                  <td class="sub_m" headers="SB_F SB_Fa sub_B0">가끔 저속한 말을 쓴다</td>
+                  <td class="score sco" headers="SB_F SB_Fa sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--언어사용(a - row3)-->
+                  <td class="sub_m" headers="SB_F SB_Fa sub_B0">저속한 말을 쓸 때가 많다</td>
+                  <td class="score sco" headers="SB_F SB_Fa sub_C0">1 ( )</td>
+                </tr> <!-- ******* (a) | END ******* -->
+
+                <!--(F)예절성-->
+                <tr>
+                  <th id="SB_Fb" rowspan="3">인 사 성</th> <!--(b)-->
+                  
+                  <!--인사성(b - row1)-->
+                  <td class="sub_m" headers="SB_F SB_Fb sub_B0">상냥하게 먼저 인사한다</td>
+                  <td class="score sco" headers="SB_F SB_Fb sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--인사성(b - row2)-->
+                  <td class="sub_m" headers="SB_F SB_Fb sub_B0">상대방이 먼저 하면 따라 한다</td>
+                  <td class="score sco" headers="SB_F SB_Fb sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--인사성(b - row3)-->
+                  <td class="sub_m" headers="SB_F SB_Fb sub_B0">인사하지 않을 때가 많다</td>
+                  <td class="score sco" headers="SB_F SB_Fb sub_C0">1 ( )</td>
+                </tr> <!-- ******* (b) | END ******* -->
+
+                <!--(F)예절성-->
+                <tr>
+                  <th id="SB_Fc" rowspan="3">발 표 자 세</th> <!--(c)-->
+
+                  <!--발표자세(c - row1)-->
+                  <td class="sub_m" headers="SB_F SB_Fc sub_B0">항상 바른 자세로 발표한다</td>
+                  <td class="score sco" headers="SB_F SB_Fc sub_C0">3 ( )</td>
+                </tr>
+                <tr>
+                  <!--발표자세(c - row2)-->
+                  <td class="sub_m" headers="SB_F SB_Fc sub_B0">그른 자세로 발표할 때도 있다</td>
+                  <td class="score sco" headers="SB_F SB_Fc sub_C0">2 ( )</td>
+                </tr>
+                <tr>
+                  <!--발표자세(c - row3)-->
+                  <td class="sub_m sub_m_L" headers="SB_F SB_Fc sub_B0">자기 마음대로 발표한다</td>
+                  <td class="score sco sco_L" headers="SB_F SB_Fc sub_C0">1 ( )</td>
+                </tr> <!-- ******* (c)| END ******* -->
+                <!-- ********** (F)| END ********** -->
+    </table>
+	</body>
+</html>

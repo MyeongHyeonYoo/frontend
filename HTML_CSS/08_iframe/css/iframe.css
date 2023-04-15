@@ -1,0 +1,16 @@
+@charset "utf-8"
+	
+#ex1 iframe{
+/*		border:0;*/
+	border: none;
+}
+
+#ex2 a {
+	text-decoration: none;
+	color:#000;
+}
+
+#ex2_2 iframe {border:none;}
+
+#ex3 {border:0;}
+#ex4 {border:0;}

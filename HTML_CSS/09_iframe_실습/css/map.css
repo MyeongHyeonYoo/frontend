@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+/******* all *******/
+body {
+	font-family:
+		"맑은 고딕", 
+		"Malgun Gothic", 
+		sans-serif;
+}
+#map1 div {margin: 3px}
+#map2 div {margin: 3px}
+#map3 div {margin: 3px}
+#map4 div {margin: 3px}
+#map5 div {margin: 3px}
+
+
+/******* map *******/
+h1 {
+	color: #7e9b44;
+	font-size: 20px;
+	padding:0;
+	margin:0;
+}
+
+p {
+	font-size: 14px;
+	line-height: 25px;
+	text-align:justify;
+}
+
+span {color: #d20707;}

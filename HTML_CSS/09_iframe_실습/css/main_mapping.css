@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+/******* all *******/
+body {
+	font-family:
+		"맑은 고딕", 
+		"Malgun Gothic", 
+		sans-serif;
+}
+#main_mapping {margin: 3px}
+
+/******* main mapping *******/
+#main_mapping a {
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration:none;
+	margin: 0 5px;
+}
+
+#main_iframe {
+	border:5px solid #ebebeb;
+	width: 745px;
+	height: 800px;
+	margin-top: 20px;
+}

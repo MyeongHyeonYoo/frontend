@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/********all selector********/
+* {
+	font-size:15px;
+	font-family:"돋음",Dotum,sans-serif;
+/*	line-height:2em;*/
+	line-height:200%;
+/*	line-height:3;*/
+/*	line-height:30px;*/
+}
+
+/********tag(Element) selector********/
+dt {
+	background-color:#99cc33;
+	color:#fff;
+	font-size:17px;
+	font-family:Arial,sans-serif;
+	font-weight:bold;
+	width:200px;
+	height:33px;
+	text-align:center;
+}
+
+/********id selector********/
+#tit2 {
+	background-color:#99cc33;
+	width:500px;
+	height:390px;
+	text-align:justify;
+	margin-left:0;
+	margin-top:15px;
+	padding:15px;
+}
+
+/********class selector********/
+.tit {
+	color:yellow;
+	margin-left:auto; margin-right:auto;
+/*	margin:0 auto;*/
+}
+

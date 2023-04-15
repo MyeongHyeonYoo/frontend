@@ -1,0 +1,37 @@
+@charset "utf-8";
+	
+h2 {
+	margin-top:25px;
+}
+	
+#subject1, #subject2 {
+	background-color:#fe0034;
+	border: solid 1px #000;
+	font-family:"돋음","맑은 고딕",sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+/*	height:40px;*/
+	padding:10px 0 12px 5px;
+}
+
+ul, ol {
+	font-size:15px;
+}
+
+.recipe {
+	line-height:32px;
+}
+
+ol.recipe span {
+	font-weight:bold;
+	color:#ff0000;
+	border-bottom:dotted 2px #ff0000;
+	
+	
+	
+}
+
+
+
+	

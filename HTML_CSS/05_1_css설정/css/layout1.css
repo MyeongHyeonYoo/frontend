@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+h2 {
+	text-decoration:underline;
+}
+h3 {
+	text-decoration:
+	underline overline line-through;
+	color:Salmon;
+	word-spacing:50px;
+}
+h4 {
+	word-spacing:5px;
+}
+p {
+	font-weight:bold;
+	background-color:#FAEBD7;
+	letter-spacing:5px;
+}

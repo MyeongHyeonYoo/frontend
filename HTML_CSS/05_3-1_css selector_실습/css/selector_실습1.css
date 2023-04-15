@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+h2 {
+	margin-top:25px;
+}
+
+#subject1, #subject2 {
+	background-color:#000;
+	font-family:"돋음","맑은 고딕",sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+/*	height:40px;*/
+	padding:10px 0 12px 20px;
+	margin:25px 20px;
+}
+
+.matter, .recipe {
+	color:#78781e;
+	line-height:25px;
+}

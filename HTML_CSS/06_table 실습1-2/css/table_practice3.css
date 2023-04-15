@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+body {
+	font-size: 15px;
+	font-family: "맑은 고딕", "Malgun Gothic", sans-serif;
+	line-height:25px;
+}
+
+#SB_ev {
+  border-collapse: collapse;
+  margin: 10px;
+  width: 650px;
+  height: 800px;
+}
+
+.SB_tt {
+  border-bottom: 4px double black;
+  font-size: 1.1em;
+  font-weight: bold;
+  width: 230px;
+  height: 20px;
+  margin-left: 200px;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+}
+
+#sub_00 {
+  width: 35px;
+  height: auto;
+}
+
+#sub_A0 {width: 100px;}
+#sub_B0 {width: 300px}
+#sub_C0 {width: 40px;}
+#sub_D0 {width: 50px;}
+#sub_E0 {width: 60px;}
+#sub_F0 {width: 70px;}
+
+#SB_ev th {
+  border: 1px solid black;
+}
+
+.sub_m {
+  border:1px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  padding-left: 10px;
+}
+.sub_m_L {
+  border-bottom-style: none;
+  border-bottom: 1px solid black;
+}
+
+.score {
+  text-align: center; 
+  border: 1px solid black;
+}
+
+.sco {
+  border:1px solid black ;
+  border-top-style: none;
+  border-bottom-style: none;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+}
+.sco_L {
+  border-bottom-style: none;
+  border-bottom: 1px solid black;
+}
+
+
+
+

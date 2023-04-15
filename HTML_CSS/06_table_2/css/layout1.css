@@ -1,0 +1,197 @@
+@charset "utf-8";
+	
+/*초기화(reset)*/
+/*
+body{font-size:15px;}
+h2{font-size:15px;}*/
+
+body, h2 {
+	font-size:15px; 
+	font-family:
+		"맑은 고딕", 
+		"Malgun Gothic", 
+		sans-serif;
+	line-height:1.5em;
+}
+
+
+/*******ex1*******/
+/*ex1{border-spacing:10px;}*/
+#ex1 {border-collapse:collapse; 
+	caption-side:bottom;
+}
+/*#ex1{border:1px solid #333;}*/
+/*#ex1 tr{border:1px solid #333333;}*/ /*적용 안 된다.*/
+/*#ex1 tr th, #ex1 tr td{border:1px solid #333;}*/
+/*#ex1 th, #ex1 td{border:1px solid #333;}*/
+#ex1 th, #ex1 td {
+	border:1px solid #333;
+	width:100px;
+	height:40px;
+}
+
+#ex1 td.ex1_1{text-align:left;}
+#ex1 td.ex1_2{text-align:center;}
+#ex1 td.ex1_3{text-align:right;}
+#ex1 td.ex1_4{vertical-align:top;}
+#ex1 td.ex1_5{vertical-align:middle;}
+#ex1 td.ex1_6{vertical-align:bottom;}
+
+
+/*******ex2*******/
+#ex2{border-collapse:collapse;}
+#ex2 th, #ex2 td {
+	border:1px solid blue;
+	width:100px;
+	height:20px;
+}
+#ex2 td{text-align:center;}
+
+
+/*******ex3*******/
+/*#ex3{border-collapse:collapse;}*/
+#ex3{empty-cells:hide;}
+#ex3 th, #ex3 td {
+	border:1px solid green;
+	width:100px;
+	height:20px;
+}
+#ex3 td{text-align:center;}
+
+
+/*******ex4*******/
+#ex4{border-collapse:collapse;}
+#ex4 th, #ex4 td {
+	border:1px solid green;
+	width:100px;
+	height:20px;
+}
+#ex4 td{text-align:center;}
+
+
+/*******ex5*******/
+#ex5{border-collapse:collapse;}
+#ex5 th, #ex5 td {border:1px solid #999;}
+#ex5 th {
+	font-weight:normal;
+	background-color:#ccc;
+	width:150px;
+	height:40px;
+}
+#ex5 td {
+	width:220px;
+	text-align:center;
+}
+
+
+/*******ex6*******/
+/*******02_완성.jpg*******/
+#ex6{border-collapse:collapse;}
+#ex6 th, #ex6 td {border:1px solid #333;}
+#ex6 th {
+	background-color:#eaeaea;
+	height:43px;
+	font-weight:bold;
+	text-align:center;
+}
+#ex6 td {
+	text-align:center;
+	height:42px;
+}
+#ex6 #tit1{width:81px;}
+#ex6 #tit2{width:218px;}
+#ex6 #tit3{width:314px;}
+#ex6 #tit4{width:235px;}
+#ex6 #tit5{width:199px;}
+
+
+/*******ex7*******/
+#ex7{border-collapse:collapse;}
+#ex7 th, #ex7 td{border:1px solid #333;}
+#ex7 th {
+	font-weight:normal;
+	width:100px;
+	height:20px;
+}
+#ex7 td {
+	width:220px;
+	text-align:center;
+}
+
+
+/*******ex8*******/
+h3.ex8_im {margin:40px 0}
+.titi{font-size:20px;}
+#ex8 {
+	margin:0; padding:0;
+	font-family:
+		"맑은 고딕", 
+		"Malgun Gothic", 
+		sans-serif;
+	border-collapse:collapse;
+}
+#ex8 th, #ex8 td {
+	border:1px solid #000;
+	width:200px;
+	height:40px;
+	font-size:18px;
+}
+#ex8 th {
+	background-color:#ccc;
+	font-weight:bold;
+	text-align:center;
+}
+/*
+#ex8 #sh00{width:60px; height:32px;}
+#ex8 #sh01{width:135px; height:32px;}
+#ex8 #sh02{width:92px; height:32px;}
+#ex8 #sh03{width:150px; height:32px;}
+*/
+
+/*******ex9*******/
+#ex9{border-collapse:collapse;}
+#ex9 th, #ex9 td{border:1px solid #333;}
+#ex9 th {
+	font-weight:bold;
+	width:100px;
+	height:20px;
+}
+#ex9 td {
+	width:150px;
+	text-align:center;
+}
+
+/*******ex10*******/
+/*
+#ex10{border-collapse:collapse;}
+#ex10 th, #ex10 td{border:1px solid #333;}
+#ex10 th {
+	font-weight:bold;
+	width:100px;
+	height:20px;
+}
+#ex10 td {
+	width:150px;
+	text-align:center;
+}
+#co1 {border-right:red 1px solid}
+#co2 {border-right:blue 1px solid}
+#co3 {border-right:yellow 1px solid}
+*/
+
+
+#ex10 {
+	border-collapse:collapse;
+	color:#333;
+	border:1px solid #333;
+	border-right:none;
+}
+#co1 {border-right:1px solid red;}
+#co2 {border-right:1px solid blue;}
+#co3 {border-right:1px solid yellow;}
+#ex10 th, #ex10 td {width:100px; height:20px;}
+#ex th {
+	border-bottom:3px double #333;
+	background-color:#eaeaea;
+}
+#ex10 td{text-align:center;}
