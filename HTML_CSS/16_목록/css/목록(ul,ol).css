@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/******* 초기화 *******/
+body {
+	font: 15px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif;
+	color: #333;
+}
+
+div, h3, h4, hr, ul, ol, li {margin: 0; padding: 0;} /******* 여백 초기화 *******/
+ul, ol, li {list-style: none;} /*숫자, 블릿기호 초기화*/
+
+/******* wrap *******/
+#wrap h4 {color: #0066ff;}
+#wrap ul, #wrap ol {margin-bottom: 10px;}
+
+.list1 li {
+	list-style-type: disc; 
+	list-style-position: inside;
+}
+.list2 li {
+	list-style-type: square;
+	list-style-position: inside;
+}
+.list3 li {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+.list4 li {
+	list-style-image: url(../images/icon7.gif);
+	list-style-position: inside;
+}
+.list5 li {
+	background: url(../images/icon7.gif) no-repeat left center;
+	padding-left: 20px;
+}
+.list6 li {
+	list-style-type: decimal;
+	margin-left: 20px;
+}
+.list7 li {
+	list-style-type: upper-alpha;
+	margin-left: 20px;
+}
+.list8 li {
+	list-style-type: lower-alpha;
+	margin-left: 20px;
+}
+.list9 li {
+	list-style-type: upper-roman;
+	margin-left: 20px;
+}
+.list10 li {
+	list-style-type: lower-roman;
+	margin-left: 20px;
+}
+.list11 li {
+	list-style-type: decimal-leading-zero;
+	margin-left: 20px;
+}
+.list12 li {
+	list-style-image: url(../images/icon8.gif);
+	margin-left: 20px;
+}
+.list13 li {
+	background: url(../images/icon8.gif) no-repeat left center;
+	text-indent: 20px;
+}
+.list14 li {
+	list-style-type: korean-hanja-informal;
+	margin-left: 20px;
+}
+.list15 li  {
+	list-style-type: korean-hangul-formal;
+	margin-left: 20px;
+}
+.list16 li {
+	list-style-type: hangul;
+	margin-left: 20px;
+}

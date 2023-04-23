@@ -1,0 +1,75 @@
+@charset "tuf-8";
+
+/*******wrap1*******/
+
+#wrap1 p {
+	border: 2px solid #cc66ff;
+	width: 100px;
+	height: 100px;
+} /*******공통*******/
+
+#wrap1 > p {border-radius: 20px;}
+#wrap1 p.ex1 {border-radius: 300px;}
+#wrap1 p.ex2 {border-radius: 30px 0;}
+#wrap1 p.ex3 {border-radius: 30px 0;}
+#wrap1 p.ex4 {border-radius: 0 70px;}
+#wrap1 p.ex5 {border-radius: 100px 0 0 0;}
+#wrap1 p.ex6 {border-radius: 0 100px 0 0;}
+#wrap1 p.ex7 {border-radius: 0 0 100px 0;}
+#wrap1 p.ex8 {border-radius: 0 0 0 100px;}
+#wrap1 p.ex9 {
+	border-top-right-radius: 50px; 
+	border-bottom-left-radius: 20px;
+}
+#wrap1 p.ex10 {border-radius: 40px 60px 50px;}
+#wrap1 p.ex11 {
+	border-radius: 50%;
+	background-image: url(../images/bg1.png);
+	border: none;
+}
+
+/*******wrap2*******/
+/*border-radius: top-left-x top-right-x bottom-right-x bottom-right-x / top-left-y top-right-y bottom-right-y bottom-right-y*/
+
+#wrap2 p {
+	border: 2px solid #f63b67;
+	width: 150px;
+	height: 150px;
+} /*******공통*******/
+
+#wrap2 p.ex1 {border-radius: 50px 0 0 0 / 50px 0 0 0;}
+#wrap2 p.ex2 {border-radius: 0 50px 0 0 / 0 80px 0 0;}
+#wrap2 p.ex3 {border-radius: 0 0 50px 0 / 0 0 50px 0;}
+#wrap2 p.ex4 {border-radius: 0 0 0 50px / 0 0 0 50px;}
+
+
+/*******wrap3*******/
+#wrap3 p {
+	border: 2px solid #999900;
+	width: 100px;
+	height: 100px;
+} /*******공통*******/
+#wrap3 p.ex1 {border-radius: 20px / 55px;} /*20px 20px 20px 20px / 55px 55px 55px 55px*/
+#wrap3 p.ex2 {border-radius: 40px / 55px;}
+#wrap3 p.ex3 {border-radius: 55px / 40px;}
+
+/*******wrap4*******/
+#wrap4 p {
+	border: 2px solid #0066cc;
+	width: 100px;
+	height: 100px;
+} /*******공통*******/
+
+#wrap4 p.ex1 {border-radius: 0 60px 50px / 60px;} /*0 60px 50px 60px / 60px 60px 60px 60px*/
+#wrap4 p.ex2 {border-radius: 50px 50px 0 / 50px;}
+
+/*******wrap5*******/
+#wrap5 p {
+	border: 2px solid #669933;
+	width: 100px;
+	height: 100px;
+} /*******공통*******/
+
+#wrap5 p.ex1 {border-radius: 0 0 60px 60px / 60px 0 60px 60px;}
+#wrap5 p.ex2 {border-radius: 50px 50px 0 0 / 50px 50px 50px 50px;}
+#wrap5 p.ex3 {border-radius: 50% 60% 50% 70% / 50% 50% 70% 60%;}

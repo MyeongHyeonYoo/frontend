@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>box-sizing</title>
+		<style>
+			#wrap > p {
+				background-color: pink;
+				width: 100px;
+				height: 100px;
+				float: left;
+				margin: 10px;
+			}
+			#wrap > .ex1 {}
+			#wrap > .ex2 {border: 5px solid red;}
+			#wrap > .ex3 {padding: 30px;}
+			#wrap > .ex4 {border: 5px solid red; box-sizing: content-box;}
+			#wrap > .ex5 {padding: 30px; box-sizing: content-box;}
+			#wrap > .ex6 {border: 5px solid red; box-sizing: border-box;}
+			#wrap > .ex7 {padding: 30px; box-sizing: border-box;}
+			#wrap > .ex8 {border: 5px solid red; padding: 30px; box-sizing: border-box;}
+		</style>
+	</head>
+	
+	<body>
+		<div id="wrap">
+			<p class="ex1">테스트1</p>
+			<p class="ex2">테스트2</p>
+			<p class="ex3">테스트3</p>
+			<p class="ex4">테스트4</p>
+			<p class="ex5">테스트5</p>
+			<p class="ex6">테스트6</p>
+			<p class="ex7">테스트7</p>
+			<p class="ex8">테스트8</p>
+		</div>
+	</body>
+</html>

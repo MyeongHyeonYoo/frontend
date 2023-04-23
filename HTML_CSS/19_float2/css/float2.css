@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/******* reset *******/
+body,
+div,
+h2,
+h3,
+p,
+a {
+	margin: 0; padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+body {
+	font: normal 12px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif;
+	color: #333;
+}
+
+/******* wrap *******/
+#wrap {
+	width: 902px;
+	height: 350px;
+/*	background-color: yellow;*/
+	margin: 20px auto 0 auto;
+}
+
+#wrap > h2 {
+	color: #749999;
+	font-size: 20px;
+	letter-spacing: 1px;
+	height: 20px;
+	margin-bottom: 30px;
+	background: url(../images/marker.gif) no-repeat left center;
+/*	text-indent: 20px;*/
+	padding-left: 20px;
+}
+
+#business {
+	width: 902px;
+	height: 300px;
+	border-top: 3px solid #749999;
+	border-bottom: 3px solid #749999;
+}
+
+#business > div {
+	width: 300px;
+	height: 290px;
+	float: left;
+	box-sizing: border-box;
+}
+
+#business > .bu2 {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+#business > div > h3 {
+	height: 20px;
+/*	border: 1px solid red;*/
+	text-align: center;
+	color: #666;
+	font-size: 17px;
+	margin: 10px 0 20px 0;
+}
+
+/******* <p> tag common *******/
+#business > div > p:nth-of-type(1) {
+/*	border: 1px solid blue;*/
+	padding-top: 150px;
+	margin: 0 auto 0 auto;
+} 
+
+#business > .bu1 > p:nth-of-type(1) {
+	background: url(../images/baby1.png) no-repeat center top;
+}
+#business > .bu2 > p:nth-of-type(1) {
+	background: url(../images/baby2.png) no-repeat center top;
+}
+#business > .bu3 > p:nth-of-type(1) {
+	background: url(../images/baby3.png) no-repeat center top;
+}
+
+#business > div > p:nth-of-type(2) {
+	width: 50px;
+	border: 1px solid green;
+	float: right;
+	margin-right: 15px;
+}
+
+#business > div > p:nth-of-type(2) a:hover {
+	text-decoration: underline;
+	color: #000;
+}

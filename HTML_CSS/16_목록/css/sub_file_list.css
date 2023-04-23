@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/******* reset *******/
+ol, ul, li {list-style: none;}
+div, ol, ul, li {margin: 0; padding: 0;}
+body{font: normal 16px/1.5em verdana, sans-serif;}
+
+/******* wrap1 *******/
+#list1 > li {}
+#list1 li {
+	background: url(../images/icon4.gif) no-repeat left 4px;
+	padding-left: 20px;
+	color: #cc0033;
+	font-weight: bold;
+}
+#list1 li ul {
+	border-left: 1px dotted #333;
+	padding: 5px 0 5px 5px;
+}
+#list1 li ul li {
+	color: #000;
+/*	background: url(../images/icon3.gif) no-repeat left 4px;*/
+	background-image: url(../images/icon3.gif);
+}
+#list1 li ul li ul {border-left: none;}
+#list1 li ul li ul li {
+	font-weight: normal;
+	background-image: url(../images/icon2.gif);
+}
+
+/******* wrap2 *******/
+#wrap2 li {
+	color: #5068fe;
+	font: bold 20px/1.5em verdana, sans-serif;
+	padding-left: 20px;
+
+}
+
+#wrap2 li ul {
+	border-left: 1px dotted #333;
+	margin: 5px 0;
+	padding-left: 20px;
+}
+#wrap2 li ul li {
+	color: #000;
+	font-size: 16px;
+}
+
+#wrap2 li ul li ul {border-left: none;}
+
+#wrap2 li ul li ul li {
+	font-weight: normal;
+	font-size: 12px;
+	background: url(../images/icon1.png) no-repeat left center;
+} 

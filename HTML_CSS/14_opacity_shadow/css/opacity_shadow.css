@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+#wrap p {
+	font-size: 30px;
+	font-weight: bold;
+} /*******공통*******/
+
+#wrap p.ex1 {
+	color:rgb(204, 0, 0);
+	background-color: #6666ff;
+}
+#wrap p.ex2 {
+	color:rgba(204, 0, 0, 0.5);
+	background-color: #6666ff;
+}
+
+#wrap p.ex3 {
+	color: #cc0033;
+	background-color: hsl(72, 100%, 50%);
+}
+#wrap p.ex4 {
+	color: #cc0033;
+	background-color: hsla(72, 100%, 50%, 0.5);
+}
+
+#wrap p.ex5 {
+	color: #cc0033;
+	background-color: #6666ff;
+	opacity: .5;
+}
+
+#wrap p.ex6 img {opacity: .7;}
+#wrap p.ex6 img:hover {
+	opacity: 1; 
+	cursor: help;
+}
+
+#wrap p.ex7 {box-shadow: 5px 8px 7px 1px #333;}
+#wrap p.ex8 {box-shadow: -5px -8px 7px 1px #333;}
+#wrap p.ex9 {
+	border-radius: 120px;
+	box-shadow: 5px 8px 7px 1px #333;
+}
+
+#wrap p.ex10 {
+	background-color: #ff9933;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	box-shadow: 3px 3px 3px 2px #ff0066;
+}
+
+#wrap p.ex11 {
+	background-color: #ff9933;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	box-shadow: inset 0 0 20px #ff0066;
+}
+
+#wrap p.ex12 {
+	background-color: #ff9933;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	box-shadow: 0 0 20px #ff0066;
+}
+
+#wrap p.ex13 {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+#wrap p.ex13:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 5);
+}
+
+#wrap p.ex14 {text-shadow: 3px 4px 1px #cc3333;}
+#wrap p.ex15 {text-shadow: -3px -4px 1px #cc3333;}
+#wrap p.ex16 {
+	text-shadow: 
+		2px 2px #cc3333, 
+		4px 4px #cc3333, 
+		6px 6px #cc3333, 
+		8px 8px #cc3333;
+}
+#wrap p.ex17 {text-shadow:
+	0 0 4px #3399ff, 
+	0 -3px 4px #6600cc, 
+	1px -6px 6px #ff9966, 
+	-1px -9px 11px #9933cc, 
+	10px -12px 18px #990099;
+}
+#wrap p.ex18 {text-shadow: 3px 4px 1px #cc3333;}
+
+#wrap p.ex19 {
+	font-size: 100px;
+	text-shadow: -1px 0 red, 0 1px red, 0 -1px red;
+	color: #333;
+}
+
+#wrap p.ex20 {
+	background-color: orange;
+	height: 94px;
+}
+#wrap p.ex20 img {
+	border-width: 2px;
+	border-style: dotted;
+	border-color: #6600ff;
+}
+
+#wrap p.ex21 {
+	background-color: pink;
+	height: 90px;
+}
+#wrap p.ex21 img {
+	outline-width: 2px;
+	outline-style: dotted;
+	outline-color: #6600ff;
+}
+
+#wrap p.ex22 img {
+	border: 3px solid #cc6666;
+	outline-width: 2px;
+	outline-style: dotted;
+	outline-color: #6600ff;
+}
+
+#wrap p.ex23 img {
+	border: 3px solid #cc6666;
+	outline: 3px dotted #6600ff;
+	padding: 10px;
+}
+
+#wrap p.ex24,
+#wrap p.ex25,
+#wrap p.ex26 {
+	font-size: 16px;
+	font-weight: normal;
+	width: 150px;
+	border: 1px solid red;
+}
+
+#wrap p.ex24 {word-wrap: normal;}
+#wrap p.ex25 {word-wrap: break-word;}
+#wrap p.ex26 {word-wrap: normal;}

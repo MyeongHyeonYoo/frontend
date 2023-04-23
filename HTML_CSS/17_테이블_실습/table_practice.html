@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>table practice</title>
+		<link rel="stylesheet" href="css/table_practice.css">
+	</head>
+	
+	<body>
+		<div id="finance">
+			<table id="fin">
+				<caption id="tit">재무정보<span class="tt">(단위: 억원)</span></caption>
+					<tr>
+					<th id="fin_id1" scope="col" colspan="2">FY2016</th>
+					<th id="fin_id2" scope="col">FY2015</th>
+					<tr>
+						<th id="property1" scope="row">자산총계</th>
+							<td headers="property1 fin_id1">1,053,313</td>
+							<td headers="property1 fin_id2">988,554</td>
+					</tr>
+					<tr>
+						<th id="property2" scope="row">부채총계</th>
+							<td headers="property2 fin_id1">971,788</td>
+							<td headers="property2 fin_id2">902,831</td>
+					</tr>
+					<tr>
+						<th id="property3" scope="row">자본금</th>
+							<td headers="property3 fin_id1">43,427</td>
+							<td headers="property3 fin_id2">43,427</td>
+					</tr>
+					<tr>
+						<th id="property4" scope="row">기타불입자본</th>
+							<td headers="property4 fin_id1">&ndash; 4,388</td>
+							<td headers="property4 fin_id2">&ndash; 4,388</td>
+					</tr>
+					<tr>
+						<th id="property5" scope="row">기타자본구성요소</th>
+							<td headers="property5 fin_id1">15,690</td>
+							<td headers="property5 fin_id2">21,742</td>
+					</tr>
+					<tr>
+						<th id="property6" scope="row">이익잉여금</th>
+							<td headers="property6 fin_id1">26,797</td>
+							<td headers="property6 fin_id2">24,943</td>
+					</tr>
+					<tr>
+						<th id="property7" scope="row">자본총계</th>
+						<td headers="property7 fin_id1">81,525</td>
+						<td headers="property7 fin_id2">85,724</td>
+					</tr>
+					<tr>
+						<th id="property8" scope="row">영업수익</th>
+							<td headers="property8 fin_id1">159,965</td>
+							<td headers="property8 fin_id2">156,432</td>
+					</tr>
+					<tr>
+						<th id="property9" scope="row">영업이익</th>
+							<td headers="property9 fin_id1">3,048</td>
+							<td headers="property9 fin_id2">4,806</td>
+					</tr>
+					<tr>
+						<th id="property10" scope="row">법인세차감전순이익</th>
+							<td headers="property10 fin_id1">4,090</td>
+							<td headers="property10 fin_id2">5,742</td>
+					</tr>
+					<tr>
+						<th id="property11" scope="row">당기순이익</th>
+							<td headers="property11 fin_id1">3,151</td>
+							<td headers="property11 fin_id2">5,003</td>
+					</tr>
+					<tr>
+						<th id="property_p1" scope="row">(주)한화 보유지분</th>
+							<td headers="property_p1 fin_id1">18.15%</td>
+							<td headers="property_p1 fin_id2">21.67%</td>
+					</tr>
+					<tr>
+						<th id="property_p2" scope="row">(주)한화 지배지분</th>
+							<td headers="property_p2 fin_id1">47.00%</td>
+							<td headers="property_p2 fin_id2">47.00%</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<ul class="fin_explain">
+								<li>별도기준 재무제표</li>
+								<li>보유지분은 보통주 기중</li>
+								<li>지배지분은 16.12월말 기준(주)한화와 자회사 보유자산(총발행주식기준 보통주)을 고려
+										(모회사&middot;자회사&middot;손자회사 지분 계산)한 (주)한화 기준에서의 지분율</li>
+							</ul>
+						</td>
+					</tr>
+			</table>
+		</div>
+	</body>
+</html>

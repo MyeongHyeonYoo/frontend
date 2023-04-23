@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/******* reset *******/
+body,
+dvi,
+h3,
+img {
+	margin: 0; padding: 0;
+}
+body {font: normal 15px/1.5em verdana, sans-serif;}
+
+
+/******* wrap *******/
+#wrap {
+	width: 1200px;
+	height: 630px;
+/*	border: 1px solid green;*/
+	margin: 50px auto 0 auto;
+}
+
+
+/******* TOP plan exhibition *******/
+#wrap h3 {
+/*	border: 1px solid green;*/
+	height: 20px;
+	margin-bottom: 35px;
+	text-align: center;
+	font-size: 20px;
+	background: url(../images/top_bg.jpg) repeat-x left top;
+	padding-top: 20px;
+}
+
+#top_img {
+	width: 1000px;
+	height: 530px;
+/*	border: 1px solid red;*/
+	margin: 0 auto 0 auto;
+}
+
+/******* left_block *******/
+.l_img {
+	float: left;
+	width: 496px;
+	height: 529px;
+}
+
+.l_img  > img {
+/*	border: 1px solid #666; */
+	box-sizing: border-box;
+}
+
+/******* right_block *******/ /* (w243 + w243) | (h264 + h264) */
+.r_img {
+	float: right;
+	width: 486px;
+	height: 528px;
+}
+
+.r_img > img {
+	float: left;
+/*	border: 1px solid #666;*/
+	box-sizing: border-box;
+}
+
+.r_img > img:nth-child(2) {border-left: none;}
+.r_img > img:nth-child(3) {border-left: none;}
+.r_img > img:nth-child(4) {
+	border-left: none;
+	border-top: none;
+}

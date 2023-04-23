@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/*******초기화(reset)*******/
+a {
+	color:#000;
+	text-decoration:none;
+}
+
+/*******ex1*******/
+/*#ex1 li a[target]{background-color:#cc99ff;}*/
+/*#ex1 li a[title="naver"]{background-color:#ff0066;}*/
+/*#ex1 li a[title~="daum"]{background-color:#ff9999;}*/
+/*#ex1 li a[title|="nate"]{text-decoration:line-through;}*/
+/*#ex1 li a[title$="nate"]{color:red;}*/
+/*#ex1 li a[title^="nate"]{color:blue;}*/
+/*#ex1 li a[title*="nate"]{color:green;}*/
+
+/*******ex2*******/
+#ex2 img[src$="png"]{border: 3px solid #cc0066;}
+#ex2 img[src*="node"]{border: 3px dotted #ff6633;}
+#ex2 img[src="images/ux1.gif"]{border: 4px double #3399ff;}
+
+/*******ex3*******/
+.ex3 li a[title^="자유"]{background-color:#cc0066;}
+.ex3 li a[title="회원 장터"]{background-color:#ff6633;}
+.ex3 li a[title$="레시피"]{background-color:#3399ff;}
+
+/*******ex4*******/
+.ex4>span {
+	color:#ff0099; 
+	border-bottom:3px double #996666;
+}
+.ex4 span {background-color:yellow;}
+
+/*******ex5*******/
+#ex5>h5 {background-color: #996699;} 
+/*#ex5 h5 {background-color: red;}*/
+#ex5>#ex5_2>h5 {color:blue;}
+#ex5_2>h5 {background-color:orange;}
+
+/*******ex6/ex7/ex8*******/
+.ex6 li+li {
+	background-color:#ff00ff; 
+	color:#ccc;
+}
+.ex7 h5+h6 {
+	text-decoration:line-through;
+	color: red;
+}
+.ex8 h5~h6{color: #0033cc;}
+
+/*******ex9*******/
+#ex9 li a:hover {
+	text-decoration: underline; 
+	color: #ff0000;
+}
+#ex9 li a:active{background-color:#99ccff;}
+
+.ex9_a:hover {cursor:default;}
+.ex9_b:hover {cursor:pointer;}
+.ex9_c:hover {cursor:move;}
+.ex9_d:hover {cursor:url(../images/cursor\(1\).cur),auto;}
+
+/*******ex10*******/
+.ex10:focus {
+	border: 3px solid #9900ff;
+	background-color: #ffffcc;
+	outline: none;
+}
+.ex10:not([type="password"]){background-color:orange;}
+
+/*************************/
+
+/*************************/
+
+/*******ex11*******/
+#ex11 li:first-child{background-color: #33ff66;}
+#ex11>li:first-child{color: red;}
+#ex11 li:last-child{background-color:#cc6699;}
+#ex11 li:nth-child(4){border: 2px solid #990033;}
+#ex11 li:nth-child(even){background-color:#ffcc33;}
+#ex11 li:nth-child(odd){background-color:#66ffff;}
+#ex11 li:nth-child(4n){text-decoration:line-through;}
+#ex11 li:nth-child(4n+1){background-color:pink;}
+#ex11 li:nth-child(3n+1){background-color:green;}
+#ex11 li:nth-child(3n+2){background-color:blue;}
+
+
+/*******ex12*******/
+#ex12 > p:nth-of-type(3){background-color:#cc99ff;}
+#ex12 > h5:nth-of-type(1){color:blue;}
+
+/*******ex13*******/
+.ex13::first-line, .ex13::first-line {
+	background-color: #ffcccc;
+	color: #cc00ff;
+	font-size: 12px;
+}
+.ex13::first-letter, .ex13:first-letter {
+	font-size: 30px;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+.ex13_2::selection {
+	color: yellow;
+	background-color: #ff7473;
+}
+
+/*******ex14*******/
+.ex14::before, .ex14:before {
+	content: "수강과목:";
+	color: #cc6600;
+	font-weight: bold;
+}
+
+.ex14::after, .ex14:after {
+	content: "/";
+	color: #cc0066;
+}
+
+/*******ex15*******/
+/*check된 input태그 바로 뒤 label 글자색 변경*/
+.ex15[type="checkbox"]:checked + label {
+	color: #ff0066;
+	font-weight: bold;
+}
+
+/*******ex16*******/
+.ex16:disabled {background-color: #ffcc66;}
+.ex16:enabled {border: 3px solid red;}
+
+/*******ex17*******/
+p.ex17 {
+	background-color: #ccffcc;
+	border-bottom: 3px double #cc6666;
+	color: #666699;
+}
+
+/*
+.ex17 {
+	text-decoration: line-through;
+	color: #000 !important;
+	background-color: #ff6600 !important;
+}
+*/
+
+
+p.ex17 {
+	text-decoration: line-through;
+	color: #000;
+	background-color: #ff6600;
+}

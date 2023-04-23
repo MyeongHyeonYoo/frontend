@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/******* reset *******/
+
+ul, li {list-style: none;}
+body,
+div,
+h3,
+p,
+ul,
+li,
+img {
+	margin: 0; padding: 0;
+}
+body {
+	font: normal 15px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif;
+	color: #333;
+	background-color: #ffebd2;
+}
+
+/******* wrap *******/
+#wrap {
+	width: 1140px;
+/*	border: 1px solid red;*/
+	margin: 90px auto 20px auto;
+  /* w313 + 474 + 313 + 20 + 20	*/
+}
+#wrap > h3 {
+/*	border: 1px solid blue;*/
+	font-size: 30px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#wrap > p {
+/*	border: 1px solid blue;*/
+	text-align: center;
+	height: 20px;
+	margin-bottom: 30px;
+}
+
+#sns {
+/*	border: 1px solid green;*/
+	width: 341px;
+	height: 73px;
+	margin: 0 auto 30px auto;
+  /* (w74 + 74 + 74 + 74) + (w15 + 15 + 15 + 15) h73	*/
+}
+
+#sns li{
+/*	background-color: tomato;*/
+	width: 74px;
+	height: 73px;
+	float: left;
+	margin-right: 15px;
+}
+
+#sns li:last-child {margin-right: 0;} /* blog */
+#banner_wrap {
+/*	border: 1px solid red;*/
+	width: 1140px;
+	height: 662px;
+  /* (w313 + 20 + 474 + 20 + 313) + (h215 + 20 + 427)	*/
+}
+
+.banner1 {
+	width: 313px;
+	height: 662px;
+	float: left;
+}
+.banner1 div:first-child {
+	width: 313px;
+	height: 215px;
+	margin-bottom: 20px;
+}
+.banner1 div:last-child {
+	width: 313px;
+	height: 427px;
+}
+
+
+.banner2 {
+	width: 474px;
+	height: 662px;
+	float: left;
+	margin-left: 20px;
+}
+.banner2 div:first-child {
+	width: 474px;
+	height: 430px;
+	margin-bottom: 20px;
+}
+.banner2 div:last-child {
+	width: 313px;
+	height: 212px;
+}
+
+.banner3 {
+	width: 313px;
+	height: 662px;
+	float: right;
+}
+.banner3 div:nth-child(1) {
+	width: 313px;
+	height: 215px;
+	margin-bottom: 20px;
+}
+.banner3 div:nth-child(2) {
+	width: 313px;
+	height: 195px;
+	margin-bottom: 20px;
+}
+.banner3 div:nth-child(3) {
+	width: 313px;
+	height: 215px;
+	margin-bottom: 20px;
+}

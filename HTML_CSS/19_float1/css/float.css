@@ -1,0 +1,143 @@
+@charset "utf-8"
+	
+
+/******* reset *******/
+div, 
+p, 
+img,
+a,
+select,
+option,
+input {
+		margin: 0;
+		padding: 0;
+}
+
+body
+select,
+input {
+	font: normal 12px/150% '맑은 고딕', 'Malgun Gothic', sans-serif;
+	color: #333;
+}
+
+/******* ex1 *******/
+#ex1 {
+	border: 1px solid #333;
+	width: 500px;
+	height: 200px;
+}
+
+.ex1_1 {
+	background-color: pink;
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+
+.ex1_2 {
+	background-color: orange;
+	float: right;
+	width: 350px;
+	text-align: justify;
+	margin-top: 14px;
+}
+
+/******* ex2 *******/
+#ex2 {clear: both;}
+
+#ex2 {
+	border: 1px solid #333;
+	width: 500px;
+	height: 200px;
+}
+
+.ex2_1 {
+	background-color: pink;
+	width: 130px;
+	height: 130px;
+	float: right;
+}
+.ex2_2 {
+	background-color: orange;
+	float: left;
+	width: 350px;
+	text-align: justify;
+	margin-top: 14px;
+}
+
+/******* ex3 *******/
+#ex3 {
+	clear: both;
+	border: 1px solid #333;
+	width: 500px;
+	height: 200px;
+}
+
+#ex3 > p {
+	border: 2px solid red;
+	width: 130px;
+	height: 130px;
+}
+
+#ex3 > p:nth-child(1) {float: left;} 
+#ex3 > p:nth-child(2) {float: left; margin-left: 50px;} 
+#ex3 > p:nth-child(3) {float: right;} 
+
+/******* ex4 *******/
+#ex4 {
+	clear: both;
+	margin: 20px;
+	height: 20px;
+}
+
+#ex4 > a {
+	color: #000;
+	float: left;
+	padding: 8px 16px;
+}
+
+#ex4 > a.active {
+	background-color: #996666;
+	color: #fff;
+}
+
+#ex4 > a:hover:not(.active) {background-color: #ccc;}
+
+/******* ex5 *******/
+#ex5 {
+	clear: both;
+	width: 210px;
+	height: 50px;
+	background-color: pink;
+	margin: 20px;
+}
+
+.ex5_1 {
+	float: left;
+	width: 100px;
+	height: 40px;
+	border: 1px solid #666;
+}
+.ex5_1 select {
+	width: 100px;
+	height: 40px;
+	border: none;
+	text-indent: 10px;
+	outline: none;
+}
+
+.ex5_2 {
+	float: right;
+	width: 100px;
+	height: 40px;
+/*	border: 1px solid #666;*/
+}
+.ex5_2 input {
+	width: 100px;
+	height: 40px;
+	border: none;
+	border: 1px solid #666;
+	outline: none;
+	text-indent: 1.5em;
+}
+

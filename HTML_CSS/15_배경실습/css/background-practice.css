@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+body {
+font: 12px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif;
+
+}
+div, h1, h2, h3, p, span {margin: 0; padding: 0;}
+#wrap {
+	width: 697px;
+	height: 540px;
+	border: 1px solid #eaeaea;
+	border-radius: 5px;
+}
+
+#wrap > h1 {
+	width: 344px;
+	height: 30px;
+	margin: 14px 0 29px 12px;
+}
+
+#wrap > h1 > img {
+	padding: 7px 8px;
+	border: 2px solid #dedede;
+	border-radius: 50%;
+	margin: 0 14px 0 8px;
+	box-shadow: -.5px -.5px #dedede, inset 1px 1px #dedede;
+}
+
+#wrap > h1 > span {
+	color: #9a9a9a;
+	font-size: 12px;
+	margin-left: 12px;
+}
+#wrap > h2 {
+	color:#3c3ae6;
+	margin: 27px 8px;
+	padding: 0 0 0 22px;
+	background: url(../images/icon.gif) 8px 5px no-repeat;
+}
+
+#wrap > p {
+	color: #6b686f;
+	margin: 0 0 17px 8px;
+}
+
+#wrap > div div {
+	width: 330px;
+	height: 78px;
+	border: 1px hidden #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-left: 8px;
+}
+
+#wrap > div h3 {
+	color: #a8bcff;
+	padding: 12px 0 0 100px;
+	
+}
+#wrap > div p {padding: 5px 0 0 100px;}
+
+#wrap > div >div:nth-child(1) {
+	background: url(../images/bg_1.png) no-repeat 20px 21px #e4ebf5;
+}
+#wrap > div >div:nth-child(2) {
+	background: url(../images/bg_2.png) no-repeat 20px 21px #e4ebf5;
+}
+#wrap > div >div:nth-child(3) {
+	background: url(../images/bg_3.png) no-repeat 20px 21px #e4ebf5;
+}
+#wrap > div >div:nth-child(4) {
+	background: url(../images/bg_4.png) no-repeat 20px 21px #e4ebf5;
+}

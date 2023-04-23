@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>유명현[table_test]</title>
+				<link rel="stylesheet" href="css/layout.css">
+    </head>
+    <body>
+			<h1><img src="images/logo.png" alt="Korean Air - main_logo" width="205" height="33" title="KOREAN AIR :D"></h1>
+			<table>
+				<caption>&lang;보너스 성수기 기간&rang;</caption>
+				<tr>
+					<th id="Route" scope="col">노선</th>
+					<th id="start" scope="col">출발지</th>
+					<th id="dest" scope="col">목적지</th>
+					<th id="year_1" scope="col">2013년</th>
+					<th id="year_2" scope="col">2014년</th>
+				</tr> <!-- 1행 목차 -->
+				<tr>
+					<th id="Route_1" scope="row">국내선</th>
+					<td colspan="2" headers="start dest Route_1">한국 내 국내선</td>
+					<td headers="year_1 Route_1">
+						1&period;1<br>
+						2&period;8 ~ 2&period;12<br>
+						3&period;1 ~ 3&period;3<br>
+						5&period;17 ~ 5&period;19<br>
+						6&period;6&comma; 6&period;8 ~ 6&period;9<br>
+						7&period;19 ~ 8&period;25<br>
+						9&period;17 ~ 9&period;23<br>
+						10&period;3&comma; 10&period;5 ~ 10&period;6<br>
+						12&period;28 ~ 12&period;31
+					</td>
+					<td headers="year_2 Route_1">
+						1&period;1<br>
+						1&period;29 ~ 2&period;3<br>
+						5&period;3 ~ 5&period;6<br>
+						6&period;6 ~ 6&period;8<br>
+						7&period;19 ~ 8&period;24<br>
+						9&period;5 ~ 9&period;10<br>
+						10&period;3 ~ 10&period;5<br>
+						10&period;9&comma; 10&period;11 ~ 12<br>
+						12&period;25 ~ 12&period;31
+					</td>
+				</tr> <!-- 2행 국내선 -->
+				<tr>
+					<th id="Route_2" scope="row">미주이외<br>노선</th>
+					<td headers="start Route_2">
+						한국&comma; 일본&comma;<br>
+						동북아&comma; 동남아&comma;<br>
+						서남아&comma;<br>
+						유럽&sol;중동&comma;<br>
+						대양주&comma; 아프리카
+					</td>
+					<td headers="dest Route_2">
+						한국&comma; 일본&comma;<br>
+						동북아&comma; 동남아&comma;<br>
+						서남아&comma;<br>
+						유럽&sol;중동&comma;<br>
+						대양주&comma; 아프리카
+					</td>
+					<td headers="year_1 Route_2 Route_3" rowspan="2">
+						1&period;1 ~ 1&period;6<br>
+						2&period;7 ~ 2&period;12<br>
+						7&period;20 ~ 8&period;22<br>
+						9&period;14 ~ 9&period;23<br>
+						12&period;21 ~ 12&period;31
+					</td>
+					<td headers="year_2 Route_2 Route_3" rowspan="2">
+						1&period;1 ~ 1&period;5<br>
+						1&period;29 ~ 2&period;3<br>
+						7&period;18 ~ 8&period;24<br>
+						9&period;5 ~ 9&period;10<br>
+						12&period;20 ~ 12&period;31
+					</td>
+				</tr> <!-- 3행 미주이외 노선  -->
+				<tr>
+					<th id="Route_3" rowspan="2" scope="row">미주노선</th>
+					<td headers="start Route_3">
+						한국&comma; 일본&comma;<br>
+						동북아&comma; 동남아&comma;<br>
+						서남아&comma; <span>대양주</span><br>
+						&lpar; 주1 &rpar;
+					</td>
+					<td headers="dest Route_3"><span>북미&comma; 남미</span> &lpar; 주1 &rpar;</td>
+				</tr> <!-- 4, 5행 미주노선 -->
+				<tr>
+					<td headers="start Route_3"><span>북미&comma; 남미</span> &lpar; 주2 &rpar;</td>
+					<td headers="dest Route_3">
+						한국&comma; 일본&comma;<br>
+						동북아&comma; 동남아&comma;<br>
+						서남아&comma; 대양주<br>
+						<span>북미&comma; 남미</span><br>
+						&lpar; 주2 &rpar;
+					</td>
+					<td headers="year_1 Route_3">
+						5&period;17 ~ 6&period;30<br>
+						12&period;7 ~ 12&period;23
+					</td>
+					<td headers="year_2 Route_3">
+						5&period;16 ~ 7&period;1<br>
+						12&period;10 ~ 12&period;25
+					</td>
+				</tr> <!-- 4, 5행 미주노선 -->
+				<tr>
+					<td headers="Route start dest year_1 year_2" colspan="5">
+						※&lpar; 주1 &rpar; 대양주발 남미행, 남미발 대양주행은 보너스 공제 마일리지표 미운영 구간으로 제외<br>
+						&lpar; 주2 &rpar; 북미발 남미행 남미발 북미행&lpar;로스엔젤로스&dash;상파울루 구간&rpar;은 미주 출발 성수기 적용
+					</td>
+				</tr> <!-- 꼬리말1(적용내용) -->
+				<tr>
+					<td class="footer" colspan="5">
+						<ul>
+							<li>좌석승급 보너스 이용은 차상급에 한해 가능합니다&period;</li>
+							<li>예약 상황에 따라 일부 항공편의 좌석승급 예약이 제한될 수 있습니다&period;</li>
+							<li>가는편과 오는편의 클래스 및 시즌이 다른 경우&comma; 편도로 발권하고 각 구가 출발 일자의 해당 시즌 공제마일을 적용합니다&period;</li>
+						</ul>
+					</td>
+				</tr> <!-- 꼬리말2(설명) -->
+			</table> <!-- 보너스 성수기 기간 table_all -->
+    </body>
+</html>

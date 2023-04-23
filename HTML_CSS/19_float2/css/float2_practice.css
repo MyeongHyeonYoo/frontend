@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/******* Reset *******/
+body,
+div,
+p,
+img {
+	margin: 0;
+	padding: 0;
+}
+/******* Common *******/
+body {font: normal 15px/150% '맑은 고딕', 'Malgun Gothic', sans-serif;}
+
+#wrap {
+	width: 796px;
+	height: 240px;
+	margin: auto;
+	/* border: 1px solid salmon; */
+}
+
+#reviews {	
+	margin-left: 17px;
+	height: 60px;
+	border-bottom: 6px solid #f1f1f1;
+	width: 760px;
+}
+#reviews > h1 {
+	font-size: 28px;
+	font-weight: 500;
+	float: left;
+}
+#reviews > p {
+	margin: 20px 0 10px 30px;
+	float: left;
+}
+
+#star {clear: both;}
+
+#box1 {
+	float: left;
+}
+#box1  h2 {
+	font-size: 15px;
+	font-weight: 500;
+	margin: 17px 0 1px 18px;
+	line-height: 10px;
+}
+#box1 >h2:nth-child(1) {margin-top: 20px;}
+#box1 >h2:nth-child(5) {margin-bottom: 42px;}
+
+#box2 {
+	float: left;
+	font-size: 15px;
+	line-height: 2em;
+	padding: 5px;
+}
+#box2 div {
+	width: 535px;
+	height: 15px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: #f1f1f1;
+	box-shadow: 1px 1px 5px 0px #ddd inset;
+	margin: 11px 0 0 73px;
+	overflow: hidden;
+	font-size: 0;
+}
+#box2 > div:nth-child(1) > p {
+	width: 60%;
+	background-color: #4cb050;
+}
+#box2 > div:nth-child(2) > p {
+	width: 32%;
+	background-color: #2196f3;
+}
+#box2 > div:nth-child(3) > p {
+	width: 10%;
+	background-color: #00bbd4;
+}
+#box2 > div:nth-child(4) > p {
+	width: 3.5%;
+	background-color: #ff9700;
+}
+#box2 > div:nth-child(5) > p {
+	width: 14%;
+	background-color: #f54337;
+}
+
+#box3 {float: right;}
+#box3 p {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: right;
+	margin: 17px 20px 1px 18px;
+	line-height: 10px;
+}

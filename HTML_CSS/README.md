@@ -1313,7 +1313,7 @@ padding을 width에 포함 or height에 포함 시키는 등, 하는 방법이 �
 
 ---
 
-**`목록` ul, ol** <br>
+**`목록` ul, ol** → ♣ [16_목록] <br>
 cf) ul, ol: 특수 기호, 여백 - 기본 설정되어 있다. <br>
 - **list-style**: list-style-type | list-style-position | list-style-image | initial | inherit <br>
     - list-style: none; → 블릿기호(disc, circle, square) 또는 숫자 없애기 <br>
@@ -1633,7 +1633,7 @@ td만 height 적용 안 된다.
         │   o   │   o   │   o   │ → thead 
         ├───────┼───────┼───────┤
         │       │       │       │
-        │  ☆☆  │  ☆☆  │  ☆☆  │ → tbody
+        │   ☆  │   ☆   │   ☆  │ → tbody
         ├───────┼───────┼───────┤
         │       │       │       │
         │   x   │   x   │   x   │ → tfoot
@@ -1882,4 +1882,984 @@ HTML 요소에 추가 정보를 저장 <br>
                 width: 400px;
             }
             ```
+---
+
+**&lt;form&gt;&lt;/form&gt;** <br>
+로그인, 회원가입 등 → data 전송되는 것 <br>
+브라우저별 지원확인 해야함 <br>
+```HTML
+<form action="" method="" target="">
+    내용
+</form>
+
+<!-- target: _self [default] | _blank -->
+```
+
+- 속성 <br>
+- **action** : 전송 버튼을 클릭할 때 태그 안의 내용들을 처리해줄 서버 상의 프로그램을 지정 <br>
+    - 서버 확장자: php, asp, jsp … <br>
+        - 전송 버튼 <br>
+            - input type="submit" <br>
+            - input type="image" → 전송 버튼을 이미지로 <br>
+            - button type="submit" <br>
+                - ▷ 전부 form 태그 안에 써야 한다. <br>
+- **method** : 사용자가 입력한 내용들을 서버 쪽에 어떻게 넘겨줄지 지정 <br>
+    - get : 주소에 데이터를 입력해서 보내는 방식 → 데이터가 일부 노출되는 것도 존재 <br>
+    - post : 주소가 변경되지 않고 비밀스럽게 데이터를 전달하는 방식 → 주소만 보인다. <br>
+    ```HTML
+    method="get"
+    method="post"
+    ```
+
+**`폼 내용을 그룹으로 묶기`** <br>
+필수 x, 선택사항 <br>
+```HTML
+<fieldset>
+    <legend>그룹 제목</legend>
+</fieldset>
+
+<!-- fieldset 쓰면 테두리 자동으로 생긴다.(CSS로 수정 가능) -->
+```
+
+**&lt;input type=""&gt;** <br>
+닫는 태그 없음 <br>
+- **`type`** 값 <br>
+- **text** : 일반텍스트, 화면에 내용이 노출됨 <br> 
+- **password** : 비밀번호/주민등록번호 등 화면에 내용이 비노출 <br>
+→ text, password - CSS로 숨길 수 있다. <br>
+    ```
+    한 글자씩 들어가는 것 → JS로 설정
+    아이디 중복 여부 → JS로 설정
+    ```
+- **radio** : ○ 1개만 선택 가능 → 선택 모양 CSS/JS로 수정 가능 <br>
+    - **checked** : 기본 선택 → 여러 개 작성 시 제일 마지막 것 선택되어 있다. <br>
+```HTML
+<input type="radio" name="" value="값">
+
+<!-- name 속성에 의해 분류 가능 -->
+<!-- name 속성을 다르게 지정하면 radio도 여러 개 선택할 수 있게 된다. -->
+```
+- **checkbox** : □ 다중 선택 가능 → 선택 모양 CSS/JS로 수정 가능  <br>
+    - **checked** : 기본 선택 → 여러 개 작성 시 제일 마지막 것 선택되어 있다. <br>
+    ```HTML
+    <input type="checkbox" name="" value="값">
+    ```
+- **file** : 파일 선택 → 파일을 선택할 수 있다. <br>
+- **submit** : action url로 전송 <br>
+    - 전송 방식을 form 태그의 방식과 다르게 별도로 지정하고 싶을 때 다음의 속성으로 설정 가능 <br>
+        - formaction : "전송 url" (action 속성과 같음) <br>
+        - formmethod : 전송 방식 설정 (method 속성과 같음) <br>
+        - formtarget : "_self" | "_blank" (target 속성과 같음) <br>
+- **reset** : 내용 초기화 <br>
+- **button** : 실행기능 없음, 모양만 버튼, 자바스크립트/제이쿼리 명령 <br>
+- **image** : action url로 전송됨 | src="경로/파일명"  alt="대체텍스트(필수)" <br>
+
+    ```
+    type의 값이 file, submit, reset, button, image인 input 태그에 name 속성 줄 수 있다.
+
+    type의 값이 submit, reset, button인 input 태그에 value 속성 줄 수 있다.
+    ※ type의 값이 image, file인 input 태그에 value 속성 사용 불가
+    ```
+    - 속성 <br>
+    - **value** : type의 값이 radio, checkbox, submit, reset, button인 input 태그에 '이름(값)' 지정 <br>
+
+**`폼 태그 접근성`** <br>
+검사항목 19. [레이블 제공] 입력 서식에는 대응하는 레이블을 제공해야 한다. (label: 묶어 주기 위함) <br>
+- **&lt;`input` `type`="image | hidden | submit | button | reset"&gt;** 을 제외한 모든 **&lt;input&gt;**, **&lt;textarea&gt;**, **&lt;select&gt;** 요소에 **&lt;label&gt;** 요소를 제공해야 한다. <br>
+```
+<input> 태그의 id 속성 값과 <label> 태그의 for 속성 값이 다르거나,
+페이지 안에 같은 id가 있는 경우 오류
+
+▶ 접근성 미준수
+
+
+```
+
+```HTML
+<!-- 암묵적 방법(권장하지 않음) -->
+
+<label><input type="text">아이디</label>
+```
+
+```HTML
+<!-- 명시적 방법(권장) -->
+
+<label for="id명">아이디</label>
+<input type="text" id="id명">
+```
+
+**`form 내용을 action주소로 전송`** <br>
+- 속성 <br>
+    - **target**="_self" → 현재창 [default] <br>
+    - **target**="_blank" → 새창 <br>
+
+**`버튼`** <br>
+**&lt;button&gt;&lt;/button&gt;** <br>
+닫는 태그 있음 <br>
+- &lt;button tpye="submit"&gt;이름&lt;/button&gt; → action url로 전송 <br>
+- &lt;button tpye="reset"&gt;이름&lt;/button&gt; → 내용 초기화 <br>
+- &lt;button tpye="button"&gt;이름&lt;/button&gt; → 실행 기능 없음 / 자바스크립트, 제이쿼리 명령 <br>
+    (button 태그에 type의 속성 값으로 image는 없다.) <br>
+```
+<button type="button">이름</button>
+
+<button> 태그 사이 '이름'은 input에서는 value 값으로 지정
+```
+
+**`여러 줄 입력하기`** <br>
+**&lt;textarea&gt;&lt;/textarea&gt;** <br>
+```HTML
+<textarea cols="칸수(가로너비)" rows="줄수(세로길이)">내용</textarea>
+
+<!-- 속성 cols, rows는 대략적으로 값을 넣어주고 CSS에서 크기 설정 가능 -->
+<!-- textarea 태그 안에 내용 쓸 때, '태그'ㄴ는 그냥 문자(열)로 인식(텍스트로 인식) -->
+```
+
+```CSS
+/* 크롬 브라우저에서 크기 변경 안 되게 CSS 설정 */
+
+tag, id, class {
+    reszie: none;
+}
+```
+
+- 폼 태그 내용 - '읽기 전용' 속성 <br>
+    - **readonly** → 수정 불가 <br>
+    ▷ input 태그 안에 사용 가능 <br>
+    ```HTML
+    <textarea readonly>내용</textarea> <!-- 수정 불가 -->
+    ```
+
+**`목록 상자`** <br>
+**&lt;select&gt;&lt;/select&gt;** <br>
+```HTML
+<select>
+    <option value="">항목</option> <!-- <option> 태그에 속성으로 'name' 사용 불가 -->
+    <option value="">항목</option>
+</select>
+```
+- 속성 <br>
+    - **selected** : 항목 기본 선택 <br>
+    - **multiple** : 다중 선택 → 이 속성 사용하면 디자인 바뀜 <br>
+    - **size** : 노출할 항목 개수 → size="개수" ▷ 4개 기본 <br>
+    ```
+    ■ multiple 단독으로 사용 가능
+    ■ size 단독으로 사용 불가
+    ■ multiple, size 같이 사용 가능
+    ```
+    ```HTML
+    <select multiple size="6"></select>
+    ```
+
+**`항목을 그룹으로 묶기`** <br>
+**&lt;optgroup&gt;&lt;/optgroup&gt;** <br>
+```HTML
+<optgroup label="그룹이름"> <!-- label: 속성 → 태그와 다르다. / ☆ label 안 써주면 오류 -->
+    <option value="">항목</option>
+    <option value="">항목</option>
+</optgroup>
+
+<!-- optgroup 태그 안 optgroup 태그 사용 불가 -->
+<!-- cf) datalist 태그의 option에도 label 속성 사용 가능 --> <!-- datalist 다음에 등장 -->
+```
+<br>
+
+§ …여기까지가 기존 **`form`** 태그 <br>
+〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+
+**`기타 속성`** <br>
+- **placeholder**="내용" → '입력 란'에 내용 표시(radio, checkbox 제외) <br>
+    - 입력하면 내용 없어짐 → 잘 안 되는 경우, JS로 더 완벽히 해줄 수 있다. <br>
+- **maxlength**="개수" → '입력 글자' - 최대 글자 수 제한 <br>
+- **minlength**="개수" → '입력 글자' - 최소 글자 수 제한 <br>
+    - maxlength, minlength : 한글 잘 안 먹음 → 잘 안 되는 경우, JS로 더 완벽히 해줄 수 있다. <br> 
+- **autofocus** → 자동으로 '커서' 위치 <br>
+    - (커서 - 깜박 깜박) → 하나만 적용 <br>
+    - ☆ autofocus 2번 쓰면 오류 <br>
+    - 입력 란, 선택 란 모두 사용 가능(초점 맞춰 준다.) <br>
+        - radio, checked 되어 있는 것 포함, input 태그에 사용 o <br>
+        - select, textarea 사용 o (only select - option, optgroup 사용 불가) <br>
+- **required** → '필수 입력' 설정  <br>
+    - 미입력(공란) 시 전송 x → JS로 기본 문구 & 디자인 수정 가능 <br>
+- **size** → 텍스트 길이 <br>
+    - 숫자가 높을수록 길게 찍힘(잘 안 맞는 경우 있다.) → JS로 수정 가능 <br>
+- **autocomplete**="on/off" → '글자' 자동 완성 기능 - 설정/해제 [on: default] <br>
+
+**`HTML5에 추가된 속성`** <br>
+**&lt;input type="속성 값"&gt;** <br>
+- **email** : 이메일 <br>
+- **tel** : 전화번호 <br>
+- **number** : 숫자 - 증가/감소 <br>
+    ```HTML
+    <input type="number" value="초기값(초기 설정 값)" min="최소" max="최대" step="단계">
+
+    <!-- min, max로 범위 지정 -->
+    <!-- step: step="10" → 10개씩 묶음 (판매/구매) -->
+    <!-- 수치(숫자) JS로 구성 가능 -->
+    ```
+- **range** : 영역 범위, 슬라이드 막대 <br>
+cf) 브라우저 업데이트 되면서 색상 바뀐다. <br>
+
+    ```HTML
+    <input type="range" value="초기값(초기 설정 값)" min="최소" max="최대" step="단계">
+
+    <!-- min, max로 범위 지정 -->
+    <!-- step: step="10" → 10개씩 표시 -->
+    <!-- 수치(숫자) JS로 구성 가능 -->
+    ```
+- **color** : 색 → 클릭하여 선택 가능 / RGB 입력 <br>
+- **date** : 날짜(년-월-일) <br>
+- **time** : 시간 <br>
+- **datetime-local** : 날짜와 시간 <br>
+- **month** : 월 <br>
+- **week** : 달력의 한 주(1년) <br>
+- **search** : 검색 (입력하고 오른쪽 'x' 등장) <br>
+- **url** : 하이퍼링크 주소 <br>
+
+**`기타`** <br>
+- **`datalist`** : 텍스트 입력에 대한 리스트 목록 제공 <br>
+    - **&lt;datalist&gt;&lt;/datalist&gt;** <br>
+    ```HTML
+    <input type="text" list="list명">
+    <datalist id="list명">
+        <option value="(위) 메인 이름" label="(아래) 서브 이름"></option>
+    </datalist>
+    ```
+
+```HTML
+<!-- option 태그 관련 -->
+<option>메인 이름</option> <!-- 속성을 안 쓰는 경우 - 메인 이름만 제공 -->
+<option label="(아래) 서브 이름">메인 이름</option> <!-- option 태그 사이의 메인 이름 - value 값 대신 메인 이름 제공 -->
+<option value="" label="(아래) 서브 이름">메인 이름</option> <!-- 다음과 같이 value가 빈 값이면 메인 이름, 서브 이름 모두 표시 x -->
+<option value="(위) 메인 이름">(아래) 서브 이름</option> <!-- option 태그 사이의 서브 이름 - label 값 대신 서브 이름 제공 -->
+<option value="(위) 메인 이름" label="">(아래) 서브 이름</option> <!-- 메인 이름만 표시 -->
+```
+
+- **`details`** : (목록) 내용 - 펼쳐보기/접기 <br>
+    - **&lt;details&gt;&lt;/details&gt;** <br>
+    제목을 클릭할 때마다 내용 show/hide <br>
+    ```HTML
+    <details>
+        <summary>제목</summary>
+            내용 <!-- p 태그 사용 가능 -->
+    </details>
+    ```
+
+- **`progress`** : 진행률(진행 상황), 정도 표시 / 프로그레스 바 <br>
+    - **&lt;progress&gt;&lt;/progress&gt;** <br>
+    ```HTML
+    <progress value="" max=""></progress> <!-- min 속성 x - 설정 불가 -->
+
+    <!-- cf) <meter> 태그와 유사 -->
+    <!-- 브라우저 업데이트마다 색상/조정 등 달라짐(브라우저마다 좀 다르다.(많이 차이는 x)) -->
+    ```
+
+**`input` 속성** 참조 <br>
+- **accept** : 확장자 힌트/필터 <br>
+    - audio/* <br>
+    - video/* <br>
+    - image/* <br>
+- **dirname** : 텍스트 방향성 <br>
+- **form** : 1개 이상의 form 'id' 지정 → 폼 외부에 &lt;input&gt; 태그를 생성할 필요가 있는 경우, 이 속성을 이용하면 해당 요소가 폼에 속한 필드인 것처럼 처리 <br> 
+- **pattern** : 정규 표현식 <br>
+    ```HTML
+    <form action="search.php">
+        <label for="code">우편번호 :</label>
+        <input id="code" type="text" name="postal_code" pattern="[0-9]{5}" title="5자리 숫자만 입력" size="5">
+        <input type="submit" value="주소 찾기">
+    </form>
+
+    <!-- 정규 표현식 제약과 일치하지 않을 경우, 폼이 전송되지 않고 경고 메시지 표시 -->
+    <!-- 단, 정규 표현식 작성 시 공백 체크까지 하지 않을 경우 미입력 체크가 되지 않아 'required' 속성과 함께 사용할 것  -->
+    ```
+
+    ```
+    pattern, step 등 입력 필드의 값을 한정하는 속성의 경우,
+    자바스크립트, 제이쿼리를 이용해 폼 필드를 전처리 후 전송하는 경우
+    한정 속성이 정상적으로 동작하지 않을 수 있다.
+    ```
+
+---
+
+## CSS
+
+**`[속성 선택자]`** <br>
+- **`태그[속성명]`** : 속성이 있는 태그 <br>
+    ```
+    target, value, src, href …
+    ```
+- **`태그[속성명="속성값"]`** : 속성 값이 정확히 있는 태그(일치하는 태그) <br>
+    ```
+    title="naver" …
+    ```
+- **`태그[속성명~="속성값"]`** : 속성 값에 공백이 있는 경우에는 그 중 하나이거나, 공백이 없으면 정확한 값이 있는 태그 <br>
+    ```
+    title="potal daum" / "daum potal" …
+    ```
+- **`태그[속성명|="속성값"]`** : 속성 값에 하이픈(-)이 있는 경우에는 속성 값으로 시작하거나, 하이픈이 없으면 정확한 값이 있는 태그 <br>
+    ```
+    "지정 속성 값-선택"
+    
+    ex)
+    [background]
+    background-color
+    background-image
+    …
+    ```
+- **`태그[속성명$="속성값"]`** : 속성 값으로 끝나거나, 정확한 값이 있는 태그  <br>
+    ```
+    끝나는 '단어'가 최소 1개 이상 일치해야 한다.
+    ```
+- **`태그[속성명^="속성값"]`** : 속성 값으로 시작하거나, 정확한 값이 있는 태그 <br>
+    ```
+    시작하는 '단어'가 최소 1개 이상 일치해야 한다.
+    ```
+- **`태그[속성명*="속성값"]`** : 속성 값을 포함하거나, 정확한 값이 있는 태그 <br>
+
+**`[자식 선택자]`** <br>
+특정 태그 아래에 있는 자식 태그를 선택할 때 <br>
+
+**`부모 요소`** **>** **`자식 요소`{속성명: 속성 값;}** <br>
+- ul > li 
+    - ul(부모) 안 li(자식) 만(부모 요소의 바로 다음 자식 요소만 선택)
+- dl > dd
+    - dl(부모) 안 dd(자식) 만(부모 요소의 바로 다음 자식 요소만 선택)
+    ```CSS
+    /* cf) */ 
+    ul li {
+
+    }
+
+    /* ul(부모)의 li(자식) 모두 */
+    /* (부모 요소의 다음 자식 요소 전체를 선택) */
+    ```
+
+**`[인접형제 선택자]`** <br>
+가장 가까운 형제요소에 CSS 적용 <br>
+
+- **`요소`** **+** **`요소`** **{속성명: 속성 값;}** <br>
+마크업에 따라 ① 첫번째는 CSS가 제외 / ② 요소 바로 뒤 하나만 적용 <br>
+
+**`[형제 선택자]`** <br>
+- **`요소`** **~** **`요소`** **{속성명: 속성 값;}** <br>
+요소 바로 뒤 전체에 적용 <br>
+
+```
+[인접형제 선택자]와 [형제 선택자] 모두 결국, 선택된 '첫번째 요소'는 CSS 적용 x
+```
+
+**`[사용자 동작에 반응하는 가상 클래스]`** <br>
+1. 방문하지 않은 링크에 CSS 적용 <br>
+    - :**link** { 속성명: 속성 값; }
+        ```CSS
+        a:link {
+            color: red;
+        } 
+        a {
+            color: red;
+        } /* 초기화 */
+        ```
+
+2. 방문한 링크에 CSS 적용 <br>
+    - :**visited** { 속성명: 속성 값; }
+        ```CSS
+        a:visited {
+            color: blue;
+        }
+        ```
+
+        ```
+        1, 2: 문서 안의 '링크'와 관련된 선택자
+        → 잘 안 쓰인다.
+        ```
+
+3. 마우스 커서를 올려놓을 때 CSS 적용 <br>
+    - :**`hover`** { 속성명: 속성 값; }
+    
+4. 마우스로 누르고 있을 때 CSS 적용 <br>
+    - :**`active`** { 속성명: 속성 값; } <br>
+        ```CSS
+        a:active {
+            color: red;
+        }
+        ```
+
+5. 포커스가 있을 때(탭, 커서) CSS 적용 → 텍스트 필드 안에 커서가 놓여진 것과 같은 상태 <br>
+    - :**`focus`** { 속성명: 속성 값; } <br>
+
+- **`outline: none`** → input 태그의 테두리 없애기 <br>
+```
+input 태그에 생성된 입력 창(입력 필드) 선택 시 테두리(검정) 생성
+(테두리(검정)는 브라우저 업데이트마다 색상 달라질 수 있다.)
+
+▷ outline: none; 으로 테두리 없앨 수 있다.
+```
+
+**`[선택자에서 조건을 제외하고 CSS 적용]`** <br>
+- 선택자:**`not(조건)`** { 속성명: 속성 값; } <br>
+(선택자 - tag, id, class) <br>
+    - 조건에 해당하는 것 제외하고 선택자 요소 선택 <br>
+        ```
+        ex) type이 password인 것, text 인 것 등… 제외
+        ```
+    - 일부 선택자 제외 ▷ not만 쓰고, 별도로 주고 싶은 조건만 쓸 수 없다.(형식 맞춰 쓰기) <br>
+
+**`[일반 구조 선택자]`** <br>
+특정한 위치에 있는 태그를 선택하여 CSS 적용 <br>
+1. 첫 번째 <br>
+    - 선택자:**`first-child`** { 속성명: 속성 값; } <br>
+2. 마지막 번째 <br>
+    - 선택자:**`last-child`** { 속성명: 속성 값; } <br>
+3. n번째 <br>
+    - 선택자:**`nth-child(n)`** { 속성명: 속성 값; } <br>
+4. 짝수 번째 <br> 
+    - 선택자:**`nth-child(even)`** { 속성명: 속성 값; } <br>
+5. 홀수 번째 <br>
+    - 선택자:**`nth-child(odd)`** { 속성명: 속성 값; } <br>
+6. 배수 번째 → 수치n + ⓝ ▷ ⓝ번째 포함 후 수치(배수) + ⓝ <br>
+    - 선택자:**`nth-child(수치n)`** { 속성명: 속성 값; } <br>
+        ```CSS
+        선택자:nth-child(4n) /* 4의 배수 */
+
+        선택자:nth-child(3n+1) /* 1번째 요소 포함하며, 1번째 요소로부터 3배수 (1, 4, 7, 10 …) */
+        선택자:nth-child(4n+2) /* 2번째 요소 포함하며, 2번째 요소로부터 4배수 (2, 6, 10 …) */
+        ```
+
+```
+1 ~ 6번 관련하여 '같은 태그'의 영역에서 사용하기 좋다.
+⊙ 정확도
+⊙ 예측 가능성
+
+
+cf) 
+
+<h5></h5>
+<h6></h6> 
+…
+
+여러 태그 있으면 예측하기 어렵다.
+```
+
+7. 형제관계 중에서 수열 번째 등장하는 특정 태그를 선택하여 CSS 적용 <br>
+- 선택자:**`nth-of-type(n)`** → n번째 (첫 번째가 1번 (0번 x)) <br>
+    - 여러 타입의 태그가 있을 떄, 선택적으로 사용하기 좋다. <br>
+
+8. 기타 <br>
+- 선택자:**only-child** → 부모 요소로부터 유일한 자식 요소일 때 CSS 적용 <br>
+- 선택자:**only-of-type** → 부모 요소로부터 유일한 타입일 때 CSS 적용 <br>
+- 선택자:**nth-last-child(n)** → 마지막 번째로부터 n번째 자식 요소에 CSS 적용 <br>
+- 선택자:**nth-last-type(n)** → 마지막 번째로부터 n번째 타입에 CSS 적용 <br>
+- 선택자:**first-of-type** → 첫 번째 타입에 CSS 적용 <br>
+- 선택자:**last-of-type** → 마지막 번째 타입에 CSS 적용 <br>
+- 선택자:**empty** → 텍스트 및 공백을 포함하여 자식 요소가 없는 태그 선택 ( 텍스트 x, 공백x, 자식 요소x ) <br>
+
+**`[문자 선택자]`** <br>
+특정 조건의 문자를 선택하여 CSS 적용 <br>
+- **시작 문자 선택자** <br>
+    - 첫 줄 <br>  
+        - 선택자::**`first-line`** { 속성명: 속성 값; } <br>
+        - 선택자:**`first-line`** { 속성명: 속성 값; } (ie 하위 버전 → 콜론(:) 1개 작성) <br>
+            ```CSS
+            선택자::first-line, 선택자:first-line {
+                속성명: 속성 값;
+            } /* 하위 버전 호환을 위해 같이 쓰기도 한다. */
+            ```
+    - 첫 글자 <br>
+        - 선택자::**`first-letter`** { 속성명: 속성 값; } <br>
+        - 선택자:**`first-letter`** { 속성명: 속성 값; } (ie 하위 버전 → 콜론(:) 1개 작성) <br>
+            ```CSS
+            선택자::first-letter, 선택자:first-letter {
+                속성명: 속성 값;
+            } /* 하위 버전 호환을 위해 같이 쓰기도 한다. */
+            ```
+- **전·후 문자 선택자** ▶ **가상으로 내용 추가할 때(많이 쓰임)** <br>
+    - 선택자 앞에 내용 추가 <br>
+        - ::before { content: "내용"; } → content 내용에 CSS코드 넣어줄 수 있다. (ex: '\2022';) <br>
+        - :before { content: "내용"; } (ie 하위 버전 → 콜론(:) 1개 작성) <br>
+            ```CSS
+            선택자::before, 선택자:before {
+                속성명: 속성 값;
+            } /* 하위 버전 호환을 위해 같이 쓰기도 한다. */
+            ```
+    - 선택자 뒤에 내용 추가 <br>
+        - ::after { content: "내용"; } <br>
+        - :after { content: "내용"; } (ie 하위 버전 → 콜론(:) 1개 작성) <br>
+            ```CSS
+            선택자::after, 선택자:after {
+                속성명: 속성 값;
+            } /* 하위 버전 호환을 위해 같이 쓰기도 한다. */
+            ```
+
+**`[내용을 '마우스로 드래그' 할 때 적용]`** <br>
+- 선택자::selection { 속성명: 속성 값; } <br>
+
+**`[상태 선택자]`** <br>
+**폼 태그(입력 양식의 상태를 선택할 때)** <br>
+
+- :**`checked`** → 체크 상태 input(checkbox, radio) ▷ √ 체크하면 적용 <br>
+    ```CSS
+    selector[type="checkbox"]:checked + label {
+	color: #ff0066;
+	font-weight: bold;
+    } /* 체크박스 체크하면 label 색상 변경 */
+    ```
+- :**`focus`** → 탭, 커서 input <br>
+- :**`enabled`** → 입력 가능한 input [default] <br>
+- :**`disabled`** → 입력 불가능한 input <br>
+    - ▷ **disabled**는 input 태그의 '속성'으로 쓸 수 있다.(입력 필드 사용 불가) <br>
+
+- **기타** <br>
+    - tag, id, class::**`placeholder`** → 입력 필드 내 placeholder 속성으로 지정한 텍스트에 CSS 적용 <br>
+
+**`[기타]`** <br>
+- 선택자:**root** → 문서의 최상위 요소(html) 선택 <br>
+- 선택자:**lang(ko)** → HTML 속성의 값이 'ko'로 지정된 요소 선택 <br>
+- 선택자:**target** → 선택자의 URL 요청되면 선택 (따라서 '선택자'는 id가 지정되어 있어야 한다.) <br>
+
+**`[CSS가 적용되는 우선 순위 변경]`** <br>
+- 선택자 { 속성명: 속성 값 **`!important`**; } → 강제 적용(변경) <br>
+    - **명시적으로 설정한 것 보다도 우선적으로 적용된다.** <br>
+        - 많이 쓰면 좋은 코드라고 보기 힘들다. (남용 금지) <br>
+            - 해석의 어려움 <br>
+            - 복잡성 <br>
+```
+[CSS 적용되는 우선 순위]
+
+1) !important > id > class > tag
+
+2) 명시적으로 CSS를 설정한 것 우선 적용
+```
+
+```CSS
+/* ex */
+
+.ex { /* ⓐ */
+    color: red;
+}
+
+p > ul > li.ex { /* ⓑ */
+    color: blue;
+}
+
+/* ⓑ가 ⓐ보다 우선 적용 된다. */
+```
+
+```
+[CSS Selector 참고]
+
+https://www.nextree.co.kr/p8468/
+```
+
+---
+
+**`border-radius` 둥근 모서리** → ♣ [13_border-radius] <br>
+- **border-radius**: 1-4 length 또는 % / 1-4 length 또는 % | initial | inherit <br>
+    - border-radius: 0; [default] <br>
+    - border-radius: 10px; → 상 하 좌 우 10px <br>
+    - border-radius: 10px 20px; → 왼 상단 & 오른 하단 10px,  왼 하단 & 오른 상단 20px <br>
+    - border-radius: 10px 20px 30px; → 왼 상단 10px, 오른 상단 & 왼 하단 20px, 오른 하단 30px <br> 
+    - border-radius: 10px 20px 30px 40px; → 왼 상단 10px, 오른 상단 20px, 오른 하단 30px, 왼 하단 40px <br>
+    <br>
+    - border-top-left-radius <br>
+    - border-top-right-radius <br>
+    - border-bottom-left-radius <br>
+    - border-bottom-right-radius <br>
+    <br>
+    - border-radius: 0 10px 0 0; <br>
+    - border-radius: 0 0 10px 0; <br>
+    - border-radius: 0 0 0 10px; <br>
+    <br>
+    - border-radius: x축/y축;
+    - border-radius: 10px/20px; <br>
+    ```
+      ⑴ ⓧ         ⓧ ⑵ 
+      ⓨ┌─────────────┐ⓨ
+        │             │
+        │             │
+        │             │
+        │             │
+      ⓨ└─────────────┘ⓨ
+      ⑷ ⓧ         ⓧ ⑶
+    
+    ⓧ 왼 상단 & 오른 상단 & 오른 하단 & 왼 하단: 10px
+    ⓨ 왼 상단 & 오른 상단 & 오른 하단 & 왼 하단: 20px
+    ```
+    - border-radius: 10px 20px 30px/10px 20px 30px 40px <br>
+    ```
+        ⓧ           ⓧ  
+      ⓨ┌─────────────┐ⓨ
+        │             │
+        │             │
+        │             │
+        │             │
+      ⓨ└─────────────┘ⓨ
+        ⓧ           ⓧ
+    
+    ⓧ 왼 상단: 10px, 오른 상단 & 왼 하단: 20px, 오른 하단: 30px
+    ⓨ 왼 상단: 10px, 오른 상단: 20px, 오른 하단: 30px, 왼 하단: 40px;
+    ```
+
+    ```
+    정 '원ㅇ'을 넣고 싶으면 사이즈 가로, 세로 같아야 한다.
+    ```
+---
+
+**`opacity` 불투명도** → ♣ [14_opacity_shadow] <br>
+- **opacity**: number | initial | inherit <br>
+    ```
+    해당 id, class, 태그 전체에 대한 투명도
+    ```
+    - opacity: 0 ~ 1 (0.0 ~ 1.0) <br>
+        ```
+        0 : 완전한 투명 (0.0)
+        1 : 완전한 불투명 (1.0)
+
+        0.5 : 반 투명 → .5 작성 가능
+        ```
+
+---
+
+**`box-shadow` 요소에 그림자 넣기** → ♣ [14_opacity_shadow] <br>
+- box-shadow: none | h-offset v-offset blur spread color | inset | initial | inherit <br>
+    - box-shadow: x축(수평) y축(수직) 흐림정도 번짐정도 색상 <br>
+        - 마이너스(-) 반대축 → x, y 둘 다 마이너스(-) 있다. <br>
+        - 바깥쪽 그림자 [default] | 안쪽 그림자 (inset) <br>
+
+```CSS
+box-shadow: 1px 1px 2px 3px #cc3333;
+
+box-shadow: 1px 1px 2px 3px #cc3333, 2px p2x 3px 5px #eaeaea;
+
+/* 콤마(,) 써서 그림자 겹침 효과 가능 */
+```
+
+---
+
+**`text-shadow` 텍스트에 그림자 넣기** → ♣ [14_opacity_shadow] <br>
+box-shadow와 쓰는 것 유사 (범위는 적다.) <br>
+- text-shadow: h-shadow v-shadow blur-radius (spread 없다.) color | none | initial | inherit <br>
+    - text-shadow: 가로 거리(x축) 세로 거리(y축) 번짐 정도 색상 <br>
+        - 마이너스(-) 반대축 <br>
+
+```CSS
+text-shadow: 2px 2px #cc3333, 4px 4px #cc3333;
+
+/* 콤마(,) 써서 그림자 겹침 효과 가능 */
+```
+
+---
+
+**`outline` 요소의 윤곽선** → ♣ [14_opacity_shadow] <br>
+▷ **border**와 동일한 속성 값(border와 사용방법 같다.) <br>
+- outline: 선두께 선종류 색상 (순서 상관 x) <br>
+    - 보편적으로 'border'를 쓴다. <br>
+- outline: none; → 폼 태그 기본 테두리 없애기 <br>
+```
+→ border는 사이즈에 영향 있다. (사이즈: width, height) 
+
+→ outline는 사이즈에 영향 (거의) 없다.
+
+
+※ border 밖 outline 적용
+```
+
+---
+
+**`word-wrap` 긴 텍스트** → ♣ [14_opacity_shadow] <br>
+테두리 안에 있을 때 <br>
+width 사이즈 적용(사이즈 내) <br>
+한글 지원 x → 한글은 사이즈 만큼 자동 적용 <br>
+- word-wrap: normal | break-word | initial | inherit <br>
+    - word-wrap: normal [default] → 줄 바뀜 x <br>
+    - word-wrap: break-word → 줄 바뀜 o <br>
+
+---
+
+**`background` 배경에 이미지 넣기** → ♣ [15_배경] <br>
+- **`background-image`**: url(경로/파일명); 
+    - → 이미지 넣으면 background-color 적용 x (아래 축약형으로 같이 써줘야 한다.) <br>
+- **`background-repeat`**: 배경 이미지의 반복 여부 <br>
+    - repeat → 반복 (x축, y축) [default] ▷ 반복으로 찍히는 것 <br>
+    - repeat-x → x축 반복 <br>
+    - repeat-y → y축 반복 <br>
+    - no-repeat → 반복 <br>
+- **`background-position`**: 배경 이미지 위치(x축 위치, y축 위치) <br>
+    - x축 : left, right, center px, % → 왼쪽(left 기준) 기준 적용 (기준: 0 [default]) <br>
+    - y축 : top, bottom, center px, % → 위(top 기준) 기준 적용 (기준: 0 [default]) <br>
+        - x축, y축 : 마이너스(-) 음수 값 허용 <br>
+        - center를 같이 쓸 경우 하나만 쓸 수 있다. <br>
+- **`background-attachment`**: 배경 이미지 위치 고정 여부 <br>
+    - scroll [default] → not fixed <br>
+    - fixed → 고정 <br>
+        - ▷ 광고 같이 따라오는 것(이미지가 고정되어 스크롤 하여도 같이 보인다.) <br>
+
+```CSS
+/* background 축약형 ① */
+
+background: 배경색 url(경로/파일명) repeat position attachment;
+/* 순서와 상관 없이 나열하여 사용 가능하다. */
+
+background: url(../images/good.png) repeat center fixed rgba(0, 0, 0, .5);
+```
+
+**`background-size` 배경 이미지 크기** <br>
+- background-size: 값; <br>
+    - 직접 지정 → width, height (px, %) <br>
+    - auto [default] → 원래 배경 이미지 크기만큼 표시됨(기본값) 
+        - ▷ 부모 요소 사이즈 설정한 만큼(또는 auto 만큼) 표시 >> 이후 잘림 <br>
+    - contain → 배경 이미지의 가로 세로 비율로 맞춰 요소에 표시할 수 있는 최대 크기로 표시 <br>
+    - cover → 배경 이미지를 늘려 요소 전체에 표시 <br>
+        - ▷ 사이즈만큼 늘리고 나머지 잘림 <br>
+            - 이미지 사이즈에 따라 다르다. <br>
+            - 많이 쓰인다. (사이즈가 다 다르기 때문에) <br>
+
+**`background-clip` 배경(색상 또는 이미지)의 요소 내에서 확장되어야 하는 거리** (어디까지 적용할 것인지) <br>
+- background-clip: border-box | padding-box | content-box | initial | inherit <br>
+    - background-clip: border-box [default] → width + height + padding + border 영역까지 적용 <br>
+    - background-clip: padding-box → width + height + padding 영역까지 적용 <br>
+    - background-clip: content-box → width + height 영역까지 적용 <br>
+
+**`background-origin` 배경 이미지의 원점 위치(배경 위치 지정 영역)를 지정** <br>
+- background-origin: padding-box | border-box | content-box | initial | inherit <br>
+    - background-origin: border-box <br>
+    - background-origin: padding-box [default] <br>
+    - background-origin: content-box <br>
+        - 적용 범위는 background-clip과 같다. <br>
+
+```CSS
+/* background 축약형 ② */
+background: url(../images/good.png) repeat fixed rgba(0, 0, 0, .5) left center/100px 200px border-box;
+background: url(../images/good.png) no-repeat 20% 50%/cover;
+
+/* background-size는 항상 background-position 뒤에 위치하여야 하고, 슬래시(/) 기호로 구분하여야 한다. */
+/* background-origin & background-clip과 관련하여 값을 1개만 지정하면 둘 다 같은 설정 */
+/* 2개의 값을 지정하면 처음 값은 background-origin, 두 번째 값은 background-clip을 설정 */
+/* background-color 값은 마지막 레이어만 가질 수 있다. (여러 개 쓴다고 여러 개 적용 x) */
+
+/* 축약형 ①이 보통 많이 쓰이고, 축약형 ②는 간혹 안 먹는 경우 있으니 잘 알아봐서 판단해서 쓸 것 */
+```
+
+---
+
+**`text-indent` 첫 줄 들여쓰기** → ♣ [17_테이블] <br>
+마이너스(-) 음수 허용 [default: 0] <br>
+사이즈 변화 없고, 사이즈 영향 없다. <br>
+- text-indent : length | initial | inherit <br> 
+    ```CSS
+    text-indent: 50px;
+    ```
+    - ★ span 태그에 쓸 수 없다. <br>
+    - 여러 줄 있으면(br...) 1줄(첫 줄)만 적용 <br>
+
+---
+
+**폰트 한꺼번에 표현하기(약식/축약형)** <br>
+2개 이상 적용할 때 <br>
+- font-weight: 글자 굵기 <br>
+- font-style: 글자 기울기 <br>
+- font-variant: 변형 글꼴 <br>
+- font-size: 글자 크기 <br>
+- line-height: 줄 간격 <br>
+- font-family: 글꼴 <br>
+
+```CSS
+font: ① (font-weight font-style font-variant)  ② (font-size/line-height) ③ font-family;
+
+/* ① : 모두 생략 가능 */
+/*   : 3개 다 사용 가능 */
+/*   : 2개 사용 가능 */
+/*   : 1개만 사용 가능 */
+
+/* ② + ③으로만 사용 가능 */
+/* ★ font-size와 font-family는 필수로 써야 한다. */
+/* font-family 빠지면 ② 적용 x */
+
+font: 600 24px/1.5 serif; /* line-height에 그냥 숫자만 쓰면 배수 적용(1.5배) */
+font: bold italic 15px/30px sans-serif;
+…
+```
+
+---
+
+cf) <br>
+
+```
+h#(제목 태그) 관련 - body 태그에만 지정해서 CSS 쓰면 h# 적용 x
+
+body, h# {
+
+} → 이렇게 써야 적용 된다.
+```
+
+```
+내용(text)이 크기(전체)보다 크면, height(사이즈)가 안 먹는다.
+```
+
+---
+
+**`overflow`** → ♣ [18_overflow] <br>
+내용이 크기(width, height)를 넘어갈 때 <br>
+- overflow : visible | hidden | scroll | auto | initial | inherit <br>
+자식 요소에 float가 설정되어 있을 때 부모 요소에 사용(overflow: hidden 내용만큼 자동으로 height 설정 됨) <br>
+    - overflow : visible; [default] → 크기 무시하고 모든 내용 보임 <br>
+    - overflow : hidden; → 내용이 넘치면 숨김 <br>
+        - height 또는 overflow: hidden으로 텍스트 잡을 수 있다. → but, 내용 숨어서 안 나올 수 있는 것 주의 <br>
+    - overflow : scroll; → 내용에 상관없이 무조건 scroll(가로, 세로 스크롤 바 생성) <br>
+        - 스크롤 바 계속 생성(내용 짧으면 비활성화) <br>
+    - overflow : auto; → 내용에 따라서 자동 스크롤 <br>
+    <br>
+    - overflow-x: scroll → x축 스크롤 <br>
+        - (white-space: nowrap → width가 있으면 자동으로 줄바꿈 x, 한 줄만 적용 됨) <br> 
+    - overflow-y: scroll → y축 스크롤 (height 꼭 지정해야 함) <br>
+```CSS
+white-space: nowrap;
+overflow-y: scroll;
+
+/* 이렇게 해도 'x' 스크롤 생긴다. */
+```
+
+---
+
+**`text-overflow` 텍스트 오버플로** → ♣ [18_overflow] <br>
+- text-overflow: clip | ellipsis | string | initial | inherit <br>
+    - text-overflow: clip [default] <br>
+    - text-overflow: ellipsis <br>
+        - 내용이 width보다 많으면 …으로 표시됨 <br>
+            - width + white-space: nowrap + overflow:hidden ▷ 단 한줄만 적용 됨 <br>
+            (뒤 잘리는 문장 여러 줄이면 전부 …으로 표시) <br>
+    
+```
+inline 텍스트, 상자 하단 - 텍스트 오버 플로우 적용 x
+```
+
+---
+
+**`white-space` 요소 내부에 공백 처리** → ♣ [18_overflow] <br>
+- white-space: normal | nowrap | pre | pre-line | pre-wrap | initial | inherit <br>
+    - white-space: normal [default] <br>
+    - white-space pre <br>
+        - 입력 그대로 출력 (공간 내 맞춤 x) <br>
+    - white-space nowrap <br>
+        - 한 줄 출력 ★ (공간 내 맞춤 x) <br>
+    <br>
+    - white-space: pre-line <br>
+        - 입력 그대로 출력되지만, 앞 줄 맞춰 준다.(공간 맞춤 o)  <br>
+    - white-space: pre-wrap <br>
+        - 입력 그대로 ~ 공간 맞춤 o (줄 맞춤 x) <br>
+
+---
+
+**`resize` 요소의 크기를 조정** → ♣ [18_overflow] <br>
+- resize: none | both | horizontal | vertical | initial | inherit <br>
+    - resize: both → width, height 모두 변경 <br>
+    - resize: horizontal → width만 변경 <br>
+    - resize: vertical → height만 변경 <br>
+    - resize: none [default] → width, height 변경 안 되게 설정 <br>
+
+```
+overflow: visible만 resize 적용 x
+
+★ overflow: hidden, scroll, auto만 resize 적용 된다.
+```
+
+---
+**`scrollbar` 스크롤 바** → ♣ [18_overflow] <br>
+- ::scrollbar { width: px, em … } → 스크롤-y 너비 <br>
+- ::scrollbar { height:: px, em … } → 스크롤-x 높이 <br> 
+- ::scrollbar-track { background-color } → 스크롤 바 전체 색상 <br>
+- ::scrollbar-thumb { background-color } → 스크롤 이동 바 색상 <br>
+- ::scrollbar-thumb → :hover/:active/:focus 사용 가능 <br>
+    - ::scrollbar-thumb:hover <br>
+    - ::scrollbar-thumb:active <br>
+    - ::scrollbar-thumb:focus <br>
+
+※ 단, 구버전 사용하는 방법 같이 쓸 것 <br>
+- -webkit- (크롬/사파리/오페라) <br>
+- -o- (오페라) <br> 
+- -moz- (파이어폭스) <br>
+- -ms- (ie) <br>
+
+```CSS
+.ex::-webkit-scrollbar { width: 4px };
+.ex::-webkit-scrollbar-track { background-color: orange };
+.ex::-webkit-scrollbar-thumb { background-color: red };
+.ex::-webkit-scrollbar-thumb:active { background-color: black };
+
+/* CSS 어떤 속성이든 구버전 값 설절하여 쓸 수 있다. */
+/* -webkit-transform: … */
+/* -ms-overflow-style: none; */
+/* … */
+```
+
+---
+
+**`direction` 방향 설정** <br>
+텍스트의 방향 설정 <br>
+스크롤 바 방향 설정 (스크롤 바 좌·우 위치) <br>
+    - direction: ltr; [default] → 텍스트 : 왼쪽에서 오른쪽 / 스크롤 바 : 오른쪽 위치 <br>
+    - direction: rtl; → 텍스트 : 오른쪽에서 왼쪽 / 스크롤 바 : 왼쪽 위치 <br>
+
+```
+direction 속성으로 스크롤 바 위치를 바꿀 때 '상위 부모 요소'에 주어야 한다.
+```
+
+```CSS
+/* [스크롤 바 위치를 바꾸는 또 다른 방법] */
+
+
+/* 부모 요소 */
+transform: rotate(180deg);
+
+/* 자식 요소 */
+transform: rotate(-180deg); /* 부모요소로 전체를 돌린 것을 자식 요소만 원상태로 ~ */
+
+/* 어색함이 남을 수 있다. → 마우스 휠을 하였을 때 스크롤 바 움직임 반대 */
+
+```
+
+---
+
+**`float` 요소의 박스를 이동** → ♣ [19_float1 / 19_float2 / 19_float3] <br>
+정렬과는 좀 다른 개념 / 중첩해서 쓸 때 사용 <br>
+왼쪽 또는 오른쪽 배치 <br>
+**inline, block 요소에 모두 적용 가능** <br>
+**text-align** 사용 불가 (적용 x) / **vertical-align** 사용 불가 (적용 x) <br>
+```
+cf: 기사문 - 사진 배치에 따른 글 배치 → 이전에 이런 형태로 많이 쓰임
+요즘은 어떤 요소든 배치를 하기 위해 쓰인다. ex: header의 네비게이션 바 - 목록을 나열
+                                             그림/사진 요소들을 나열 및 정렬(위치)
+```
+- float: none | left | right | initial | inherit <br>
+    - float: none; [default] → 이동 x <br>
+    - float: left; → 왼쪽 배치 <br>
+    - float: right; → 오른쪽 배치 <br>
+        - 해제 : clear: both; → left, right 모두 해제 ▶ 많이 쓰인다. <br>
+            ```
+            100% 해제되는 것은 아니다. (사이즈 등 영향)
+            사이즈 등 영향으로 인해 해제 필요할 때 있다.
+            ```
+            - clear: left; → 왼쪽 배치 해제 <br> 
+            - clear: right; → 오른쪽 배치 해제 <br>
+                ```CSS
+                 clear: inline-start;
+                 clear: inline-end;
+
+                 /* 지원 많이 안 한다. */
+                ```
+
+---
+
+**`box-sizing`** → ♣ [19_float2] <br>
+- box-sizing: content-box; [default] → width와 height에 padding, border 제외 <br>
+- box-sizing: border-box; → width와 height에 padding, border 포함 <br>
+    - box 안 고정시킬 때 쓸 수 있다. <br>
+        - 웹 사이트 축소/확대 시 특정 요소가 정렬에서 벗어나는 것(밑으로 내려가는 등) 방지 → 고정 가능(유지) <br>
+
+```
+★ 정말 필요할 경우 사용할 것(수치 안 맞아서 틀어질 수 있다.)
+
+CSS 전체 초기화할 때, 
+애초부터 padding, border가 width, height에 영향 주는 것 신경 안 쓰고 작업할 때 쓸 수 있다.
+```
+
 ---

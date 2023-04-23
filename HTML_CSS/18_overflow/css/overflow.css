@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/******* reset *******/
+body {font: normal 12px/150% '맑은 고딕', 'Malgun Gothic', sans-serif;}
+
+/******* wrap *******/
+/******* overflow *******/
+#wrap > div {
+	border: 1px solid #333;
+	width: 200px;
+	height: 150px;
+	margin-bottom: 150px;
+}
+
+#wrap > .ex1 {overflow: visible;}
+#wrap > .ex2 {overflow: hidden;}
+#wrap > .ex3 {overflow: scroll;}
+#wrap > .ex4 {overflow: auto;}
+
+
+/******* white space *******/
+.ex5 {white-space: normal;}
+.ex6 {white-space: pre;}
+.ex7 {white-space: nowrap;}
+
+.ex8 {
+	background-color: yellow;
+	width: 150px;
+	white-space: pre;
+	overflow-x: scroll;
+}
+
+.ex9 {
+	background-color: yellow;
+	width: 150px;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+.ex10 {
+	background-color: yellow;
+	width: 150px;
+	height: 100px;
+	overflow-y: scroll;
+}
+
+/******* text-overflow *******/
+.ex11 {
+	background-color: pink;
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: clip;
+}
+.ex12 {
+	background-color: pink;
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ex13 {
+	background-color: pink;
+	width: 150px;
+	white-space: pre;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/******* resize *******/
+.ex14, .ex15, .ex16, .ex17 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid blue;
+	overflow: auto;
+}
+.ex14 {resize: both;}
+.ex15 {resize: horizontal;}
+.ex16 {resize: vertical;}
+.ex17 {resize: none;}

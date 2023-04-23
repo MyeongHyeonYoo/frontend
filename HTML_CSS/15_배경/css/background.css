@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*
+body {
+	background: url(../images/bg2.png) no-repeat 530px 100px;
+}
+*/
+/*
+body {
+	background: url(../images/bg2.png) no-repeat 530px 100px scroll;
+}
+*/
+body {
+	background: url(../images/bg2.png) no-repeat 530px 100px fixed;
+}
+
+
+
+/*******wrap1*******/
+#wrap1 > div {
+	border: 1px solid green;
+	width: 500px;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+#wrap1 > .box1 {background-image: url(../images/icon1.gif);}
+#wrap1 > .box2 {
+	background-image: url(../images/icon1.gif); 
+	background-repeat: repeat;
+}
+#wrap1 > .box3 {
+	background-image: url(../images/icon1.gif); 
+	background-repeat: repeat-x;
+}
+#wrap1 > .box4 {
+	background-image: url(../images/icon1.gif); 
+	background-repeat: repeat-y;
+}
+#wrap1 > .box5 {
+	background-image: url(../images/icon1.gif); 
+	background-repeat: no-repeat;
+}
+#wrap1 > .box6 {
+	background-image: url(../images/icon1.gif); 
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#wrap1 > .box7 {
+	background-image: url(../images/icon1.gif); 
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#wrap1 > .box8 {background: url(../images/icon1.gif) no-repeat center center;}
+#wrap1 > .box9 {background: url(../images/baby1.png) no-repeat center;}
+#wrap1 > .box10 {background: #ccffff url(../images/baby2.png) no-repeat center;}
+	
+/*******wrap1*******/
+#wrap2 > p {
+	border: 1px dotted #333;
+	width: 152px;
+	height: 152px;
+	margin-bottom: 20px;
+}
+
+#wrap2 > .ex1 {background: #ffcc33 url(../images/bg1.png) repeat-y 100px top}
+#wrap2 > .ex2 {background: #ccccff url(../images/bg1.png) repeat-x left 100px}
+#wrap2 > .ex3 {background: #ccff9a url(../images/bg1.png) no-repeat right top}
+#wrap2 > .ex4 {background: #ffcccb url(../images/bg1.png) no-repeat left bottom}
+#wrap2 > .ex5 {background: #cc9998 url(../images/bg1.png) no-repeat center top}
