@@ -527,6 +527,12 @@ a 태그 안 figure, img 태그 허용 ○
 → ♣ [02_이미지 링크, 맵 실습/02_이미지 링크 실습.html]
 ```
 
+```
+<a태그 관련>
+
+구 버전 브라우저에서는 파란 테두리 있다. (작업 시 제거 필요)
+```
+
 ---
 
 **&lt;map&gt; ~ &lt;/map&gt;** → ♣ 02_이미지 맵.html <br>
@@ -778,6 +784,7 @@ ex) 홈페이지 탭 목록 안 새로운 목록
 ---
 
 ## CSS
+
 ※ CSS 작업 시 'mark-up 작업 순서'를 고려하여 작성(유추, 가독성) <br>
 ```
 [css 참고]
@@ -796,7 +803,7 @@ https://www.w3schools.com/css
 **css 적용하는 방법 3가지** <br>
 
 1. **인라인 스타일(inline style)**: 특정요소에 직접 css를 적용 → ♣ [05_1_css설정] <br>
-→ 장점보다는 단점 많음 → 분리 안 되는 문제 발생(마크업(구조)와 css가 분리가 안됨) <br>
+→ 장점보다는 단점 많음 → 분리 안되는 문제 발생(마크업(구조)와 css가 분리가 안됨) <br>
 ▶ 최소한에 적용할 때 사용 <br>
 ```HTML
 <태그 style="속성명: 속성값;">
@@ -1062,7 +1069,7 @@ font-size: 150%;
 
     ```
     pt(포인트), cm, mm 등 단위 다양하게 존재
-    (but, 모든 css에 모든 단위가 적용되는 것은 아니다. 일부 %, em 등 적용 안 되는 것도 있으니 참고) 
+    (but, 모든 css에 모든 단위가 적용되는 것은 아니다. 일부 %, em 등 적용 안되는 것도 있으니 참고) 
 
     [단위 참고]
     https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/Values_and_units
@@ -1102,7 +1109,7 @@ oblique - noraml에서 기울기만 한 것 | inital | inherit
 **`word-spacing` 단어 사이 간격** <br>
 - **word-spacing**: normal [default] | length | initial | inherit <br>
     - 단어 1개 적용 x → ex: '가', '고기' ···· <br>
-    - 음수(-)도 쓸 수 있지만 권장 x → 어느정도(블록) 줄어들면 블록 지정(드래그) 안 되는 버그 생김 <br>
+    - 음수(-)도 쓸 수 있지만 권장 x → 어느정도(블록) 줄어들면 블록 지정(드래그) 안되는 버그 생김 <br>
     - 0만 그냥 쓸 수 있다. (1부터 단위 꼭 써주어야 한다.) <br>
 
 ---
@@ -1196,7 +1203,7 @@ font-family: ⓐ"돋움", ⓑ"굴림", ⓒ"맑은 고딕", ⓓ대표패밀리(�
     - line-height: 200%;
 
 → 숫자(음수 값 허용 x) ▶ 그냥 숫자만 쓰는 경우 '배수' 적용 <br>
-→ height와 px 같게 하면 가운데 지정 (but, 항상 다 되는 것은 아니다. → 적용이 안 되는 경우도 존재) <br>
+→ height와 px 같게 하면 가운데 지정 (but, 항상 다 되는 것은 아니다. → 적용이 안되는 경우도 존재) <br>
 
 ```
 cf)
@@ -1417,7 +1424,7 @@ https://www.w3schools.com/cssref/pr_list-style-type.asp
 블록요소 안에서 세로 정렬 요소 <br>
 ```
 ● 대부분 부모 요소에 상대적으로 정렬
-● 적용이 잘 안 되는 경우 많다.
+● 적용이 잘 안되는 경우 많다.
 ● 거의 잘 안 쓰임 - 쓰이는 곳: 테이블, 체크박스 등
 ● 요소 자체만을 정렬 (table cell은 예외)
 ● 내용에 영향 없다.
@@ -1500,7 +1507,9 @@ div {
 ```
 
 ---
+
 ## HTML
+
 **`표만들기`** <br>
 **&lt;table&gt; ~ &lt;/table&gt;** → ♣ [06_table_1, 06_table_2] <br>
 일부 셀만 사이즈 조절 못 한다. <br>
@@ -2069,10 +2078,10 @@ tag, id, class {
 
 **`기타 속성`** <br>
 - **placeholder**="내용" → '입력 란'에 내용 표시(radio, checkbox 제외) <br>
-    - 입력하면 내용 없어짐 → 잘 안 되는 경우, JS로 더 완벽히 해줄 수 있다. <br>
+    - 입력하면 내용 없어짐 → 잘 안되는 경우, JS로 더 완벽히 해줄 수 있다. <br>
 - **maxlength**="개수" → '입력 글자' - 최대 글자 수 제한 <br>
 - **minlength**="개수" → '입력 글자' - 최소 글자 수 제한 <br>
-    - maxlength, minlength : 한글 잘 안 먹음 → 잘 안 되는 경우, JS로 더 완벽히 해줄 수 있다. <br> 
+    - maxlength, minlength : 한글 잘 안 먹음 → 잘 안되는 경우, JS로 더 완벽히 해줄 수 있다. <br> 
 - **autofocus** → 자동으로 '커서' 위치 <br>
     - (커서 - 깜박 깜박) → 하나만 적용 <br>
     - ☆ autofocus 2번 쓰면 오류 <br>
@@ -2250,7 +2259,7 @@ cf) 브라우저 업데이트 되면서 색상 바뀐다. <br>
 
 **`[사용자 동작에 반응하는 가상 클래스]`** <br>
 1. 방문하지 않은 링크에 CSS 적용 <br>
-    - :**link** { 속성명: 속성 값; }
+    - :**link** { 속성명: 속성 값; } <br>
         ```CSS
         a:link {
             color: red;
@@ -2261,7 +2270,7 @@ cf) 브라우저 업데이트 되면서 색상 바뀐다. <br>
         ```
 
 2. 방문한 링크에 CSS 적용 <br>
-    - :**visited** { 속성명: 속성 값; }
+    - :**visited** { 속성명: 속성 값; } <br>
         ```CSS
         a:visited {
             color: blue;
@@ -2274,7 +2283,7 @@ cf) 브라우저 업데이트 되면서 색상 바뀐다. <br>
         ```
 
 3. 마우스 커서를 올려놓을 때 CSS 적용 <br>
-    - :**`hover`** { 속성명: 속성 값; }
+    - :**`hover`** { 속성명: 속성 값; } <br>
     
 4. 마우스로 누르고 있을 때 CSS 적용 <br>
     - :**`active`** { 속성명: 속성 값; } <br>
@@ -2410,6 +2419,22 @@ cf)
 
 - **기타** <br>
     - tag, id, class::**`placeholder`** → 입력 필드 내 placeholder 속성으로 지정한 텍스트에 CSS 적용 <br>
+        ```CSS
+        #login input::placeholder {
+            color:green;
+            font-style: italic;
+        }
+        #login input:-ms-input-placeholder {
+            color:green;
+            font-style: italic;
+        }
+        #login input:-webkit-input-placeholder {
+            color:green;
+            font-style: italic;
+        }
+
+        /* -webkit-, -ms- 관련하여 나중에 등장 */
+        ```
 
 **`[기타]`** <br>
 - 선택자:**root** → 문서의 최상위 요소(html) 선택 <br>
@@ -2531,6 +2556,10 @@ box-shadow: 1px 1px 2px 3px #cc3333;
 box-shadow: 1px 1px 2px 3px #cc3333, 2px p2x 3px 5px #eaeaea;
 
 /* 콤마(,) 써서 그림자 겹침 효과 가능 */
+```
+
+```
+※ border 쓰면 사이즈 커지니까, box-shadow에 '확산'만 줘서 사용할 수 있다.
 ```
 
 ---
@@ -2666,9 +2695,9 @@ background: url(../images/good.png) no-repeat 20% 50%/cover;
 font: ① (font-weight font-style font-variant)  ② (font-size/line-height) ③ font-family;
 
 /* ① : 모두 생략 가능 */
-/*   : 3개 다 사용 가능 */
-/*   : 2개 사용 가능 */
-/*   : 1개만 사용 가능 */
+/* ① : 3개 다 사용 가능 */
+/* ① : 2개 사용 가능 */
+/* ① : 1개만 사용 가능 */
 
 /* ② + ③으로만 사용 가능 */
 /* ★ font-size와 font-family는 필수로 써야 한다. */
@@ -2693,6 +2722,47 @@ body, h# {
 
 ```
 내용(text)이 크기(전체)보다 크면, height(사이즈)가 안 먹는다.
+```
+
+---
+
+**`마우스커서모양`** <br>
+- **cursor: pointer;** → 손모양(링크를 나타내는 포인터) <br>
+- **cursor: default;** → 화살표 <br>
+- **cursor: auto;** [default] → Ⅰ (텍스트를 가리킬 때와 동일) <br>
+- cursor: crosshair; (십자선) <br>
+- cursor: move; (== all-scroll) <br>
+- cursor: alias; (별칭 또는 바로가기 생성)  <br>
+- cursor: copy; <br>
+- cursor: text; → Ⅰ <br>
+- cursor: wait; (무한 로딩 하듯) <br>
+- cursor: help; (화살표-물음표) <br>
+- cursor: not-drop; (== not-allowed) <br>
+- cursor: progress; (화살표-로딩) (wait와 대조적) <br>
+- cursor: n-resize <br>
+- cursor: ne-resize <br>
+- cursor: e-resize <br>
+- cursor: se-resize <br>
+- cursor: … 더 많다. <br>
+
+```
+[cursor 참고]
+
+https://www.w3schools.com/cssref/pr_class_cursor.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+```
+
+파일로 적용할 때 - 확장자: cursor.cur (.jpg도 가능) <br>
+```CSS
+ex:hover {
+    cursor: url(../images/cursor1.cur), auto; /* 커서 파일 호환 안 되거나 가져오지 못할 때 다음 값(auto) 적용 */
+    cursor: url(../images/cursor\(1\).cur), auto; /* url에 괄호 쓸 때 \(역슬래시 사용) */
+
+    cursor: url("pdficon.jpg");
+    cursor: url(mycursor.cur);
+}
+
+/* 크기: w32 × h32 → 적당 | w64 × h64 | w128 × h128 까지 지원 */
 ```
 
 ---
@@ -2862,4 +2932,759 @@ CSS 전체 초기화할 때,
 애초부터 padding, border가 width, height에 영향 주는 것 신경 안 쓰고 작업할 때 쓸 수 있다.
 ```
 
+---
+
+**`display` 요소가 가지고 있는 성격(블록 요소 또는 인라인 요소)을 변경할 때 사용** → ♣ [20_display/display.html] <br>
+- display: block; → 줄 바꿈 O / 사이즈 변경 O (인라인 ▷ 블록) <br>
+- display: inline; → 줄 바꿈 X / 사이즈 변경 X (블록 ▷ 인라인) <br>
+    - 사이즈 변경 없이 1줄로 할 때 <br>
+- display: inline-block; → 화면만 1줄 표시(인라인) / 사이즈 변경 O <br>
+    - float과 다르다. (빨려 들어가는 그런 것 없음) <br>
+- display: none; → 태그(요소)를 화면에서 숨김(공간까지 숨김 → width, height 모두 숨김) <br>
+    ```
+    1) none 쓰고
+    2) inline 또는 block 써서 다시 나타낼 때 사용
+
+    많이 쓰인다.
+    ```
+
+```
+○ display: block 처리 후 float 사용 가능.
+○ float 후 display: block 처리 하면 줄 바꿈 안 된다. (많이 쓰임)
+○ float 있으면 'inline-block'은 무시되고, display는 block이 된다.
+○ block 요소 안 inline 요소 있을 때 block 요소에 CSS(사이즈 변경) 써야 적용.
+○ text-align 사용 가능
+```
+
+```
+＊인라인 요소(태그) → a, span, strong, em, label … ▷ 줄 바꿈 X / 사이즈(w, h) 변경 X
+＊블록 요소(태그) → body, h1 ~ h6, p, div, li … ▷ 줄 바꿈 O / 사이즈(w, h) 변경 O
+＊인라인 블록 요소(태그) → img … 
+```
+
+---
+
+**`visibility` 요소 박스를 '표시'하거나 감출 때 사용** → ♣ [20_display/display2.html] <br>
+- visibility: visible | hidden | collapse | initial | inherit <br>
+    - visibility: visible; [default] → 표시 <br>
+    - visibility: hidden; → 숨김 ▷ 숨겨도 '공간'에 남아 있다. (width, height - 사이즈 남음) <br>
+        - 사용 후 display: inline / block / inline-block으로 표시 못 한다. <br>
+        - display: none과 다르다. <br>
+    - visibility: collapse; → table 관련 (table 요소를 숨길 때 ▷ display: none처럼 공간도 없앰) <br>
+
+---
+
+**`display: flex` 역순배치** → ♣ [20_display/display3.html] <br>
+(ie8 이하 지원 x) <br>
+- flex-direction: row; [default] <br>
+    ```
+        ┌───────┬───────┬───────┐
+        │       │       │       │ 
+        │       │       │       │ 
+        └───────┴───────┴───────┘
+            1       2       3
+    ```
+- flex-direction: row-reverse; <br>
+    ```
+        ┌───────┬───────┬───────┐
+        │       │       │       │ 
+        │       │       │       │ 
+        └───────┴───────┴───────┘
+            3       2       1
+    ```
+    ```
+- flex-direction: column; <br>
+    ```
+   
+        ┌───────┐
+        │       │ 
+        │       │   1 
+        ├───────┤
+        │       │ 
+        │       │   2
+        ├───────┤
+        │       │   
+        │       │   3
+        └───────┘
+
+    ```
+- flex-direction: column-reverse; <br>
+    ```
+   
+        ┌───────┐
+        │       │ 
+        │       │   3 
+        ├───────┤
+        │       │ 
+        │       │   2
+        ├───────┤
+        │       │   
+        │       │   1
+        └───────┘
+
+    ```
+
+
+```CSS
+/* ◎ 크롬 / 사파리 / 오페라 : -webkit-     */
+/* ◎ 파이어폭스 : -moz-     */
+/* ◎ 오페라 : -o-     */
+/* ◎ ie : -ms-     */
+
+    display: flex;
+	display:-webkit-flex;
+	display:-ms-flex;
+	flex-direction: column-reverse;
+	-webkit-flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	-moz-flex-direction: column-reverse;
+	-o-flex-direction: column-reverse;
+
+    /* 구 버전 호환시킬 때 같은 속성 값을 위와 같은 형태로 쓰인다. */
+```
+
+```CSS
+flex-wrap: nowrap;
+flex-wrap: wrap;
+flex-wrap: wrap-reverse;
+
+flex-flow: row wrap; /* flex-flow: flex-direction  flex-wrap; ▶ 속성 값 한 번에 쓰기 [★ 순서 있다!] */
+
+flex-basis; /* 크기 설정 */
+flex-grow; /* 성장 계수 → 정수(0부터) */
+flex-shrink; /* 축소 계수 → 정수(음수 x / 0 안 됨 / 1부터) */
+flex: 1 2 100px; /* flex: grow  shrink  basis; ▶ 속성 값 한 번에 쓰기 [★ 순서 있다!] */
+/* 순서대로 사용하되, 1개 또는 2개, 3개 모두를 쓸 수 있다. (1개는 only basis) */
+
+/* flex-grow와 flex-shrink는 flex-basis에 포함되어 있다. 즉, flex-basis로 설정 가능하다. */
+```
+
+```
+※ 참고 자료
+
+flex [MDN]
+
+https://developer.mozilla.org/ko/docs/Web/CSS/flex
+
+
+[1분 코딩]
+
+CSS Flex
+https://studiomeal.com/archives/197
+
+CSS Grid
+https://studiomeal.com/archives/533
+```
+
+---
+
+**`display: list-item` li 기본 속성으로 변경** → ♣ [20_display/display3.html] <br>
+P태그 등 li 속성(형태로)으로 변경 <br>
+사용 후 list-style: type | position | image; 사용 가능 <br>
+
+---
+
+**`dsiplay: table` CSS로 표형태** → ♣ [20_display/display3.html] <br>
+표 형태의 속성 사용 가능 (속성: 테두리 등 - vertical-align 사용 O) <br>
+- display: table; → '부모 요소'에 적용해 주어야 한다. <br>
+- display; table-cell; → '자식 요소'에 적용 <br>
+
+---
+
+**`display: inline-table`** → ♣ [20_display/display3.html] <br>
+지정한 너비까지만 인라인 형태, 자동 줄바꿈, 표형태 <br>
+▷ 인라인 형태 : 인라인 상자(table) <br>
+
+---
+
+**`웹폰트`** → ♣ [22_폰트] <br>
+- google에서 제공하는 무료 웹폰트 <br>
+    ```
+    https://www.google.com/fonts
+    ```
+    ※ 웹 폰트 많이 적용하지 말 것(2개 정도 적당) → 많이 적용하면 느려질 수 있다.(성능↓) <br>
+
+- **`font-face`** <br>
+    - .eot : ie하위, ie상위 → ms전용 ie4 ~ ie8 <br>
+    - .woff : ie9이상, 크롬 → ie9 이상, 최신 브라우저 모두 지원(용량 가장 작음) <br>
+    - .ttf : 크롬, ie하위 x → 최신 브라우저 모두 지원, ie 지원 x <br>
+         ```
+        eot, woff, ttf → '확장자'
+        ```
+        ```CSS
+        @font-face {
+            font-family: 임의 이름 지정;
+            src: url('경로/이름.eot');
+            src: url('경로/이름.eot?#iefix')format('embedded-opentype'),
+                 url('경로/이름.woff')format('woff'),
+                 url('경로/이름.ttf')format('truetype');
+        }
+
+        /* 적용 */
+        선택자 {font-family: 정의된 글꼴 이름(임의 이름 지정한 것), 접근성;}
+        ```
+   
+---
+
+**`파비콘`** → ♣ [23_파비콘] <br>
+- 크기 : 16 x 16 pixel ▷ 32px ⓧ 32px / 48px ⓧ 48px /64px ⓧ 64px 지원 <br>
+- 파일명 : `favicon.ico` <br>
+    ```HTML
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- link:favicon → tab키 (자동 완성) -->
+
+    <!-- cf) sizes="16x16" → 이전에는 쓰였지만 지금은 거의 지원 안 된다. -->
+    ```
+    ```
+    favicon.cc → 제작 사이트
+    https://www.favicon.cc/
+    ```
+
+---
+
+**`position` 요소를 강제로 배치** → ♣ [25_position_zindex] <br>
+- position: static | absolute | fixed | relative | sticky | initial | inherit <br>
+▷ 남용하지 말 것! → CSS 자체 적용 안될 수 있다. <br>
+▷ float 후 안 먹힐 수도 있다. <br>
+▷ '표'에 대하여는 정의되지 않았다. (사용법) <br>
+    - static [default] : 기본 값 <br>
+    - absolute : 절대 위치(웹 브라우저(전체) 기준) <br>
+    - relative : 상대 위치(요소 위치 기준) <br>
+    - fixed : 스크롤바를 이동시켜도 현재위치 유지(고정)(웹 브라우저 기준) <br>
+    - sticky : 상대 위치 고정(지원 여부 확인) <br>
+        ```
+        top, right, bottom, left로 위치 지정(px, em / % …)
+        ```
+    ```
+    ★ [relative + absolute]
+       부모 요소 : relative;
+       자식 요소 : absolute;
+
+    ▶ 부모 요소 내 자식 요소 배치
+    ```
+
+---
+
+**`z-index` 요소 박스가 겹쳐지는 순서를 지정** → ♣ [25_position_zindex] <br>
+※ **position** 내에서만 설정 가능(겹쳤을 때) <br>
+음수(-) 가능 → 남용 금지 <br>
+- z-index: auto | number | initial | inherit <br>
+    - z-index: 숫자(number) <br>
+        - 숫자가 가장 높은게 맨 위로 표시됨 <br>
+            ```
+            ★ margin 적용 x 
+            ```
+
+---
+
+**`user-select`** → ♣ [25_position_zindex/radio_checkbox6.html] <br>
+- user-select: auto; [default] <br>
+- user-select: none; → 드래그 안 되게 할 수 있다. <br>
+    ```CSS
+    .container {
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+    }
+
+    /* -webkit- */
+    /* -ms- */
+    /* -moz- */
+    /* -o- */
+    /* 호환성을 위해 같이 사용하는 경우 많다. */
+    ```
+
+---
+
+**`다단`** → ♣ [26_animation_transform_transition/dadan.html] <br>
+블록 요소(p, div 태그 등)에 사용 가능(인라인 요소 사용 x) <br>
+- column-count : number | auto |initial | inherit <br>
+- column-rule: column-rule-width column-rule-style column-rule-color; <br>
+    - border 사용하듯이 사용 <br>
+        - column-rule-width → 선 두께 <br>
+        - column-rule-style → 선 종류 <br>
+        - column-rule-color → 선 색상 <br>
+- column-gap: length | normal | initial | inherit <br>
+    - 열 사이의 간격(수치) <br>
+    
+---
+
+**`transform` 요소를 회전, 이동, 변형** → ♣ [26_animation_transform_transition/transform.html, transform2.html, background_fixed.html] <br>
+css1, css2 대부분 브라우저 지원(ie9 ~ 11, 크롬, 파이어폭스) <br>
+css3(지원 브라우저 확인) <br>
+```
+https://www.w3schools.com 검색
+```
+
+- **`transform: rotate(수치deg/turn)` 회전** <br>
+시계방향으로 회전 (deg : 정도) <br>
+마이너스(-) : 반대 방향으로 회전 <br>
+    - transform: rotate(30deg); → 시계 방향으로 30도 회전 <br>
+    - transform: rotate(-30deg); → 시계 반대방향으로 30도 회전 <br>
+    - transform: rotateX(수치deg); → 위·아래로 뒤집어짐 <br>
+    - transform: rotateY(수치deg); → 좌·우로 뒤집어짐 <br>
+    - transform: rotateZ(수치deg); → 주어진 각도에서 Z축을 중심으로 요소를 회전 <br>
+        - rotateX, rotateY, rotateZ : 3D 잘 안되는 경우 있다. ▷ 육안으로 잘 안 보일 수 있다.(잘 확인해야 함.)<br>
+        ```
+        transform: rotateX() rotateY(); → 이런 형태로 같이 쓸 수 있다.
+        ```
+
+- **`transform: translate(x, y)` x, y축 이동** <br>
+(translate(x, y) → 괄호 안 반드시 콤마(,) 사용할 것) <br>
+x축(오른쪽), y축(아래쪽)으로 이동 <br>
+-x축(왼쪽), -y축(위쪽)으로 이동 <br>
+    - transform: translateX();
+    - transform: translateY(); 
+        - ▷ X축, Y축만 정해서 쓸 수 있다. <br>
+        ```
+        ★ position과 결합하여 가운데 맞출 때 사용
+        
+        but, 'IOS(애플)' 잘 안 먹는 경향 있다.
+        ```
+
+- **`transform: scale(수치)` 지정 배율만큼 확대/축소** <br>
+    - transform: scale(1); → 100% <br>
+    - transform: scale(0.5); → 50% <br>
+    - transform: scale(2); → 200% <br>
+    - transform: scale(x, y); → x, y만큼 확대/축소 (괄호 안 반드시 콤마(,) 사용) <br> 
+        - .5 표현 가능(소수점 O) / 단위(px, em 등) 표현 x <br>
+    - transform: scaleX(-1); → 이미지 좌·우 바뀜 <br>
+    - transform: scaleY(-1); → 이미지 상·하 바뀜 <br>
+        - scaleX, scaleY : X, Y에 소문자도 가능하지만, 문법적으로 대문자 사용(가독성↑) <br>
+        - scale(-1) ▷ X, Y 안 주면 전부 반전 <br>
+        - scaleX, scaleY ▷ 3D 지원 관련, 잘 확인해야 함. <br>
+
+- **`transform: skew(x, y)` 변형 deg** <br>
+(skew(x, y) → 괄호 안 반드시 콤마(,) 사용할 것) <br>
+    - transform: skew(10deg, 30deg); → x축으로 10도, y축으로 30도 변형(기울어짐) <br>
+    - transform: skewX; → x축으로만 기울이는 각도 ▷ 오른쪽 <br>
+        - 음수(-) ▷ transform: skewX(-각도); → 왼쪽으로 기울어짐 <br> 
+    - transform: skewY; → y축으로만 기울이는 각도 ▷ 아래쪽 <br>
+        - 음수(-) ▷ transform: skewY(-각도); → 위쪽으로 기울어짐 <br> 
+
+- **`transform-origin` 지정한 요소의 변형 원점을 설정 (시계 방향 움직임)** <br>
+x축 | y축 | 직접 설정 <br>
+    - left top 왼쪽 상단 <br>
+    - right bottom 우측 하단 <br>
+    - center는 가운데 중점으로 시계방향으로 살짝 회전 <br>
+    - 직접 설정 : left, right만 설정 가능 <br>
+        - left O / right O
+        - right bottom O → 같이 쓰는 경우 직접 설정 가능(top, bottom만 직접 설정 불가능) <br>
+        - px, %, em 등 단위 설정 가능 <br>
+
+---
+
+**`transition`** → ♣ [26_animation_transform_transition/transition.html, transform2.html] <br>
+마우스 :hover | :active 할 때 속성 값이 변경되는 동안 부드럽게 처리 <br>
+
+- **`transition-propery` 속성** <br>
+- **`transition-duration` 진행시간** <br>
+    - s: second: 초 | ms: millisecond 초 <br>
+        ```
+        ex)
+        
+        ● hover 시 글자색을 3초 동안 서서히 변경되게 처리
+        
+        방법 1: transition-propoery: color;
+                transition-duration: 3s;    [분할하여 사용]
+
+        방법 2: transition: color 3s;       [한 번에 사용]
+                transition: all 3s; → all: 변하는 속성 값 전체 설정
+
+
+        ★ :hover에 주면 적용 안 되고, 그 해당 태그에 CSS 주어야 한다.
+        ```
+- **`transition-timing-function` 진행되는 시간 동안 효과** <br>
+    1. ease [default] : 시작과 종료를 부드럽게 <br>
+    2. linear : 시작과 종료를 일정하게 <br>
+    3. ease-in : 서서히 시작 <br>
+    4. ease-out : 서서히 종료 <br>
+    5. ease-in-out : 서서히 시작하여 서서히 종료 <br>
+        - 1 ~ 5 : 변화 보이지만 미미하다. <br>
+    6. steps : (n, end) | (n, start) | (n, jump-end) | (n, jump-start) | (n, jump-none) | (n, jump-both) <br> 
+        - end == jump-end <br>
+        - start == jump-start <br>
+        - 음수(-) 사용 x <br>
+
+        ```
+        [참고]
+
+        https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
+        ```
+    7. cubic-bezier (n, n, n, n) : 곡선 그래프 표현 <br>
+        - (n, n, n, n) ▷ 0 ~ 1 사이 <br>
+        ```
+        https://cubic-bezier.com
+        ```
+
+- **`transition-delay` 지연 시간** <br>
+delay로 지정한 시간 이후 진행 <br>
+0, 양수, 음수 모두 가능 (음수: 이미 시작된 것처럼) <br>
+
+```CSS
+transition: property name | duration | easing fuction(timing function) | delay;
+
+transition: all 0.5s ease-in 1s;
+
+/* duration과 delay를 이어서 사용 x → '진행 시간'인지 '딜레이 시간'인지 인식 어려움 */
+/* 시간과 관련된 것은 진행 시간(duration)이 먼저 인식 되기 때문에 duration을 먼저 써주고 delay를 나중에 작성 */
+/* 모든 속성 값을 사용할 때는 웬만하면 위 순서대로 작성 */
+```
+
+---
+
+**`filter` 이미지에 효과줄 때 사용** → ♣ [26_animation_transform_transition/filter.html] <br>
+사용하는 속성 값에 따라 단위 표현 다르다. <br>
+익스플로러(ie) 적용 x <br>
+- filter: none; [default] → 필터 없음 <br>
+- filter: url(); → 외부 SVG 필터를 받아서 사용 (svg 태그) <br>
+- filter: blur(); → 흐림 정도 <br>
+    - px, em 가능 / %, 소수점 x(단, 소수점에 단위 붙여서 사용 가능) <br>
+- filter: grayscale(); → 회색 계열 <br>
+    - %만 가능 (100% 이상은 100%와 같다.) <br>
+- filter: sepia(); → 모래색으로의 표현 <br>
+- filter: invert; → 반전 <br>
+    - %만 가능 <br>
+- filter: brightness(); → 밝기(명도) <br>
+    - %만 가능 <br>
+- filter: contrast(); → 밝기 대비 / brightness() 설정 대비 효과 있다. <br>
+    - %만 가능 / 0%: 보이지 않음 / 100%: 기본 100% 이상 밝아짐 <br>
+- filter: opacity; → 투명도 (0.0 ~ 1.0) <br>
+- filter: saturate; → 채도 (0.0 ~ 1.0) <br>
+- filter: hue-rotate(ⓝdeg/turn); → ⓝdeg/turn 만큼 색조 회전(색상 변화) <br>
+- filter: drop-shadow(offset-x offset-y blur-radius color); → 이미지에 그림자 효과 <br>
+    - px만 가능 <br>
+    - offset-x, offset-y: 필수 값 <br>
+    - blur-radius, color: 선택 사항 <br>
+```
+% 단위로 사용 가능한 속성 값은 0.0 ~ 1.0으로도 사용 가능하다.
+반대로 0.0 ~ 1.0으로 사용 가능한 것들도 % 단위로 사용 가능.
+```
+
+```CSS
+/* 속성명 한 번 쓰고 속성 값 이어서 사용할 수 있다. */
+
+filter: drop-shadow(16px 16px 20px red) invert(75%);
+
+filter: contrast(175%) brightness(3%);
+
+/* 구버전 호환을 위해 webkit, moz, ms, o 같이 사용하는 경우도 있다. */
+```
+
+---
+
+**`gradient`** → ♣ [26_animation_transform_transition/gradient.html, practice.html] <br>
+값을 똑같이 줘도 브라우저마다 다르다.(공통인 것도 있다.) <br>
+- linear : 수평, 수직, 대각선 (선형) <br>
+- radial : 원 (방사형 - 중심에서 밖으로) <br>
+- 배경색(background-color) 적용 <br>
+    - linear-gradient() <br>
+    - radial-gradient() <br>
+    - conic-gradient() : 방사형 대신 중심점을 중심으로 회전하는 색상 전환이 있는 그라데이션 <br>
+```CSS
+/* old 브라우저(크롬 기준) */
+
+background: gradient(linear, 시작 위치, 종료 위치 from(시작 위치 색), to(종료 위치 색)); /* 2가지 색 */
+
+/* 시작 위치 / 종료 위치 1 : left, right | right, left */
+/* 시작 위치 / 종료 위치 2 : top, bottom | bottom, top */
+/* 시작 위치: left, right / 종료 위치: top, bottom → top,bottom을 시작 위치로 쓰면 적용 x  */
+/* 시작 위치, 종료 위치: px, % … 단위로 직접 위치 지정 가능 */
+/* 구 버전 방식에는 괄호 안 linear 대신 radial, conic 사용 불가 */
+```
+
+```
+[그라데이션 만들어 주는 사이트 참고]
+
+https://www.colorzilla.com/gradient-editor
+```
+
+```
+cf) 포토샵은 linear, radial 외 기능 더 많이 있다.
+```
+
+---
+
+**`target`** → ♣ [26_animation_transform_transition/target.html] <br>
+name anchor와 유사 <br>
+- id명을 a태그의 href 속성에 연결 <br>
+★ 반드시 id 있어야 한다. <br>
+    ```HTML
+    <a href="#id명"></a>
+    ```
+
+    ```CSS
+    /* '가상 클래스' 쓰듯이 사용 */
+
+    tag:target {
+        border: 3px solid #990000;
+        color: #990000;
+	    font-weight: bold;
+    }  /* 선택되어진 것 변화 주기 */
+    /* id 준 곳(태그)에 target 설정(변화 주고 싶은 태그에 설정) */
+    ```
+
+```
+선택한 텍스트 색깔 등 유지가 필요한 경우 JS로 해주어야 한다.
+```
+
+---
+
+**`벡터 아이콘`** → ♣ [26_animation_transform_transition/vector_icon.html, vector_icon2.html] <br>
+
+```
+[참고 url]
+
+https://www.w3schools.com/icons/icons_reference.asp
+```
+
+- Font Awesome 5 (지원 여부 확인 필요 (거의 지원 x)) → SVG 기반 아이콘 지원 <br>
+```HTML
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+```
+
+- Font Awesome 4 <br>
+```HTML
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- 'Font Awesome' 구글 검색 → [W3C] 홈페이지로 이동 : 4, 5 버전 모두 있다. -->
+```
+
+- Google <br>
+```HTML
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- '구글 폰트' 검색 → icon 선택 후 사용 -->
+```
+
+```HTML
+<i></i> 태그 사용
+
+or
+
+다른 태그
+<a href="#" class="fa">&#xf099;</a>
+
+f099 : 해당 아이콘 번호 기재 → 숫자만 바꿔줘도 사용 가능
+```
+
+---
+
+**`animation`** → ♣ [26_animation_transform_transition/animation.html, etc.html] <br>
+**`@keyframes`** <br>
+```CSS
+@keyframes 애니메이션 이름 {
+    from { 애니메이션 시작 CSS }
+    to { 애니메이션 종료 CSS }
+}
+```
+
+```CSS
+@keyframes 애니메이션 이름 {
+    0% {}   /* from */
+    10% {}
+    35% {}
+    50% {}
+    75% {}
+    100% {} /* to */
+
+/* 0 ~ 100% 사이 특정 애니메이션의 값을 설정하여 진행시킬 수 있다. */
+/* (진행도: 0% → 100%로 순차적으로 진행) */
+}
+```
+
+- animation-name: 애니메이션 이름 <br>
+- animation-duration: 진행 시간(s / ms) <br>
+- animation-iteration-count: 반복 횟수 / infinite: 무한 반복 <br>
+- animation-timing-function: 속도 형태 (transition-timing-function과 같은 것) <br>
+    - ease [default] : 시작과 종료 부드럽게 <br>
+    - linear : 일정하게 <br>
+    - ease-in : 서서히 시작 <br>
+    - ease-out : 서서히 종료 <br>
+    - ease-in-out : 서서히 시작하여 서서히 종료 <br>
+    - cubic-bezier(n, n, n, n) : <br>
+        ```
+        https://cubic-bezier.com 
+
+        cubic-bezier : 컴퓨터 그래픽에서 사용하는 곡선 모델
+        cf) https://basemenks.tistory.com/281
+        ```
+    - step-start : 시작하자마자 순간적으로 바뀜 <br>
+    - step-end : 시작 유지되다가 끝날 때 순간적으로 바뀜 <br>
+    - steps(int, start | end) : 단계별로 진행 (int : 숫자) <br>   
+- animation-delay : 애니메이션 시작 지연 <br>
+- animation-direction : 진행/흐름 방향 <br>
+    - animation-direction: normal; [default] → 일반적인 진행 방향 <br>
+    - animation-direction: reverse; → 역방향 <br>
+    - animation-direction: alternate; → 일반적으로(앞으로) 진행하다가 다시 역방향으로 진행 [앞-뒤-앞] <br>
+    - animation-direction: alternate-reverse; → 역방향으로 진행하다가 다시 앞으로 진행 [뒤-앞-뒤] <br>
+- animation-fill-mode: 진행이 끝나는 위치 설정 <br>
+    - animation-fill-mode: none; [default] → 애니메이션이 끝난 후 처음 프레임 유지 <br>
+    - animation-fill-mode: forwards; → 애니메이션이 끝난 후 마지막 프레임 유지 <br>
+    - animation-fill-mode: backwards; → 애니메이션이 끝난 후 시작 프레임 유지 <br>
+    - animation-fill-mode: both; → 애니메이션의 앞/뒤 결과를 조합 <br>
+    ```
+    [animation-fill-mode]
+
+    none : 다른 CSS 규칙이 있다면 그것을 적용 (기본값)
+
+    forwards, backwards, both : animation-direction에 영향 있다.
+    both : animation-direction 설정에 따른 양뱡향 설정
+    ```
+- animation-play-state: 애니메이션의 진행/중지 설정 <br>
+    - animation-play-state: running [default] → 애니메이션 실행 <br>
+    - animation-play-state: paused → 애니메이션 중지 <br>
+
+```CSS
+/* 축약형 */
+
+animation: 애니메이션 이름  진행시간  반복횟수  속도형태  … ;
+
+animation: animation-name  animation-duration  animation-iteration-count  animation-timing-function
+           animation-delay  animation-direction  animation-fill-mode  animation-play-state;
+           /* 모두를 다 쓸 필요 없이 필요한 것만 지정하여 작성 */
+           /* transition과 마찬가지로 '진행시간',  '딜레이 시간' 이어서 사용 금지 (구분 x / 적용 안 될 수 있다.) */
+```
+
+---
+
+**`perspective` 3D 관련** → ♣ [26_animation_transform_transition/perspective.html] <br>
+(이전에 잘 적용이 안 되었던 것) <br>
+- 3D 배치 요소 <br>
+    - perspective: none [default] <br>
+    - perspective: 수치 <br>
+        ```CSS
+        transform: perspective(500px) rotateX(360deg);
+        ```
+    - transform-style: preserve-3d; → 자식 요소 3D 변환 <br>
+    - perspective-origin : 3D 요소의 위치 설정 <br>
+        ```CSS
+        perspective-origin: 50% 50%; == perspective-origin: center; [default]
+        perspective-origin: left;
+        perspective-origin: right;
+        …
+        ```
+    - backface-visibility: visible; → 후면 보이게 설정 <br>
+    - backface-visibility: hidden; → 후면 보이지 않게 설정 <br>
+
+- 3차원 변형 함수 ▷ 쓸 때 확인 필요(아직 100% 호환 x) <br> 
+    - translate3d(translateX, translateY, translateZ) : 특정 크기만큼 이동 <br>
+        - translateX(translateX) : X축으로 특정 크기만큼 이동 <br>
+        - translateX(translateY) : Y축으로 특정 크기만큼 이동 <br>
+        - translateX(translateZ) : Z축으로 특정 크기만큼 이동 <br>
+        <br>
+    - scale3d(scaleX, scaleY, scaleZ) : 특정 크기만큼 확대 및 축소 <br>
+        ```
+        scaleX, scaleY, scaleZ : 좌표 값
+        ```
+        - scaleX(scaleX) : X축으로 특정 크기만큼 확대 및 축소 <br>
+        - scaleY(scaleY) : Y축으로 특정 크기만큼 확대 및 축소 <br>
+        - scaleZ(scaleZ) : Z축으로 특정 크기만큼 확대 및 축소 <br>
+        <br>
+    - rotate3d(angleX, angleY, angleZ) : 특정 각도 만큼 회전 <br>
+        ```
+        angleX, angleY, angleZ : 0, 1 / α각도(deg, turn, rad) [+ : 시계 방향 / - : 반 시계 방향] 
+        ```
+        - rotateX(angleX) : X축 기준 특정 각도 만큼 회전 <br>
+        - rotateY(angleY) : Y축 기준 특정 각도 만큼 회전 <br>
+        - rotateZ(angleZ) : Z축 기준 특정 각도 만큼 회전 <br>
+
+---
+
+**`카운터 증가`** → ♣ [26_animation_transform_transition/etc.html] <br>
+- counter-reset: 이름; → **부모** (ul, ol) <br>
+- counter-increment : 이름; → **자식** (li) <br> 
+```CSS
+class::before {
+    content: counter(이름, 옵션(list-style-type));
+
+    /* 1. counter(이름) : counter-reset과 counter-increment에 준 이름 */
+    /*  ▶ class명, id명을 똑같이 해도 되고 "임의의 이름 선정" */
+
+    /* 2. 옵션 설정 안 하면 [default] 값 적용 (ol: 1, 2, 3 … / ul: ●, ●, ● …) */
+
+
+    content: "section" (counter(이름), 옵션(list-style-type));
+    /* section 1. */
+    /* section 2. */
+    /* section 3. */
+    /* … */
+    /* 증가하는 수 앞에 텍스트 입력 가능(뒤 텍스트도 입력 가능) */
+}
+```
+
+---
+
+## HTML
+
+- HTML5 추가 태그(레이아웃 태그) → **`시맨틱 요소`(코드에 의미성 부여)** <br>
+    - **&lt;header&gt; ~ &lt;/header&gt;** <br>
+    사이트 전체의 헤더 영역, 주로 페이지 맨 위쪽이나 왼쪽에 삽입. <br>
+        - 꼭 포함해야 할 것 : 하나 이상의 제목 요소 (**&lt;h1&gt; - &lt;h6&gt;**) → 권장 사항 <br>
+        - header 안 nav 태그 가능 <br>
+        - header 태그는 중첩하여 사용 가능 → 여러 곳에 있을 수 있다. <br>
+            - 단, header, footer, address 안에 중첩하면 안 된다. → header 안 header, footer, address 안 된다. <br>
+    - **&lt;nav&gt; ~ &lt;/nav&gt;** <br>
+    내비게이션 주메뉴, 위치에 영향을 받지 않음 (ol, ul) <br>
+    - **&lt;section&gt; ~ &lt;/section&gt;** <br>
+    주제별로 콘텐츠 영역 나타내기 <br>
+        - 내용 콘텐츠 <br>
+        ex: 봄(sec), 여름(sec), 가을(sec), 겨울(sec) <br>
+            - section 내 header 태그 가능 <br>
+            ```
+            h요소와 함께 사용하기를 W3C에서 권장
+            ``` 
+    - **&lt;article&gt; ~ &lt;/article&gt;** <br>
+    콘텐츠에 내용을 넣을 때, 독립적인 내용, 배포할 수 있는 콘텐츠로 인식 <br>
+    ▷ 저작권이 없는 작업 <br>
+        - 포럼 게시물, 블로그 포스터, 뉴스 스토리 <br>
+    - **&lt;aside&gt; ~ &lt;/aside&gt;** <br>
+    본분 이외의 내용, 링크 모음, 메인에 영향을 주지 않는 내용, 기타 내용 <br>
+    - **&lt;footer&gt; ~ &lt;/footer&gt;** <br>
+    보통 하단에 표시, 제작자의 연락처 정보와 저작권 정보 등을 표시 <br>
+    (회사 주소, 연락처, 사이트 맵 등) <br>
+        - 꼭 포함해야 할 것 : 저작자 정보, 저작권 정보, 연락 정보, 사이트 맵, 맨 위로 링크 <br>
+        - footer 중첩 사용 가능 <br>
+        - footer 안 address 태그 가능 <br>
+    - **&lt;main&gt; ~ &lt;/main&gt;** <br>
+    본문에서 주요 내용(ie 12 이상에서 지원) [ie 11 이후 엣지 등장 - 거의 사용 x] <br>
+        - 주의 : 사이드 바, 탐생 링크, 저작권 정보, 사이트 로고 및 검색 양식과 같은 문서에서 반복되는 콘텐츠를 포함하면 안 됨 <br>
+        - ★ 2개 이상 main 요소 사용하면 안 됨 → 중복 x <br>
+        - main 요소는 article, aside, footer, header, nav 요소의 하위 요소로 마크업하면 안 됨 <br>
+            ```
+            잘 사용 x → 규정되어 있다.
+            ```
+
+```CSS
+/* ※ 시멘틱 요소  */
+
+/* '시멘틱 요소'의 모든 태그 및 'figure > figcaption'을 초기화하여 사용 */
+
+header,
+nav,
+section,
+article,
+aside,
+footer,
+main, 
+figure,
+figcaption {
+    display: block; /* 보통 display: block으로 초기화하여 사용 */
+}
+```
+
+```
+[참고]
+
+https://developer.mozilla.org/en-US/docs/Glossary/Semantics
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+```
+
+
+---
+---
 ---

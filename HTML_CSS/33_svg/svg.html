@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>rect</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			svg {
+				border: 1px solid blue;
+			}
+			.ex4 {
+				fill: #cc3366;
+				stroke: rgb(0, 0, 255);
+				stroke-width: 10;
+				opacity: 0.4;
+			}
+		</style>
+	</head>
+	<!-- svg 코드는 xml로 이루어져 있다. -->
+	<body>
+		<!-- <rect> 사각형 | 둥근 모서리 사각형 (x | y | width | height | rx | ry) -->
+		<div id="ex1">
+			<svg>
+				<rect width="100" height="100" />
+			</svg>
+		</div> <!-- ex1 -->
+		<hr>
+		<div id="ex2">
+			<svg width="400" height="200">
+				<rect width="150" height="150" x="50" y="20" 
+							style="fill:green; stroke:red; 
+							stroke-width:5; opacity:0.3;
+							stroke-opacity:.7" />
+			</svg>
+		<hr>
+		</div> <!-- ex3 -->
+		<div id="ex3">
+			<svg>
+				<rect x="20" y="20" 
+							width="100" height="100"
+							style="stroke:#009900; stroke-width:3; 
+							stroke-dasharray: 10 5; fill:none;" />
+			</svg>
+		</div> <!-- ex3 -->
+		<hr>
+		<div id="ex4">
+			<svg height="300">
+				<rect class="ex4" width="186" height="205" x="50" y="50" />
+			</svg>
+		</div> <!-- ex4 -->
+		<div id="ex4">
+			<svg width="400" height="200">
+				<rect width="150" height="150" x="30" y="30" rx="20" ry="20" style="fill:red"/>
+			</svg>
+		</div> <!-- ex4 -->
+		<div id="ex5">
+			<svg width="400" height="200">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.39 89.54"><defs><style>.cls-1{fill:#231f20;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="82.08 75.94 52.42 68.36 29.36 88.5 27.4 57.95 1.13 42.24 29.57 30.94 36.39 1.1 55.93 24.66 86.42 21.93 70.05 47.79 82.08 75.94"/></g></g></svg>
+			</svg>
+		</div> <!-- ex5 -->
+	</body>
+</html>

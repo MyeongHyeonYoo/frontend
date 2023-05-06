@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>join</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Oswald:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/join.css">
+	</head>
+	
+	<body>
+		<div id="join_wrap">
+			<form id="join" action="join.asp" method="post">
+				<fieldset>
+					<legend>♪ 가입정보</legend>
+					<ul>
+						<li><label for="uid"><strong class="point">&ast; </strong>아이디 </label><input id="uid" type="text" required autofocus></li>
+						<li><label for="pwd1"><strong class="point">&ast; </strong>비밀번호 </label><input id="pwd1" type="password" required autocomplete="off"></li>
+						<li><label for="pwd2"><strong class="point">&ast; </strong>비밀번호 확인 </label><input id="pwd2" type="password" required autocomplete="off"></li>
+						<li><label for="level">회원등급 </label><input id="level" type="text" value="준회원" readonly></li>
+					</ul>
+				</fieldset> <!-- 가입정보 -->
+				<fieldset>
+					<legend>♪ 개인정보</legend>
+					<ul>
+						<li><label for="uname">이름 </label><input id="uname" type="text" placeholder="공백없이 입력"></li>
+						<li><label for="mail">메일주소 </label><input id="mail" type="email" placeholder="아이디&commat;계정"></li>
+						<li><label for="utel">연락처 </label><input id="utel" type="tel" placeholder="공백없이 입력"></li>
+					</ul>
+				</fieldset> <!-- 개인정보 -->
+				<fieldset>
+					<legend>♪ 코딩숙련도(1: 상, 2: 중, 3: 하)</legend>
+					<ul>
+						<li><label for="skill">숙련도 </label><input type="range" id=skill value="1" min="1" max="3" step="1"></li>
+					</ul>
+				</fieldset><!-- 코딩숙련도 -->
+				<p class="btn_wrap">
+					<button type="submit">가입하기</button>
+					<button type="reset">다시작성</button>
+				</p> <!-- btn_wrap -->
+			</form>
+		</div> <!-- join -->
+	</body>
+</html>

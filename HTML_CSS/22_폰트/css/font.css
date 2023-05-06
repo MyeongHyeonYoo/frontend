@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Comforter+Brush&family=Nanum+Pen+Script&family=Oswald:wght@300&display=swap');*/
+
+
+.txt1,
+.txt2,
+.txt3,
+.txt4 {
+	font-size: 50px;
+}
+.txt1 {font-family: 'Nanum Pen Script', cursive;}
+.txt2 {font-family: 'Oswald', sans-serif;}
+.txt3 {font-family: 'Black Han Sans', sans-serif;}
+.txt4 {font-family: 'Comforter Brush', cursive;}

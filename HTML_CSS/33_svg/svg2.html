@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>circle/ellipse</title>
+		<style>
+				* {
+					margin: 0;
+					padding: 0;
+				}
+				svg {
+					border: 1px solid red;
+				}
+		</style>
+	</head>
+
+	<body>
+		<!-- <circle> 원 ( cx | cy | r(반지름) -->
+		<div id="ex1">
+			<svg width="200" height="200" >
+				<circle cx="50" cy="50" r="50" />
+			</svg>
+		</div> <!-- ex1 -->
+		<hr>
+		<div id="ex2">
+			<svg width="300" height="300" >
+				<circle cx="142.23" cy="142.23" r="141.73" style="fill:red"/>
+			</svg>
+		</div> <!-- ex2 -->
+		
+		<!-- <ellipse> 타원 ( cx | cy | rx(반지름-x) | ry(반지름-y) -->
+		<div id="ex3">
+			<svg width="500" height="200" >
+				<ellipse cx="200" cy="80" rx="100" ry="50" style="fill:hotpink"/>
+			</svg>
+		</div> <!-- ex3 -->
+		<div id="ex4">
+			<svg width="600" height="300" >
+				<ellipse cx="143.5" cy="71" rx="143" ry="70.5"/>
+			</svg>
+		</div> <!-- ex4 -->
+	</body>
+</html>

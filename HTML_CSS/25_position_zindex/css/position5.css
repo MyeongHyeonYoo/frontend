@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/******* reset *******/
+body,
+div,
+video,
+source,
+h3,
+p,
+a,
+br {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font: normal 15px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif;
+	color: #333;
+}
+
+/******* wrap *******/
+#wrap {
+	width: 1920px;
+	height: 640px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#contents_wrap {
+/*	border: 1px solid red;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	width: 100%;
+	height: 640px;
+}
+
+/* |300 + 300 + 300 + 300| */
+#contents {
+/*	border: 1px solid blue;*/
+	width: 1200px;
+	height: 540px;
+	margin: 100px auto;
+} 
+
+
+/******* .con1 ~ .con8 공통 *******/
+#contents > div {
+	float: left;
+	width: 300px;
+	height: 200px;
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#contents > .con4,
+#contents > .con8 {
+	border-right: none;
+}
+
+#contents > .con5 {
+	clear: both;
+}
+#contents > div > h3 {
+/*	border: 1px solid yellow;*/
+	color: #fff;
+	font-size: 20px;
+	background: no-repeat center top;
+	padding-top: 50px;
+	margin-bottom: 20px;
+}
+#contents > .con1 > h3 {background-image: url(../images/intro_icon1.png);}
+#contents > .con2 > h3 {background-image: url(../images/intro_icon2.png);}
+#contents > .con3 > h3 {background-image: url(../images/intro_icon3.png);}
+#contents > .con4 > h3 {background-image: url(../images/intro_icon4.png);}
+#contents > .con5 > h3 {background-image: url(../images/intro_icon5.png);}
+#contents > .con6 > h3 {background-image: url(../images/intro_icon6.png);}
+#contents > .con7 > h3 {background-image: url(../images/intro_icon7.png);}
+#contents > .con8 > h3 {background-image: url(../images/intro_icon8.png);}
+
+#contents > div > p:nth-of-type(1) {
+	color: #f27321;
+	background: url(../images/line2.jpg) no-repeat center bottom;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+#contents > div > p:nth-of-type(2) {
+/*	border: 1px solid skyblue;*/
+	width: 100px;
+	height: 25px;
+	margin: 0 auto;
+}
+#contents > div > p:nth-of-type(2) a {
+	display: block;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 15px;
+}
+#contents > div > p:nth-of-type(2) a:hover {
+	background-color: #fff;
+	color: #333;
+}

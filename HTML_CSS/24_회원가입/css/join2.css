@@ -1,0 +1,197 @@
+@charset "utf-8";
+@font-face {
+	font-family: nanum;
+	src: url("../font/NanumGothic.eot");
+	src: url("../font/NanumGothic.eot?#iefix")format("embedded-opentype"),
+			 url("../font/NanumGothic.ttf")format("truetype"),
+			 url("../font/NanumGothic.woff")format("woff");
+}
+
+/******* reset *******/
+body,
+div,
+h3,
+form,
+p,
+label,
+input,
+select,
+option,
+span,
+textarea {
+	margin: 0; padding: 0;
+}
+body, 
+input,
+select,
+option,
+textarea {
+	font: normal 14px/1.5em nanum, sans-serif;
+	background-color: #fff;
+	color: #333;
+}
+input,
+select,
+option,
+textarea {
+	outline: none;
+}
+
+/******* all setting *******/
+#wrap {
+/*	border: 1px solid red;*/
+	width: 602px;
+	height: 470px;
+	margin: 20px auto;
+}
+
+/***** join form *****/
+#wrap > h3 {
+	height: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#form_wrap {
+	width: 600px;
+	border: 1px solid #999;
+}
+
+/******* common *******/
+.line {
+	height: 40px;
+	border-bottom: 1px solid #999;
+	clear: both;
+}
+
+/* self-introduce */
+.line2 {
+	height: 130px;
+	border-bottom: none;
+}
+
+/***** 'left' common *****/
+.l_con {
+	background-color: #ccccff;
+	width: 100px;
+	height: 40px;
+	display: block;
+	float: left;
+	text-indent: 10px;
+	line-height: 40px;
+}
+/*** introduce-self in 'left' ***/
+.l_con2 {
+	height: 130px;
+}
+
+/***** 'right' common *****/
+.r_con {
+/*	background-color: yellow;*/
+	float: left;
+	width: 500px;
+	height: 40px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	line-height: 40px;
+}
+/*** introduce-self in 'right' ***/
+.r_con2 {
+	height: 130px;
+}
+
+/******* common *******/
+#wrap input,
+#u_tel1,
+.email3 select, 
+#write {
+	border: 1px solid #999;
+}
+.infor {
+	color: red;
+}
+
+/* Name | Id | Password */
+#u_name, 
+#u_id, 
+#u_pwd {
+	width: 220px;
+	height: 25px;
+	text-indent: 10px;
+}
+
+/* male & female */
+#chk1,
+#chk2 {
+	vertical-align: -2px;
+}
+
+/* Phone Number */
+.tel1, 
+.tel2,
+.tel3,
+.tel4,
+.tel5 {
+	float: left;
+}
+/* span '-' */
+.tel2,
+.tel4,
+ {
+	margin: 0 5px;
+}
+
+/* Phone Number | select, input */
+#u_tel1,
+#u_tel2,
+#u_tel3 {
+	width: 100px;
+	height: 25px;
+	text-indent: 10px;
+}
+
+/* email */
+.email1,
+.email2,
+.email3 {
+	float: left;
+}
+
+/* span '@' */
+.email2 {
+	margin: 0 5px;
+/*	padding-bottom: 30px;*/
+}
+
+/* Email | input, select */
+#u_email,
+.email3 select {
+	margin-top: 7px;
+	height: 25px;
+	text-indent: 10px;
+}
+
+/* introduce-self */
+#write {
+	width: 300px;
+	height: 100px;
+	margin-top: 13px;
+	resize: none;
+}
+
+.btn {
+/*	background-color: skyblue;*/
+	height: 30px;
+	margin-top: 10px;
+	text-align: center;
+}
+.btn input {
+	width: 100px;
+	height: 25px;
+	cursor: pointer;
+}
+
+/* join | rewrite */
+.btn input:hover {
+	background-color: #999;
+	color: #fff;
+}

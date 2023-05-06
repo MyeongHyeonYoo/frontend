@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/******* Reset *******/
+ul, li {list-style: none;}
+ul, li, a, hr {margin:0; padding: 0;}
+a {text-decoration: none; color: #000;}
+
+
+/******* ex1 *******/
+/*.ex1 li {display: inline;}*/
+/*.ex1 li a {display: inline;}*/
+/*.ex1 li {float: left;}*/
+/*.ex1 li a {float: left;}*/
+
+
+/******* ex2 *******/
+.ex2 {
+	border: 1px solid blue;
+	height: 80px;
+	display: none;
+}
+
+.ex2 {display: inline;}
+/*.ex2 {display: block;}*/
+
+
+/******* ex3 *******/
+.ex3 {
+	background: url(../images/dimchage1.jpg) no-repeat;
+	width: 488px;
+	height: 396px;
+}
+.ex3 span {display: none;}
+
+
+/******* ex4 *******/
+.ex4 {
+	border: 1px solid green;
+	height: 80px;
+	visibility: hidden;
+}
+/*.ex4 {display: block;}*/
+.ex4 {visibility: visible;}
+
+
+/******* ex6 *******/
+/*
+.ex6 li {
+	color: green;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+*/
+
+.ex6 li::before, .ex6 li:before {
+	content: "\2022";
+	color: red;
+/*	background-color: yellow;*/
+	width: 10px;
+	display: inline-block;
+}
+
+
+/******* ex7 *******/
+.ex7 {
+	background-color: #993333;
+	width: 500px;
+	height: 56px;
+	overflow: auto;
+	white-space: nowrap;
+	margin: 30px 0;
+	line-height: 50px;
+}
+.ex7 a:hover {
+	background-color: #6699ff;
+}
+.ex7::-webkit-scrollbar {height: 6px;} /*스크롤바 높이*/
+.ex7::-webkit-scrollbar-track {background-color: pink;} /*스크롤바 색상*/
+.ex7::-webkit-scrollbar-thumb {background-color: orange;} /*드래그 가능한 스크롤바 색상*/
+.ex7::-webkit-scrollbar-thumb:active {background-color: blue;}
+
+
+/******* ex8 *******/
+.ex8 {
+	background-color: #993333;
+	width: 500px;
+	height: 56px;
+	overflow: auto;
+	white-space: nowrap;
+	margin: 30px 0;
+	line-height: 50px;
+	direction: rtl;
+}
+.ex8 a:hover {
+	background-color: #6699ff;
+}
+.ex8::-webkit-scrollbar {height: 6px;} /*스크롤바 높이*/
+.ex8::-webkit-scrollbar-track {background-color: pink;} /*스크롤바 색상*/
+.ex8::-webkit-scrollbar-thumb {background-color: orange;} /*드래그 가능한 스크롤바 색상*/
+.ex8::-webkit-scrollbar-thumb:active {background-color: blue;}
+
+
+/******* ex9 *******/
+.ex9 {
+	background-color: #eaeaea;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.ex9 li {
+	display: inline;
+	font-size: 17px;
+	padding: 7px;
+}
+.ex9 li + li::before {content: "\002f  "}
+.ex9 li:first-child a {color: #01447e;}
+.ex9 li a:hover {
+		color: #0275d8;
+		text-decoration: underline;
+	}
+
+/******* ex10 *******/
+.ex10 {
+	width: 800px;
+	height: 40px;
+	background-color: #e9e9e9;
+	margin: 30px 0;
+}
+
+.ex10 ul {
+/*	border: 1px solid red;*/
+	float: left;
+	width: 300px;
+	height: 40px;
+}
+.ex10 ul li {
+	float: left;
+	width: 100px;
+	height: 40px;
+}
+.ex10 ul li a {
+	width: 100px;
+	height: 40px;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+}
+.ex10 ul li a:hover {background-color: #ccc;}
+.ex10 ul li a.active {
+	background-color: #6699cc;
+	color: white;
+}
+.ex10 div {
+/*	border: 1px solid blue;*/
+	float: right;
+	width: 185px;
+	height: 35px;
+	margin-top: 2px;
+}
+
+.ex10 div input[type="search"] {
+	float: left;
+	width: 150px;
+	border: none;
+	outline: none;
+	text-indent: 1em;
+}
+.ex10 div button[type="button"] {
+	float: left;
+	width: 35px;
+	background-color: #999;
+	border: none;
+	outline: none;
+}
+
+/******* ex11 *******/
+.ex11 {
+	clear: both;
+	border: 1px solid red;
+	height: 35px;
+	margin: 30px 0;
+}
+.ex11 li {
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin: 0 1px;
+}
+.ex11 li img:nth-child(2) {
+	display: none;
+}
+.ex11 li:hover img:nth-child(2) {display: block;}
+.ex11 li:hover img:nth-child(1) {display: none;}
+
+
+/******* ex12 *******/
+.ex12 {
+	border: 1px solid red;
+	height: 150px;
+	margin: 30px 0;
+}
+.ex12 input[type="checkbox"] + div {
+	background-color: #eaeaea;
+	width: 300px;
+	height: 100px;
+	display: none;
+}
+.ex12 input[type="checkbox"]:checked + div {display: block;}
+

@@ -1,0 +1,424 @@
+@charset "utf-8";
+
+#wrap > h3 {
+	margin: 10px;
+}
+#wrap > div {
+	border: 1px solid #aaa;
+}
+
+/* ex1 */
+#ex1 {
+	display: flex;
+}
+#ex1 > div {
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex2 */
+#ex2 {
+	display: flex;
+	flex-direction: column;
+}
+#ex2 > div {
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex3 */
+#ex3 {
+	display: flex;
+	flex-direction: column-reverse;
+}
+#ex3 > div {
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex4 */
+#ex4 {
+	display: flex;
+	flex-direction: row;
+}
+#ex4 > div {
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex5 */
+#ex5 {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 300px;
+}
+#ex5 > div {
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex6 */
+#ex6 {
+	display: flex;
+	flex-wrap: wrap;
+}
+#ex6 > div {
+	background-color: tomato;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex7 */
+#ex7 {
+	display: flex;
+	flex-wrap: nowrap;
+}
+#ex7 > div {
+	background-color: tomato;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex8 */
+#ex8 {
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+#ex8 > div {
+	background-color: tomato;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex9 */
+#ex9 {
+	display: flex;
+	justify-content: center;
+}
+#ex9 > div {
+	background-color: skyblue;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex10 */
+#ex10 {
+	display: flex;
+	justify-content: flex-start;
+}
+#ex10 > div {
+	background-color: skyblue;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex11 */
+#ex11 {
+	display: flex;
+	justify-content: flex-end;
+}
+#ex11 > div {
+	background-color: skyblue;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex12 */
+#ex12 {
+	display: flex;
+	justify-content: space-around;
+}
+#ex12 > div {
+	background-color: indigo;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex13 */
+#ex13 {
+	display: flex;
+	justify-content: space-between;
+}
+#ex13 > div {
+	background-color: indigo;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex13_etc */
+#ex13_etc {
+	display: flex;
+	justify-content: space-evenly;
+}
+#ex13_etc > div {
+	background-color: indigo;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+
+/* ex14 */
+#ex14 {
+	display: flex;
+	height: 300px;
+	align-items: center;
+}
+#ex14 > div {
+	background-color: hotpink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex15 */
+#ex15 {
+	display: flex;
+	height: 300px;
+	align-items: flex-start;
+}
+#ex15 > div {
+	background-color: hotpink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex16 */
+#ex16 {
+	display: flex;
+	height: 300px;
+	align-items: flex-end;
+}
+#ex16 > div {
+	background-color: hotpink;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex17 */
+#ex17 {
+	display: flex;
+	height: 300px;
+	align-items: stretch;
+}
+#ex17 > div {
+	background-color: hotpink;
+	width: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex18 */
+#ex18 {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	height: 600px;
+	align-items: stretch;
+}
+#ex18 > div {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex19 */
+#ex19 {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	height: 600px;
+}
+#ex19 > div {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex20 */
+#ex20 {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	height: 600px;
+}
+#ex20 > div {
+	background-color: blue;
+	width: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex21 */
+#ex21 {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	height: 600px;
+}
+#ex21 > div {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex22 */
+#ex22 {
+	display: flex;
+	height: 300px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+	
+#ex22 > div {
+	background-color: black;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex23 */
+#ex23 {
+	display: flex;
+}
+#ex23 > div {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+/* ex24 */
+#ex24 {
+	display: flex;
+}
+#ex24 > div {
+	background-color: gold;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex25 */
+#ex25 {
+	display: flex;
+}
+#ex25 > div {
+	background-color: silver;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}
+
+/* ex26 */
+#ex26 {
+	display: flex;
+}
+#ex26 > div {
+	background-color: palevioletred;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid black;
+}

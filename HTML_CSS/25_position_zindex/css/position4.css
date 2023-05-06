@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/******* reset *******/
+body,
+div,
+figure,
+img,
+figcation,
+p,
+br,
+span,
+input {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: normal 12px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif; 
+	color: #333;
+}
+
+/************* infor_wrap *************/
+
+#infor_wrap {
+	width: 960px; /* 190 + 580 + 190 */
+	height: 380px;
+	border: 1px solid blue;
+	margin: 10px auto;
+}
+
+#infor1 {
+	float: left;
+	width: 190px;
+	height: 380px;
+}
+#infor1 figure {
+	width: 190px;
+	height: 190px;
+	text-align: center;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+#infor1 figure:first-child {
+	background-color: #e84e56;
+	color: #fff;
+}
+#infor1 figure:last-child {
+	background-color: #e0d3cb;
+}
+
+
+#infor2 {
+	float: left;
+	width: 580px;
+	height: 380px;
+	position: relative;
+}
+.infor2_2,
+.infor2_3,
+.infor2_4,
+.infor2_5 {
+	position: absolute;
+	left: 30px;
+	z-index: 2;
+}
+.infor2_1 {
+/*	background: yellow;*/
+	width: 580px;
+	height: 380px;
+}
+.infor2_2 {
+	top: 20px;
+	letter-spacing: -1px;
+}
+.infor2_3 {
+	top: 50px;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+.infor2_3 span {
+	color: #2c88aa;
+}
+.infor2_4 {
+	top: 100px;
+}
+.infor2_5 {
+	top: 180px;
+}
+.infor2_5 input {
+	border: none;
+	background-color: #555536;
+	color: #fff;
+	width: 150px;
+	height: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.infor2_5 input:hover {
+	background-color: #999;
+}
+
+#infor3 {
+	float: left;
+	width: 190px;
+	height: 380px;
+}
+#infor3 figure {
+	width: 190px;
+	height: 190px;
+	text-align: center;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+#infor3 figure:first-child {
+	background-color: #e0eaeb;
+}
+#infor3 figure:last-child {
+	background-color: #1f8cb3;
+	color: #fff;
+}
+

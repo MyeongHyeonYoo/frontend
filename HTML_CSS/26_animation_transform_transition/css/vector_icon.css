@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/******* reset *******/
+div,
+p,
+i {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 30px;
+}
+
+/*** wrap1 ***/
+#wrap1 p {
+	color: red;
+	font-size: 36px;
+}
+
+/*** wrap2 ***/
+#wrap2 p .fa {
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 10px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	font-size: 25px;
+}
+#wrap2 p:nth-child(1) a {background-color: #3b5998;}
+#wrap2 p:nth-child(2) a {background-color: #55acee;}
+#wrap2 p:nth-child(3) a {background-color: #dd4b39;}
+#wrap2 p:nth-child(4) a {background-color: #007bb5;}
+#wrap2 p:nth-child(5) a {background-color: #bb0000;}
+#wrap2 p:nth-child(6) a {background-color: #125688;}
+#wrap2 p:nth-child(7) a {background-color: #cb2027;}

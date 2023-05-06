@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*
+font-family: 'Gugi', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+
+@font-face {
+	font-family: nanum;
+	src: url("../font/NanumGothic.eot");
+	src: url("../font/NanumGothic.eot?#iefix")format("embedded-opentype"),
+			 url("../font/NanumGothic.ttf")format("truetype"),
+			 url("../font/NanumGothic.woff")format("woff");
+}
+
+/******* reset *******/
+ul, li {
+	list-style: none;
+}
+body,
+div,
+form,
+fieldset,
+legend,
+ul,
+li,
+label,
+strong,
+input,
+p,
+button {
+	margin:0; padding: 0;
+}
+body,
+input,
+button {
+	font: normal 13px/1.5em Gugi, Oswald, nanum, sans-serif;
+	color: #333;
+	background-color: #fff;
+}
+input,
+button {
+	outline: none;
+}
+
+/************* join_wrap *************/
+/******* all setting *******/
+#join_wrap {
+	border: 1px solid rgba(135, 135, 135, .5);
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #999;
+}
+
+#join fieldset {
+	border: none;
+}
+#join fieldset legend {
+	height: 20px;
+	margin-bottom: 10px;
+/*	border: 1px solid red;*/
+}
+
+#join ul li {
+	height: 29px;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+#join ul li label {
+	width: 120px;
+	height: 29px;
+	display: block;
+	float: left;
+	line-height: 29px;
+	padding-left: 30px;
+/*	background-color: yellow;*/
+}
+
+#join ul li input {
+	float: left;
+	width: 200px;
+	height: 25px;
+	border: 1px solid #ccc;
+	text-align: center;
+	color: #666;
+}
+
+.point {
+	color: #ff2323;
+}
+
+/* join | rewrite */
+.btn_wrap {
+	height: 30px;
+	text-align: center;
+/*	border: 1px solid red;*/
+}
+
+.btn_wrap button {
+	border: 2px solid #ccc;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.btn_wrap button:hover {
+	border-color: #333;
+	color: #000;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+      /* p { 
+        border: 1px solid red;
+        width: 200px;
+        height: 200px;
+        word-wrap: normal;
+      } */
+     body, 
+     div,
+     p {
+      margin: 0;
+      padding: 0;
+     }
+      #box2 div {
+        width: 450px;
+        height: 20px;
+        border:1px solid #ccc;
+        border-radius: 15px;
+        margin: 50px 0 0 100px;
+        overflow: hidden;
+        box-shadow: 0 0 5px 0px #ddd inset;
+      }
+
+      #box2 > div > p:nth-child(1) {
+        display: inline-block; 
+        width: 70%; 
+        height: 100%; 
+        background: #2989d8; /* Old browsers */ 
+        background: -moz-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* FF3.6+ */ 
+        background: -webkit-gradient(linear, left bottombottom, rightright top, color-stop(33%,#2989d8), color-stop(34%,#7db9e8), color-stop(59%,#7db9e8), color-stop(60%,#2989d8)); /* Chrome,Safari4+ */ 
+        background: -webkit-linear-gradient(45deg, #2989d8 33%,#7db9e8 34%,#7db9e8 59%,#2989d8 60%); /* Chrome10+,Safari5.1+ */ 
+        background: -o-linear-gradient(45deg, #2989d8 33%,#7db9e8 34%,#7db9e8 59%,#2989d8 60%); /* Opera 11.10+ */ 
+        background: -ms-linear-gradient(45deg, #2989d8 33%,#7db9e8 34%,#7db9e8 59%,#2989d8 60%); /* IE10+ */ 
+        background: linear-gradient(45deg, #2989d8 33%,#7db9e8 34%,#7db9e8 59%,#2989d8 60%); /* W3C */ 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#2989d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+        background-size: 60px 30px; text-align: center; color:#fff;
+      }
+    
+ 
+
+   /* p:nth-child(4)  {
+      margin :50px 0;
+      position: relative;
+      display: block;
+      width: 0;
+      height: 0;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid pink;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+   } */
+
+   /* p:nth-child(4)::before {
+    border-bottom: 80px solid pink;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position :absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+   }  */
+   /* p:nth-child(4)::after {
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: -105px;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid pink;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+   } */
+   
+   /* p:nth-child(4) {
+    margin: 50px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid blueviolet;
+    border-bottom: 20px solid transparent;
+   } */
+
+   /* p:nth-child(4) {
+    margin: 50px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid palegreen;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+   } */
+   
+   /* p:nth-child(4) {
+    margin: 50px 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: pink;
+    position: relative;
+    top: 50px;
+   } */
+   /* p:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    left: 75px;
+    top: 60px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: pink;
+   } */
+
+   /* p:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: pink;
+   } */
+  
+
+    @media (min-width: 200px) and (max-width: 500px) {
+
+    }
+      
+    /* body {background-color: #2989d8;} */
+    /* p:nth-child(12) {
+      border: 1px solid blue;
+      display: grid; 
+      grid-template-columns: 2px 2px 2px 2px;
+    } */
+    p:nth-child(2) {
+      margin: 50px;
+      border: 3px dotted darkblue;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    p:nth-child(4) {
+      margin: 50px;
+      width: 50px;
+      height: 50px;
+      border: 1px solid tomato;
+      background: center/ 10px 10px rebeccapurple;
+      /* font-family: 'Noto Sans KR', sans-serif; */
+    }
+    
+  
+
+    #gradi1 {
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(to right bottom, 
+      red 1%,blue 2%, yellow 3%, orange 4%,
+      red 5%,blue 6%, yellow 7%, orange 8%,
+      red 9%,blue 10%, yellow 11%, orange 12%,
+      red 13%,blue 14%, yellow 15%, orange 16%,
+      red 17%,blue 18%, yellow 19%, orange 20%,
+      red 21%,blue 22%, yellow 23%, orange 24%,
+      red 25%,blue 26%, yellow 27%, orange 25.555%,
+      red 29%,blue 30%, yellow 31%, orange 32%,
+      red 40%,blue 60%, cyan 80%, black 100% );
+       border-radius: 50%;
+    }
+    #gradi2 {
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(to right bottom, red 25%, tomato 25% 50%, blue 50% 75%, greenyellow 75%, black 90%);
+    }
+
+    #gradi3 {
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(to right bottom, red, 10%, transparent);
+    }
+
+    #gradi4 {
+      width: 500px;
+      height: 500px;
+      background: 
+      linear-gradient(217deg, rgb(5, 247, 126), rgba(0, 217, 255, 0) 70.71%), 
+      linear-gradient(127deg, rgba(43, 101, 177, 0.8), rgba(255, 174, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(255, 23, 23, 0.8), rgba(153, 0, 255, 0.61) 70.71%);
+    }
+
+    #gradi5 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(ellipse 40% 10%, red, yellow 10%, #1e90ff 50%, beige);
+      border-radius: 50%;
+    }
+
+    #gradi6 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(
+      farthest-side,
+      red,
+      yellow 10%,
+      #1e90ff 50%,
+      beige
+    );
+    }
+    #gradi7 {
+      width: 500px;
+      height: 500px;
+      background: repeating-linear-gradient(
+      210deg,
+      red 10px,
+      red 20px,
+      blue 10px,
+      blue 20px,
+      yellow 10%,
+      orange 15%,
+      transparent 20%
+      );
+    }
+    
+    #gradi8 {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      background: repeating-radial-gradient(
+        circle at 80% 50%,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) 15px,
+        rgba(255, 255, 255, 0.5) 15px,
+        rgba(255, 255, 255, 0.5) 30px
+      ) bottom right no-repeat, repeating-radial-gradient(
+        ellipse at 20% 50%,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) 10px,
+        rgba(255, 255, 255, 0.5) 10px,
+        rgba(255, 255, 255, 0.5) 20px
+      ) bottom left no-repeat, yellow;
+       background-size: 280px 280px, 200px 200px;
+    }
+
+    #gradi9 {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      background: repeating-conic-gradient(at 80% 30%, rgb(255, 0, 0) 10%, yellow 30%, #1e90ff 50%) bottom left no-repeat,
+      repeating-conic-gradient(at 50% 80%, rgb(143, 253, 0) 10%, rgb(2, 2, 0) 30%, #8ca3b9 50%) top right;
+
+      background-size: 200px 250px, 200px 200px;
+    }
+
+    #gradi10 {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      background: -webkit-radial-gradient(center,  ellipse cover rgba(204,20,197,0.65) 0%, rgba(204,21,193,0.65) 1%, rgba(15, 95, 185, 0.65) 13%, rgba(208,47,93,0.65) 100%);
+    }
+
+    #shape1 {
+      width: 230px;
+      height: 230px;
+      clip-path: ellipse(130px 140px at 10% 10%);
+      shape-outside: content-box;
+      background-color: rebeccapurple;
+      border: 2px solid black;
+      margin-left: 100px;
+      float: left;
+    }
+
+    
+
+    .sss {
+      width: 200px;
+      height: 150px;
+      float: left;
+    }
+    .aaa {
+      float:left;
+    }
+   
+
+
+ #asd {
+  max-width: 400px;
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: oblique 0deg 20deg;
+}
+
+.shape {
+  float: left;
+  width: 150px;
+  height: 150px;
+  background-color: maroon;
+  clip-path: polygon(0 0, 150px 150px, 0 150px);
+  shape-outside: polygon(0 0, 150px 150px, 0 150px);
+  shape-margin: 5px;
+  
+}
+    </style>
+
+  </head>
+
+  <body>
+    <div>
+    <p>1
+      <span>1-1</span>
+      <span>1-2</span>
+      <span>1-3</span>
+    </p>
+    <div>
+    <p>2</p>
+    <p>3</p>
+    </div>
+    <div>
+    <div><a href="#">하하하</a><p>키키키</p></div>
+   
+  </div>
+  </div>
+  <div id="gradi1"></div>
+  <div id="gradi2"></div>
+  <br>
+  <hr>
+  <div id="gradi3"></div>
+  <br>
+  <hr>
+  <div id="gradi4"></div>
+  <br>
+  <hr>
+  <div id="gradi5"></div>
+  <br>
+  <hr>
+  <div id="gradi6"></div>
+  <br>
+  <hr>
+  <div id="gradi7"></div>
+  <br>
+  <hr>
+  <div id="gradi8"></div>
+  <br>
+  <hr>
+  <div id="gradi9"></div>
+
+  <br>
+  <hr>
+  <div id="gradi10"></div>
+  <br><br><hr>
+  <div id="shape1"><p class="sss">Lorem, ipsum dolor sit amet consectetur 
+    adipisicing elit. Dolorum tenetur sunt consectetur 
+    doloremque quasi aperiam perspiciatis at voluptates 
+    nam qui impedit cupiditate veritatis aliquid odio temporibus, 
+    placeat a maxime nisi.</p></div>
+  
+    <span class="aaa">aaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaa<br>aaa<br>aaaaaaaaa</span>
+
+    <div id="asd">
+      <div class="shape"></div>
+      We are not quite sure of any one thing in biology; our knowledge of geology is
+      relatively very slight, and the economic laws of society are uncertain to
+      every one except some individual who attempts to set them forth; but before
+      the world was fashioned the square on the hypotenuse was equal to the sum of
+      the squares on the other two sides of a right triangle, and it will be so
+      after this world is dead; and the inhabitant of Mars, if one exists, probably
+      knows its truth as we know it.
+    </div id="asd">
+  </body>
+</html>

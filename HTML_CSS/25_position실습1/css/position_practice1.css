@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/******* reset *******/
+body,
+h3,
+div,
+p,
+a,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: normal 12px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif;
+	background: url(../images/bg.jpg) repeat center/cover;
+}
+
+/*** title ****/
+#wrap > h3 {
+	color: #050057;
+	font-size: 3em;
+	text-align: center;
+	padding-top: 15px;
+	letter-spacing: 1px;
+}
+
+#wrap > p:nth-of-type(1) {
+	color: #666;
+	text-align: center; 
+	margin: 40px 0 30px 0;
+}
+#wrap > p:nth-of-type(2) {
+	text-align: center;
+}
+#wrap > p:nth-of-type(2) > a {
+	color: #333;
+	text-decoration: underline 2px;
+	text-decoration-color: #333;
+	text-underline-offset: 7px;
+}
+
+/*** images ****/
+#wrap > p:nth-of-type(3) {
+/*	border: 1px solid red;*/
+	position: relative;
+	width: 982px;
+	height: 513px;
+	margin: 17px auto 0 auto;
+}
+#wrap > p:nth-of-type(3) img {
+/*	float: left;*/
+/*	margin: 16px;*/
+	box-sizing: border-box;
+}
+#wrap > p:nth-of-type(3) > img:nth-child(1) {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#wrap > p:nth-of-type(3) > img:nth-child(2) {
+	position: relative;
+	top: 0;
+	left: 415px;
+}
+#wrap > p:nth-of-type(3) img:nth-child(3) {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#wrap > p:nth-of-type(3) img:nth-child(4) {
+	position: absolute;
+	top: 135px;
+	left: 0;
+}
+#wrap > p:nth-of-type(3) img:nth-child(5) {
+	position: absolute;
+	top: 135px;
+	left: 310px;
+}
+#wrap > p:nth-of-type(3) img:nth-child(6) {
+	position: absolute;
+	top: 185px;
+	right: 0;
+}
+#wrap > p:nth-of-type(3) img:nth-child(7) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#wrap > p:nth-of-type(3) img:nth-child(8) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

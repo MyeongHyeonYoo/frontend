@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/******* reset *******/
+bpdy,
+div,
+h3,
+img,
+p,
+h4,
+input,
+label,
+ul,
+li,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+input {
+	border: none;
+}
+
+
+/******* all *******/
+body {
+	font: normal 12px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif; 
+	color: #333;
+}
+
+#wrap {
+	width: 481px;
+	height: 637px;
+	margin: auto;
+/*	border: 1px solid blue;*/
+}
+
+
+/******* title *******/
+#wrap > h3 {
+	width: 176px;
+	height: 31px;
+	margin: 17px auto 40px auto;
+}
+
+/******* Id | Password *******/
+.u_id,
+.u_pwd {
+	width: 350px;
+	height: 40px;
+	margin: 0 auto;
+}
+.u_id {
+	margin-bottom: 8px;
+}
+.u_id input,
+.u_pwd input {
+	width: 350px;
+	height: 40px;
+	border: 1px solid #cdcdcd;
+	background-color: #eaeaea;
+	color: #737277;
+	text-indent: 21px;
+	font-size: 16px;
+	outline: none;
+}
+
+/******* login button *******/
+.login_sub {
+	width: 350px;
+	height: 60px;
+	margin: 18px auto 24px auto;
+}
+.login_sub input {
+	width: 350px;
+	height: 60px;
+	background-color: #984eb1;
+	border: 1px hidden #984eb1;
+	border: none;
+	border-radius: 5px;
+	color: #ffe9ff;
+	font-size: 15px;
+	opacity: 0.9;
+}
+.login_sub input:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.login_sub input:active {
+	opacity: 1;
+}
+
+
+/******* Id & Password - Save *******/
+.login_chk {
+	width: 355px;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: -1px;
+	border-bottom: 1px solid #cecece;
+}
+#chk2 {
+	margin-left: 5px;
+}
+
+#chk1[type="checkbox"]:checked + label, 
+#chk2[type="checkbox"]:checked + label {
+	font-weight: bold;
+}
+
+/******* SNS login *******/
+#wrap > h4 {
+	font-size: 20px;
+	width: 110px;
+	height: 20px;
+	margin: 35px auto 15px auto;
+}
+
+/******* SNS button *******/
+.sns {
+	width: 264px;
+	height: 60px;
+	margin: 0 auto;
+}
+.sns li {
+/*	display: inline-block;*/
+	float: left;
+	margin: 0 5px 12px 5px;
+	opacity: 0.9;
+}
+.sns li a:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.sns li a:active {
+	opacity: 1;
+}
+
+/******* desc *******/
+p.infor {
+	clear: both;
+	display: block;
+	width: 275px;
+	height: 30px;
+	text-align: center;
+	margin: 0 auto 23px auto; 
+}
+
+/******* bottom - 'Join' *******/
+
+.btn button {
+	width: 350px;
+	height: 60px;
+	background-color: #4e4e4e;
+	border: 1px hidden #984eb1;
+	border-radius: 5px;
+	color: #ffe9ff;
+	font-size: 15px;
+	display: block;
+	margin: auto;
+	opacity: 0.9;
+	
+}
+.btn button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.btn button:active {
+	opacity: 1;
+}

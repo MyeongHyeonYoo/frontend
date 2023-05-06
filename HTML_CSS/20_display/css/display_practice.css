@@ -1,0 +1,143 @@
+@charset "tuf-8";
+
+/******* Reset *******/
+body,
+div,
+ul,
+li {
+	font: normal 15px/1.5em 'times new roman', times, serif;
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+
+/******* Common *******/
+body {
+	width: 702px;
+	height: 470px;
+	margin: auto;
+}
+
+/******* Month *******/
+.month {
+	width: 700px;
+	height: 200px;
+	background-color: #ff6600;
+	margin-top: 20px;
+}
+.month > ul li {
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 900;
+}
+.month > ul li:nth-child(1) {
+	float: left;
+	width: 30px;
+	height: 30px;
+	color: white;
+	margin: 90px 0 0 20px;
+	text-align: center;
+	line-height: 30px;
+	/* border: #333 1px solid; */
+}
+.month > ul li:nth-child(2) {
+	clear: both;
+	color: white;
+	width: 80px;
+	height: 50px;
+	margin: 80px 0 0 260px;
+	text-align: center;
+	line-height: 25px;
+	/* border: #333 1px solid; */
+}
+.month > ul li:nth-child(3) {
+	float: right;
+	width: 30px;
+	height: 30px;
+	color: white;
+	margin: 90px 20px 0 0;
+	text-align: center;
+	line-height: 30px;
+	/* border: #333 1px solid; */
+}
+
+.month > ul li:nth-child(1):hover,
+.month > ul li:nth-child(3):hover {
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background-color: antiquewhite;
+	cursor: default;
+/*
+	width: 28px;
+	height: 28px;
+*/
+	box-sizing: border-box;
+}
+
+/******* Weekdays *******/
+.weekdays {
+	width: 700px;
+	height: 50px;
+	background-color: #ddd;
+}
+.weekdays li { 
+	width: 22px;
+	height: 25px;
+	color: #6f6669;
+	display: inline-block;
+	margin: 15px 36px;
+}
+.weekdays li:hover {
+	color: ivory;
+	font-weight: bold;
+	cursor: default;
+}
+
+/******* Days *******/
+#wrap ul:nth-of-type(2) {
+	background-color: #eee;
+	width: 700px;
+	height: 240px;
+}
+#wrap ul:nth-of-type(2) li {
+	/* float: left; */
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	color: #494949;
+	/* border: #333 1px solid; */
+}
+
+#wrap ul:nth-of-type(2) li:nth-child(1),
+#wrap ul:nth-of-type(2) li:nth-child(2),
+#wrap ul:nth-of-type(2) li:nth-child(3),
+#wrap ul:nth-of-type(2) li:nth-child(4),
+#wrap ul:nth-of-type(2) li:nth-child(5),
+#wrap ul:nth-of-type(2) li:nth-child(6),
+#wrap ul:nth-of-type(2) li:nth-child(7) {
+	margin: 15px 32px 0 31px;
+	text-align: center;
+}
+#wrap ul:nth-of-type(2) li:nth-child(8),
+#wrap ul:nth-of-type(2) li:nth-child(9) {
+	margin: 15px 32px 0 31px;
+	text-align: center;
+}
+#wrap ul:nth-of-type(2) li:nth-child(9) ~ li {
+	margin: 14px 32px 0 31px;
+	text-align: center;
+}
+
+#wrap ul:nth-of-type(2) li:hover {
+	color: #fff;
+	text-decoration: underline black;
+	text-underline-position: under;
+	background-color: #333;
+	cursor: pointer;
+}
+
+

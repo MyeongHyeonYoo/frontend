@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/******* reset *******/
+body,
+div,
+h3,
+p,
+a,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+/******* all *******/
+* {
+	box-sizing: border-box;
+}
+body {
+	font: normal 14px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif;
+}
+
+
+/******* wrap *******/
+#wrap {
+/*	border: 1px solid indigo;*/
+	width: 960px;
+	height: 360px;
+	margin: 20px auto;
+}
+
+/******* left_wrap *******/
+#left_wrap {
+	float: left;
+	width: 760px;
+	height: 185px;
+}
+#top_wrap,
+#bottom_wrap {
+/*	border: 1px solid red;*/
+/*	float: left;*/
+	width: 760px;
+	height: 175px;
+}
+#top_wrap > div, 
+#bottom_wrap > div {
+/*	border: 1px solid blue;*/
+	float: left;
+	width: 190px;
+	height: 175px;
+	position: relative;
+}
+#top_wrap > div:nth-child(1), 
+#bottom_wrap > div:nth-child(1) {
+	background-color: #c4c5c7 !important; 
+}
+#top_wrap > div:nth-child(even),
+#bottom_wrap > div:nth-child(odd) {
+	background-color: #edebee;
+}
+#top_wrap > div:nth-child(3)
+#bottom_wrap > div:nth-child(2)
+#bottom_wrap > div:nth-child(4) {
+	background-color: #faf8fb;
+}
+#bottom_wrap div {
+	margin-top: 10px;
+}
+#top_wrap > div > h3, 
+#bottom_wrap > div > h3 {
+	position: absolute;
+	top: 12px;
+	left: 18px;
+}
+#top_wrap > div > p > a,
+#bottom_wrap > div > p > a,
+#bottom_wrap > div > ul  li {
+	color: #666;
+	font-size: 12px;
+	line-height: 18px;
+}
+#bottom_wrap > div > ul  li {
+	margin-left: 10px;
+}
+#top_wrap > div > p:nth-child(2), 
+#bottom_wrap > div > p:nth-child(2) {
+	margin: 44px 0 0 19px;
+}
+#top_wrap > div > p:nth-child(3), 
+#bottom_wrap > div > p:nth-child(3) {
+	margin-left: 19px;
+}
+#bottom_wrap > div > ul {
+	margin: 44px 0 0 19px;
+	list-style-type: square;
+}
+
+.icon {
+	position: absolute;
+	bottom: 27px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	transition-property: transform;
+	transition-duration: 2s;
+	transition-delay: 0.2s;
+}
+.icon:hover {
+	font-size: 10px;
+	position: absolute;
+	bottom: 27px;
+	right: 25px;
+	transform: scale(2);
+}
+
+/******* right_wrap *******/
+#right_wrap {
+/*	clear: both;*/
+	float: right;
+	width: 190px;
+	height: 360px;
+	background-color: #d9c8c0;
+	position: relative;
+}
+#right_wrap > h3 {
+	margin: 12px 0 0 18px;
+	padding-bottom: 18px;
+}
+#right_wrap > p {
+	font-size: 12px;
+}
+#right_wrap > p:nth-child(2) > a,
+#right_wrap > p:nth-child(3) > a {
+	margin-left: 19px;
+}
+
+#right_wrap > p:nth-child(4) > img {
+	position: absolute;
+	bottom: 0;
+	right: 21px;
+}
+

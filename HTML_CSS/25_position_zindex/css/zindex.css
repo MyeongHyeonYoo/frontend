@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/******* reset *******/
+p{
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#wrap1{
+	background-color: yellow;
+	width: 500px; 
+	height: 300px;
+	position: relative;
+}
+#wrap1 p{
+	background-color: #ffffff; 
+	width: 128px; 
+	height: 128px; 
+	position: absolute;
+}
+
+#wrap1 .box1{
+	border: 2px solid #ff6666; 
+	left: 30px; 
+	top: 50px;
+}
+#wrap1 .box2{
+	border: 2px solid #993366;
+	left: 80px; 
+	top: 80px;
+	z-index: 1
+}
+#wrap1 .box3{
+	border: 2px solid #009900; 
+	left: 110px;
+	top: 110px;
+}
+
+#wrap2 {
+	border: 1px solid green;
+	width: 128px;
+	height: 128px;
+	position: relative;
+}
+
+#wrap2 p:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+}
+
+
+
+
+
+
+

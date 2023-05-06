@@ -1,0 +1,126 @@
+@charset "utf-8";
+@font-face {
+	font-family: nanum;
+	src: url("../font/NanumGothic.eot");
+	src: url("../font/NanumGothic.eot?#iefix")format("embedded-opentype"),
+			 url("../font/NanumGothic.ttf")format("truetype"),
+			 url("../font/NanumGothic.woff")format("woff");
+}
+
+/******* Reset *******/
+body,
+div,
+h3,
+h4,
+ul,
+ol,
+li,
+p,
+span,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+
+body, div {
+	font: 13px/1.5em nanum, sans-serif;
+}
+
+
+#main {
+/*	border: 1px solid red;*/
+	width: 1145px;
+	height: 721px;
+	margin: 20px auto;
+}
+
+#main_title {
+/*	border: 1px solid blue;*/
+	width: 960px;
+	height: 66px;
+	line-height: 66px;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 3px solid #bfb383;
+}
+
+#sub_title {
+	margin: 32px 0 44px 85px;
+}
+#progress {
+/*	border: 1px solid yellow;*/
+	width: 960px;
+	height: 250px;
+	margin: 0 auto;
+/*	box-sizing: border-box;*/
+}
+#progress > ol > li img[src^="images"] {
+	display: block;
+	margin: 0 auto 35px auto;
+}
+.li_progress {
+	float: left;
+	width: 240px;
+	height: 215px;
+}
+
+.pro_common {
+	display: block;
+	width: 243px;
+	height: 70px;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 70px;
+}
+.pro1 {
+	background: url(../images/step_b1.png) no-repeat
+}
+.pro2 {
+	background: url(../images/step_b2.png) no-repeat
+}
+.pro3 {
+	background: url(../images/step_b3.png) no-repeat
+}
+.pro4 {
+	background: url(../images/step_b4.png) no-repeat
+}
+
+#main > div:nth-child(4) {
+	width: 960px;
+	height: 110px;
+	text-align: center;
+	margin: 0 auto;
+	border-top: 1px solid #ccc;
+	border-bottom : 1px solid #ccc;
+}
+#main > div:nth-child(4) > p {
+	width: 495px;
+	height: 33px;
+	margin: 43px auto 38px auto;
+}
+
+#main > div:nth-child(5) {
+/*	border: 1px solid tomato;*/
+	width: 960px;
+	height: 180px;
+	margin: 39px auto 0 auto;
+	line-height: 35px;
+}	
+#main > div:nth-child(5) > ul li:before, 
+#main > div:nth-child(5) > ul li::before {
+	content: "\2022 ";
+	color: #009843;
+}
+#main > div:nth-child(4) > p strong,
+#main > div:nth-child(5) > ul li strong {
+	color: #129054;
+}

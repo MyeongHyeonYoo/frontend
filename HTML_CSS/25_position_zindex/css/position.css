@@ -1,0 +1,59 @@
+@charset "utf=8";
+
+/******* reset *******/
+body,
+p,
+img,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 2px solid red;
+  background-color: #fff;
+}
+
+#ex1 {
+  position: absolute;
+  left: 400px;
+  top: 20px;
+}
+#ex2 {
+  position: relative;
+  left: 200px;
+  top: 30px;
+}
+#ex3 {
+  position: fixed;
+  top: 40px;
+  right: 50px;
+}
+
+#ex4 {
+  border: 1px solid blue;
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+  position: relative;
+}
+#ex4 img {
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+  ;
+}
+
+#ex5 {
+  background-color: orange;
+  border: 2px solid #e33111;
+  padding: 5px;
+  position:-webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  top: 0;
+}
+
+#ex6 {
+  padding-bottom: 1000px;
+}

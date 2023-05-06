@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+
+/******* reset *******/
+body,
+div,
+p,
+h4,
+input,
+ul,
+li,
+strong {
+	margin: 0;
+	padding: 0;
+}
+/*
+ul, li {
+	list-style: none; 
+}
+*/
+
+/******* all *******/
+body {
+	font: normal 12px/1.5em '맑은 고딕', 'Malgun Gothic', sans-serif; 
+	color: #333;
+}
+#wrap {
+	width: 1043px;
+	height: 691px;
+	margin: 0 auto;
+/*	border: 1px solid #ccc;*/
+}
+
+/******* desc - top *******/
+#wrap > p {
+	width: 620px;
+	height: 20px;
+	color: #66676b;
+	font-size: 15px;
+	background: url(../images/icon_caution.png) no-repeat left center;
+	background-size: 13px 13px;
+	padding-left: 20px;
+	margin: 20px auto 52px auto;
+}
+
+/******* [Phone | IP] : certification - all *******/
+#tel_box {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+#tel_box > div:first-child,
+#tel_box > div:last-child {
+	float: left;
+	width: 400px;
+	height: 400px;
+	border: 1px solid #cecece;
+	box-sizing: border-box;
+}
+#tel_box > div:first-child {
+	background: url(../images/icon_phone.gif) no-repeat center 170px;
+}
+#tel_box > div:last-child {
+	background: url(../images/icon_ipin.gif) no-repeat center 170px;
+	border-left: none;
+}
+
+/******* [Phone | IP] : certification - details setting *******/
+#tel_box > div:first-child > h4,
+#tel_box > div:last-child > h4 {
+	color: #646c6f;
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: 42px;
+}
+#tel_box > div:first-child > p,
+#tel_box > div:last-child > p {
+	color: #6e696d;
+	font-size: 13px;
+	width: 286px;
+	height: 31px;
+	margin: 33px auto 176px auto;
+}
+#tel_box > div:first-child > p > span,
+#tel_box > div:last-child > p > span {
+	display: block;
+}
+
+#tel_box > div:first-child > p:last-child > input,
+#tel_box > div:last-child > p:last-child > input {
+	width: 150px;
+	height: 50px;
+	color: #e9ffff;
+	background-color: #3e88c9;
+	border: none;
+	opacity: 0.9;
+}
+#tel_box > div:first-child > p:last-child > input:hover,
+#tel_box > div:last-child > p:last-child > input:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+#tel_box > div:first-child > p:last-child > input:hover::-webkit-,
+#tel_box > div:last-child > p:last-child > input:hover::-webkit- {
+	cursor: pointer;
+	opacity: 1;
+}
+#tel_box > div:first-child > p:last-child > input:hover::-ms-,
+#tel_box > div:last-child > p:last-child > input:hover::-ms- {
+	cursor: pointer;
+	opacity: 1;
+}
+#tel_box > div:first-child > p:last-child > input:hover::-moz-,
+#tel_box > div:last-child > p:last-child > input:hover::-moz- {
+	cursor: pointer;
+	opacity: 1;
+}
+
+
+/******* desc - bottom *******/
+#infor {
+	font-size: 12px;
+	width: 780px;
+	margin: 25px 140px 0 140px;
+	list-style: square;
+}
+#infor li {
+	color: #a1a2a4;
+	text-align: justify;
+	letter-spacing: 0.6pt;
+	line-height: 1.7em;
+}
+/*
+#infor li:before,
+#infor li::before {
+	content: "■";
+	font-size: 5px;
+}
+*/
+
+#infor li:first-child > strong {
+	display: block;
+	color: #1b252e;
+	margin: 20px 0;
+	opacity: 0.9;
+}
+#infor li:first-child > strong {
+	display: block;
+	color: #1b252e;
+	margin: 20px 0;
+	opacity: 0.9;
+}

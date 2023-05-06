@@ -1,0 +1,49 @@
+@charset "tuf-8";
+
+@font-face {
+	font-family: nanum;
+	src: url('../font/NanumGothic.eot');
+	src: url('../font/NanumGothic.eot?#iefix')format("embedded-opentype"),
+			 url('../font/NanumGothic.ttf')format('truetype'),
+			 url('../font/NanumGothic.woff')format('woff');
+}
+
+/******* reset *******/
+body, 
+div, 
+header,
+h1, h2, h3, h4,
+nav,
+ul, li,
+article,
+p,
+a,
+span,
+storng,
+br,
+footer,
+address {
+	margin: 0;
+	padding: 0;
+}
+header,
+nav,
+article,
+footer {
+	display: block;
+}
+ul, li {
+	list-style: none;
+}
+img {
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+body,
+h1 {
+	font: normal 12px/1.5em nanum, sans-serif;
+	color: #333;
+}

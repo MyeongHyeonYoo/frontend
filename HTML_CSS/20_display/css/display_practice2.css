@@ -1,0 +1,112 @@
+@charset "tuf-8";
+
+/************* Reset *************/
+body,
+div,
+ul,
+li {
+	font: normal 15px/1.5em 굴림, Gulim, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/************* Common *************/
+a {
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+	color: aliceblue;
+}
+body {
+	width: 1190px;
+	height: 600px;
+	margin: 20px auto 0 auto;
+}
+
+/************* Background *************/
+#wrap > div:nth-child(1) {
+	float: left;
+	width: 395px;
+	height: 600px;
+	background: url(../images/bg_product01.png) no-repeat center;
+}
+#wrap > div:nth-child(2) {
+	float: left;
+	width: 396px;
+	height: 300px;
+	background: url(../images/bg_product02.png) no-repeat center;
+}
+#wrap > div:nth-child(3) {
+	float: left;
+	width: 396px;
+	height: 300px;
+	background: #00a088 no-repeat center;
+}
+#wrap > div:nth-child(4) {
+	float: left;
+	width: 396px;
+	height: 300px;
+	background: #646b7e no-repeat center;
+}
+#wrap > div:nth-child(5) {
+	float: left;
+	width: 396px;
+	height: 300px;
+	background: url(../images/bg_product05.png) no-repeat center;
+}
+
+
+/************* Moving Tabs *************/
+#wrap > div > p > a > img {
+	margin: 25px 0 0 332px;
+}
+#wrap > div > p:nth-child(1) {
+	width: 48px;
+	height: 48px;
+	color: aliceblue;
+}
+#wrap > div > p > a > img:hover {
+/*	width: 48px;*/
+/*	height: 48px;*/
+	border: 1px hidden #fff;
+	border-radius: 50%;
+	background: #beb3b3;
+	line-height: 48px;
+}
+
+/************* Titles *************/
+#wrap > div > h3 {
+	text-align: center;
+	color: aliceblue;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+/************* Contents *************/
+#wrap > div > p:nth-of-type(2) {
+	color: aliceblue;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 3px;
+}
+/************* Insurance Calculation Boxes *************/
+#wrap > div > p:nth-of-type(3) {
+	color: aliceblue;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+	width: 127px;
+	height: 37px;
+	line-height: 37px;
+	border: 1px solid aliceblue;
+	margin: 50px 0 0 135px;
+	padding: 5px;
+}
+#wrap > div > p:nth-of-type(3):hover {
+	width: 130px;
+	height: 40px;
+	background: #beb3b3;
+	border: none;
+	line-height: 40px;
+}
