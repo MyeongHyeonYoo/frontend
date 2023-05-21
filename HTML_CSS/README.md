@@ -2188,6 +2188,8 @@ cf) 브라우저 업데이트 되면서 색상 바뀐다. <br>
     한정 속성이 정상적으로 동작하지 않을 수 있다.
     ```
 
+<img src="11_폼/input_attribute.png" width="800" height="800">
+
 ---
 
 ## CSS
