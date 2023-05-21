@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script>
+      // 화살표 함수(arrow function) =>
+      function add1(a, b) {
+        return a + b;
+      }
+      console.log(add1(7, 8));
+
+      const add2 = function(x, y) {
+        return x + y;
+      }
+      console.log(add2(5, 10));
+
+      const add3 = (x, y) => x + y;
+        console.log(add3(5, 10));
+      const add33 = (x, y) => {
+        return x + y;
+      }
+      console.log(add33(6, 10));
+
+      const add4 = (x, y) => console.log(x);
+      add4(5, 10);
+
+      const add5 = (x,  y) => {
+        const a = 13;
+        return a + x + y;
+      }
+      console.log(add5(5, 10));
+
+      const add6 = (g) => g + 9;
+      console.log(add6(6));
+
+      const add7 = g => g + 9; // 매개변수가 하나인 경우 () 생략 가능.
+      console.log(add7(6));
+
+      const add8 = () => {
+        console.log("add8 함수구문 실행");
+      }
+      add8();
+
+      fnc1();
+      function fnc1() {
+        console.log("fnc1의 호출에 의한 함수구문 실행");
+      }
+
+      // fnc2(); 에러 -> 정의 되기 전 호출(사용). [04. function.html:52 Uncaught ReferenceError: Cannot access 'fnc2' before initialization]
+      const fnc2 = function() {
+        console.log("fnc2의 호출에 의한 함수구문 실행");
+      }
+      fnc2();
+
+      const fnc3 = (x, y, z) => {
+        return x + y + z;
+      }
+      console.log(`최종 합계는 : ${fnc3(1, 2, 3)}`); // 최종 합계는 : 6
+
+      const fnc4 = (x, y, z) => x + y + z;
+      console.log(`최종 합계는 : ${fnc4(1, 2, 3)}`); // 최종 합계는 : 6
+
+      
+    </script>
+  </head>
+
+  <body>
+    <h3 id="ch_txt1">이젠</h3>
+    <div id="ch_txt2"></div>
+    <script>
+      const fun_1 = i => {
+        document.querySelector("#ch_txt1").innerText = i;
+      }
+      fun_1("이젠아카데미");
+
+      const fun_2 = j => {
+        document.querySelector("#ch_txt2").innerText = j;
+        return `${j} 만세`;
+        
+      }
+      console.log(fun_2("이젠"));
+    </script>
+  </body>
+</html>

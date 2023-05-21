@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 전환</title>
+    <script>
+      window.onload = function() {
+        var count = 1;
+        var img1 = document.getElementById("photo1");
+        var img2 = document.getElementById("photo2");
+
+        setInterval(function() {
+          count++;
+          console.log(count);
+          if (count > 3) {
+            count = 1;
+          }
+          img1.src = "images/num" + count + ".gif";
+          img2.src = "images/s_0" + count + ".gif";
+        }, 2000); 
+      }
+    </script>
+  </head>
+  
+  <body>
+    <p><img id="photo1" src="images/num1.gif" alt="#" width="40" height="40"></p>
+    <p><img id="photo2" src="images/s_01.gif" alt="#" width="109" height="83"></p>
+  </body>
+</html>

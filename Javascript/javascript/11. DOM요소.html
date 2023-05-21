@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Object Model)요소</title>
+    <script>
+      // ex1
+      // document.getElementById("ex1").innerHTML = "Hello!!"; // (x - 인식 오류)
+      function ex4_js() {
+        document.getElementById("ex4").src="images/roll3_1.gif";        
+      }
+
+      function ex5_js() {
+        // document.getElementsByClassName("class명");
+        var a = document.getElementsByClassName("ex5_1"); // 확인3, 확인4
+        a[0].style.color = "blue"; // 확인3
+        a[1].innerHTML = "변경됐나요?"; // 확인4
+        document.getElementById("ex5_result").innerHTML = a.length;
+      }
+
+      function ex6_js() {
+        var b = document.getElementsByClassName("ex6"); // 확인2, 확인4, 확인5, 확인6
+        var i;
+        for (i = 0; i < b.length; i++) {
+          b[i].style.backgroundColor = "orange"; // b[0]  b[1]  b[2]  b[3]
+        }
+      }
+      
+      function ex7_js() {
+        // document.getElementsByTagName("tag명");
+        var c = document.getElementsByTagName("h5");
+        c[0].innerHTML = "변경됐나요?"; // 확인1
+        document.getElementById("ex7_result").innerHTML = c[1].innerHTML; // 확인2
+      }
+      
+      function ex10_js() {
+        var g = document.querySelectorAll("h4");
+        g[2].style.border = "1px solid red";
+      }
+
+      function ex11() {
+        var h = document.querySelectorAll(".ex11"); // p
+        h[0].style.color = "orange";
+      }
+
+      function ex12() {
+        var k = document.querySelectorAll("a[target]");
+        var m;
+        for (m = 0; m < k.length; m++) {
+          k[m].style.border = "5px double orange"; // 링크2 링크3
+        } //k[0] k[1]
+      }
+    
+    </script>
+  </head>
+
+  <body>
+    <script></script>
+    <p id="ex1">안녕하세요!!!</p>
+    <hr>
+
+    <p id="ex2">확인</p>
+    <p><button type="button" onclick="document.getElementById('ex2').style.color='blue'">클릭해봐!!</button></p>
+    <hr>
+
+    <p id="ex3">확인</p>
+    <hr>
+    <p><img id="ex4" src="images/roll1_1.gif" alt="#" width="200" height="201" ></p>
+    <p><button type="button" onclick="ex4_js()">클릭</button></p>
+    <hr>
+
+    <ul>
+      <li id="ex5">확인1</li>
+      <li>확인2</li>
+      <li class="ex5_1">확인3</li>
+      <li class="ex5_1">확인4</li>
+      <li>확인5</li>
+    </ul>
+    <p id="ex5_result">확인</p>
+    <p><button type="button" onclick="ex5_js()">클릭</button></p>
+    <hr>
+
+    <div>
+      <p>확인1</p>
+      <p class="ex6">확인2</p>
+      <p>확인3</p>
+      <p class="ex6">확인4</p>
+      <p class="ex6">확인5</p>
+      <p class="ex6">확인6</p>
+      <p>확인7</p>
+      <p><button tpye="button" ondblclick="ex6_js()">더블클릭</button></p>
+    </div>
+    <hr>
+
+    <div>
+      <h5>확인1</h5>
+      <h5>확인2</h5>
+      <h5>확인3</h5>
+      <h5>확인4</h5>
+      <h5>확인5</h5>
+      <p id="ex7_result">확인</p>
+      <p><button type="button" onclick="ex7_js()">클릭</button></p>
+    </div>
+    <hr>
+    
+    <div id="ex8">
+      <p>내용1</p>
+      <p>내용2</p>
+      <p>내용3</p>
+    </div>
+    <p id="ex8_1">테스트</p>
+    <hr>
+
+    <p class="ex9">내용1</p>
+    <p class="ex9">내용2</p>
+    <p id="ex9">확인</p>
+    <hr>
+
+    <h4>내용1</h4>
+    <h4>내용2</h4>
+    <h4>내용3</h4>
+    <p><button type="button" onclick="ex10_js()">확인</button></p>
+    <hr>
+
+    <ul>
+      <li>내용1</li>
+      <li class="ex11">내용2</li>
+      <li>내용3</li>
+      <li class="ex11">내용4</li>
+      <li>내용5</li>
+    </ul>
+    <p><button type="button" onclick="ex11()">확인</button></p>
+    <hr>
+
+    <div>
+      <a href="#">링크1</a>
+      <a href="#" target="_blank">링크2</a>
+      <a href="#" target="_self">링크3</a>
+      <p><button type="button" onclick="ex12()">확인</button></p>
+    </div>
+    <script>
+      // ex1
+      document.getElementById("ex1").innerHTML = 'Hello!!';
+      document.getElementById("ex1").style.color = "red";
+      document.getElementById("ex1").style.fontFamily = "Arial";
+      document.getElementById("ex1").style.fontSize = "30px";
+
+      // ex3
+      var element = document.getElementById("ex3");
+      element.innerHTML = "ex3 내용 변경";
+
+      // ex8
+      var d = document.getElementById("ex8");
+      var e = d.getElementsByTagName("p"); // e = ex8.p
+      e[1].style.backgroundColor = "pink"; // 내용2의 배경색
+
+      // ex9
+      var f = document.querySelectorAll(".ex9");
+      f[0].style.backgroundColor = "green"; // 내용1
+      f[1].style.backgroundColor = "yellow"; // 내용2
+    </script>
+  </body>
+</html>

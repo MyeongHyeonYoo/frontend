@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>various</title>
+    <script>
+      // #5 const Object.assign : 객체내부에 새로운 값으로 할당할 수 있음.
+      // Object.assgin(객체변수, {기존 key1 : 신규 value1}) 기존 key1의 value1값을 신규 value1 값으로 교체할 수 있음.
+      const hero = {
+        name : "토마토 재배자",
+        device : "호미",
+        cloth : "일반 가죽 옷"
+      }
+      // 호미 => '곡괭이' 변경, cloth => '린넨 옷' 변경, level : 2 추가
+      Object.assign(hero, {device : "곡괭이"}, {cloth : "린넨 옷"}, {level : 2});
+      console.log(hero);
+
+      const arr3 = [0];
+      const arr4 = arr3.concat(3);
+      console.log(arr4);
+
+      const arr5 = [...arr4, 2, 3];  // ... : 전개 연산자
+      console.log(arr5);
+
+      const arr6 = [-1, ...arr4, 2, 3];
+      console.log(arr6);
+
+      const [a1, b1, c1, d1] = arr5; // (4) [0, 3, 2, 3]
+      console.log(a1); // 0
+      console.log(b1); // 3
+      console.log(c1); // 2
+      console.log(d1); // 3
+
+      const [first, ...arr7] = arr5; // (4) [0, 3, 2, 3]
+      console.log(first); // 0 
+      console.log(arr7); // (3) [3, 2, 3]
+
+      // 전개연산자를 활용하여 마지막 인덱스에 위치한 [3]으로 값을 출력하시오. (from arr5)
+      const [num1, num2, num3, ...arr8] = arr5;
+      console.log(arr8); // [3] // 0번 인덱스
+
+      // 객체에서의 전개연산자 활용ㄴ
+      const obj3 = {name : "홍길동", age : 20, region : "서울"};
+      const obj4 = {...obj3, context : "아버지를 아버지라..."};
+      console.log(obj4); // {name : '홍길동', age : 20, region : '서울', context : '아버지를 아버지라...'};
+
+      const obj4_1 = {...obj4, age : 21};
+      console.log(obj4_1); // {name : '홍길동', age : 21, region : '서울', context : '아버지를 아버지라...'};
+
+      const obj4_2 = {age : 22, ...obj4_1}; // 변경 x -> 전개연산자 위치가 중요하다.
+      console.log(obj4_2); // {age: 21, name: '홍길동', region: '서울', context: '아버지를 아버지라...'}
+      
+      const {age, ...sObj} = obj4;
+      console.log(age);  // 20
+      console.log(sObj); // {name: '홍길동', region: '서울', context: '아버지를 아버지라...'}
+    </script>
+  </head>
+
+  <body>
+    
+  </body>
+</html>

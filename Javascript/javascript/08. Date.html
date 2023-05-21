@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <script>
+      document.write(Date() + "<br>");
+      var date1 = new Date();
+      var hour1 = date1.getHours();
+      var minute1 = date1.getMinutes();
+      var second1 = date1.getSeconds();
+      document.write(hour1 + "시 ");
+      document.write(minute1 + "분 ");
+      document.write(second1 + "초 ");
+
+      // 현재시간 (12시 이전 오전, 12시부터 오후)
+      var date2 = new Date();
+      var hour2 = date2.getHours();
+      if (hour2 < 12) {
+        document.write("오전");
+      }
+      else {
+        document.write("오후");
+      }
+      document.write("<hr>");
+      // 현재시간 (12시 이전 오전, 18시 이전 오후, 18시부터 저녁)
+      var date3 = new Date();
+      var hour3 = date3.getHours();
+      switch(true) {
+        case hour3 < 12:
+          document.write("오전");
+          break;
+        case hour3 < 18:
+          document.write("오후");
+          break;
+        default:
+          document.write("저녁");
+          break;
+      }
+      document.write("<hr>");
+
+      // 현재날짜에서 요일 별 이미지 출력
+      var date4 = new Date();
+      var day5 = date4.getDay();
+      document.write(day5 + "<br>");
+      if (day5 == 1) {
+        document.write("<img src='images/img1.jpg' title='월요일'>");
+      }
+      else if (day5 == 2) {
+        document.write("<img src='images/img2.jpg' title='화요일'>");
+      }
+      else if (day5 == 3) {
+        document.write("<img src='images/img3.jpg' title='수요일'>");
+      }
+      else if (day5 == 4) {
+        document.write("<img src='images/img4.jpg' title='목요일'>");
+      }
+      else if (day5 == 5) {
+        document.write("<img src='images/img5.jpg' title='금요일'>");
+      }
+      else if (day5 == 6) {
+        document.write("<img src='images/img6.jpg' title='토요일'>");
+      }
+      else  {
+        document.write("<img src='images/img7.jpg' title='일요일'>");
+      }
+      document.write("<hr style='border-color: #ccc'>");
+
+      var date5 = new Date();
+      var year5 = date5.getFullYear();
+      document.write("현재 연도 : " + year5, "<br>");
+      var month5 = date5.getMonth();
+      document.write("현재 월 : " + month5 , "<br>");
+      var date5_ = date5.getDate();
+      document.write(date5_);
+
+
+      var date6 = new Date();
+      var year6 = date6.getFullYear();
+      var date6_1 = new Date(year6, 11, 31); // 연말 정보
+      var date6_2 = date6_1 - date6; // 마지막 날짜에서 오늘날짜 빼주고, 이때 반환은 밀리초 단위로 반환.
+      document.write(date6_2 + "<br>");
+      var result6 = Math.ceil(date6_2 / (1000 * 60 * 60 * 24)); // 밀리미초 단위까지 계산
+      document.write("내일부터 올해 말일까지는 " + result6 + "일 남았습니다.");
+      document.write("<hr style='border-color: #ccc'>");
+      document.write(date6_2 + "<br>");
+      document.write(date6_1 + "<br>");
+      document.write(date6);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

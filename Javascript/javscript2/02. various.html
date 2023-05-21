@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>various</title>
+    <script>
+      // #1. var, let, const
+      // 조건식에서 변수 선언 if(조건식) {실행문}
+
+      // var
+      var msg1 = "hello";
+      if(true) {
+        var msg1 = "안녕하세요.";
+        console.log(msg1); // 안녕하세요.
+      }
+      console.log(msg1);  // 안녕하세요.
+
+      // let
+      let msg2 = "hello";
+      if(true) {
+        let msg2 = "안녕하세요.";
+        console.log(msg2);  // 안녕하세요.
+      }
+      console.log(msg2);  // hello
+
+      // const
+      const msg3 = "hello";
+      if(true) {
+        const msg3 = "안녕하세요.";
+        console.log(msg3);  // 안녕하세요.
+      }
+      console.log(msg3);  // hello
+
+
+
+      // 함수 구문에서 변수 선언 fucntion(){실행문}
+
+      // var 
+      var msg4 ="hello";
+      function printOut1() {
+        var msg4 = "안녕하세요.";
+        console.log(msg4); // 안녕하세요.
+      }
+      printOut1();
+      console.log(msg4); // hello
+
+      // let
+      let msg5 ="hello";
+      function printOut1() {
+        let msg5 = "안녕하세요.";
+        console.log(msg5); // 안녕하세요.
+      }
+      printOut1();
+      console.log(msg5); // hello
+
+      // const
+      const msg6 ="hello";
+      function printOut1() {
+        const msg6 = "안녕하세요.";
+        console.log(msg6); // 안녕하세요.
+      }
+      printOut1();
+      console.log(msg6); // hello
+
+      // #2. var와 let
+      // var
+      if(true) {
+        var age1 = 20;
+        console.log(`1. 당신의 나이는 : ${age1}`); // 1. 당신의 나이는 : 20
+      };
+      console.log(`2. 당신의 나이는 : ${age1}`); // 2. 당신의 나이는 : 20
+
+      // let
+      if(true) {
+        let age2 = 21;
+        console.log(`1. 당신의 나이는 : ${age2}`); // 1. 당신의 나이는 : 21
+      };
+      // console.log(`2. 당신의 나이는 : ${age2}`); // 코드 에러
+
+      if(true) {
+        let age3 = 22;
+        console.log(`1. 당신의 나이는 : ${age3}`); // 1. 당신의 나이는 : 22
+      }
+      let age3 = 24;
+      console.log(`2. 당신의 나이는 : ${age3}`); // 2. 당신의 나이는 : 24
+
+      // var와 let의 혼합
+      if(true) {
+        var age4 = 20;
+        console.log(`1. 당신의 나이는 : ${age4}`); // 1. 당신의 나이는 : 22
+      }
+      // let age4 = 24; // 코드 오류 
+      console.log(`1. 당신의 나이는 : ${age4}`); 
+
+      let cooki = "아이비";
+      // let cooki = "참크래커"; // 코드 오류
+      console.log(cooki);
+
+      let cooki2 = "아이비";
+      cooki2 = "참크래커";
+      console.log(cooki2); // 참크래커
+
+      // 혼합
+      if(true) {
+        let age5 = 25;
+        console.log(`1. 당신의 나이는 : ${age5}`); // 1. 당신의 나이는 : 25
+      }
+      var age5 = 20;
+      console.log(`2. 당신의 나이는 : ${age5}`); // 2. 당신의 나이는 : 20
+
+      // #3. const 상세
+      const number1 = 20;
+      const string1 = '자바스크립트';
+      console.log(`number1 : ${number1}`); // number1 : 20
+      console.log(`string1 : ${string1}`); // string1 : 자바스크립트
+
+      const number2 = 20;
+      const string2 = "자바스크립트";
+      // number2 = 32; // 코드 오류(데이터 교체 불가)
+      // string2 = "안녕!!!"; // 코드 오류(데이터 교체 불가)
+      console.log(`number2 : ${number2}`);
+      console.log(`string2 : ${string2}`);
+
+      // 배열데이터 const 
+      //  push(): 끝 추가 | pop(): 끝 삭제 | unshift(): 처음 추가 | shift(): 처음 삭제 
+      const num_arr = [25, 30, 35];
+      num_arr.push(40);
+      console.log(num_arr); // (4) [25, 30, 35, 40]
+
+      const str_arr = ["img_01.jpg", "img_02.jpg"];
+      // str_arr = ["photo1", "photo2"]; // 오류 - 배열데이터 자체 형식을 신규로 갱신 시 에러 발생
+      console.log(str_arr);
+
+      const dessert = {
+        keyword : "빙그레 바나나 우유",
+        category : "간식"
+      }
+      dessert.keyword = "빙그레 메로나"; // const이지만 변경 가능하다. case by case
+      console.log(`오늘의 간식은 ${dessert.keyword}`);
+
+      dessert.guest = "홍길동";
+      console.log(`간식을 먹은 사람 : ${dessert.guest}`);
+      console.log(dessert); // {keyword: '빙그레 메로나', category: '간식', guest: '홍길동'}
+      delete dessert.category; // 삭제 delete
+      console.log(dessert); // {keyword: '빙그레 메로나', guest: '홍길동'}
+
+      // #4. 가변 변수 let : 변수 데이터 자체를 갱신(교체)할 수 있음
+      let num = 1;
+      num = num * 5;
+      num = 23;
+      console.log(num); // 23
+
+      let str = "문자형 데이터";
+      str = `I'm ${str}`;
+      console.log(str); // I'm 문자형 데이터
+
+      let arr = ["color"];
+      arr = ["red", "orange", "yellow"];
+      console.log(arr); // (3) ['red', 'oragne', 'yellow'] 교체됨
+
+      let obj = {hero : "홍길동"}
+      obj = {영화제목 : "설국열차", 주인공 : "송강호"}
+      console.log(obj);
+
+      // #5 const | Object.assign: 객체 내부에 새로운 값을 할당할 수 있다.
+      // Object.assign(객체변수, {기존 key1 : 신규 value1}) 기존 key1의 value값을 신규 value1의 값으로 교체
+      const obj2 = {};
+      Object.assign(obj2, {new0 : "BTS"}, {new1 : "아이유"});
+      console.log(obj2);
+
+      Object.assign(obj2, {new0 : "김연자"});
+      console.log(obj2);
+      // console.clear();
+    </script>
+  </head>
+
+  <body>
+    
+  </body>
+</html>

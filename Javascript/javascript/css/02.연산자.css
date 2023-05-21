@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.ex1 {
+  padding-left: 20px;
+}
+.ex1 li:first-child {
+  background-color: coral;
+}
+.ex1 li:nth-child(2) {
+  background-color: darkblue;
+}
+.ex1 li:nth-child(3) {
+  background-color: darkorchid;
+}
+.ex1 li:last-child {
+  background-color: skyblue;
+}
+
+#table {
+  border-collapse: collapse;
+  text-align: center;
+}
+#table th,
+#table td {
+  border: 1px solid #333;
+  width: 80px;
+  height: 40px;
+}
+#table th {
+  background-color: #eaeaea;
+}

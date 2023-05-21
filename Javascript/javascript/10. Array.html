@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+  <script>
+    // Array
+    // 1. var 변수 = new Array();
+    var i = new Array();
+    i[0] = 'aa';
+    i[1] = 'bb';
+    i[2] = 'cc';
+    i[3] = 'dd';
+    i[4] = 'ee';
+    document.write(i + "<br>");
+    document.write(i[3]);
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    // 2. var 변수 = new Array(값);
+    var day1 = new Array('일', '월', '화', '수', '목', '금', '토', '일'); // 일요일로 0부터 시작.
+    document.write(day1 + "<br>");
+    document.write(day1[1] + "<br>");
+    var today1 = new Date();
+    document.write(today1 + "<br>");
+    var yoil = day1[today1.getDay()];
+    document.write(yoil + "<br>");
+
+    // var 변수 = [v1, v2, v3, v4 ...]
+    var txt = ['웹개발', 123,'웹접근성', 45, 'web'];
+    document.write(txt[0] + "<br>");
+    document.write(txt[1] + "<br>");
+    document.write(txt[2] + "<br>");
+    document.write(txt[3] + "<br>");
+    document.write(txt[4] + "<br>");
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var txt2 = [1, '홍길동', true];
+    for (var k = 0; k < txt2.length; k++) {
+      // document.write(k + " ");
+      document.write(txt2[k] + "<br>");
+    }
+
+    // 누적합
+    var num = [100, 100, 200, 50, 600, 80];
+    var n = num.length; // 개수
+    document.write(num + "<br>"); // 100, 100, 200, 50, 600, 80
+    document.write(n); // 6(개수)
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var total = 0;
+    for(var j = 0; j < n; j++) {
+      // document.write(j + " ");
+      total += num[j]
+      document.write(total + "<br>");
+    }
+
+    document.write("최종 누적합 : " + total) // 1130
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t1 = ['a', 'b', 'c', 'd', 'e'];
+    t1.reverse();
+    document.write(t1); //e, d, c, b, a
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t2_1 = ['2b', '1b', '4c', '3d', '5e'];
+    var t2_2 = ['bc', 'ad', 'ca', 'af', 'bb'];
+    t2_1.sort(); // 오름차순 정렬
+    t2_2.sort();
+    document.write(t2_1 + " / " + t2_2); // 1b, 2b, 3d, 4c, 5e / ad, af, bb, bc, ca
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t3_1 = ['ba', 'cb', 'bc', 'ed', 'fe'];
+    var t3_2 = ['2a', '1b', '4c', '3d', '5e'];
+    var result3 = t3_1.concat(t3_2); // 결합
+    document.write(result3); // ba, cb, bc, ed, fe, 2a, 1b, 4c, 3d, 5e
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t4 = ['a', 'b', 'c', 'd', 'e'];
+    var result4 = t4.slice(2, 4); // 인덱스1 ~ 인덱스 2-1
+    document.write(result4);
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t5 = ['a', 'b', 'c', 'd', 'e'];
+    var result5_1 = t5.join("*"); // 구분자로 연결하여 결합
+    var result5_2 = t5.join("/");
+    document.write(result5_1 + " " + result5_2) // a*b*c*d*e  a/b/c/d/e
+    document.write("<hr style='border-color: #eaeaea;'>");
+    
+    var t6 = ['a', 'b', 'c', 'd', 'e'];
+    t6.shift(); // 인덱스 (0)번 데이터 삭제
+    document.write(t6); // b, c, d, e
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t7 = ['a', 'b', 'c', 'd', 'e'];
+    var t7_2 = 'ff';
+    t7.unshift(t7_2); // 인덱스 (0)번 데이터 추가
+    document.write(t7); // ff, a, b, c, d, e
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t8 = ['a', 'b', 'c', 'd', 'e'];
+    t8.pop(); // 마지막 인덱스 데이터 삭제
+    document.write(t8); // a, b, c, d
+    document.write("<hr style='border-color: #eaeaea;'>");
+
+    var t9 = ['a', 'b', 'c', 'd', 'e'];
+    var t9_2 = 'ff';
+    t9.push(t9_2); // 마지막 인덱스 데이터 추가
+    document.write(t9); // a, b, c, d, e, ff
+    document.write("<hr style='border-color: #eaeaea;'>");
+  </script>
+
+</head>
+
+<body>
+  
+</body>
+</html>

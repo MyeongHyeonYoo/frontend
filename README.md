@@ -4,7 +4,11 @@
 
 ---
 
-## **`VSCode`** 단축키 <br>
+## 💡 [`Javascript`](https://github.com/MyeongHyeonYoo/frontend/tree/main/Javascript)
 
-<img src="vscode_단축키.png" width="1000" height="1200">
+--- 
+
+## **`VSCode`** 단축키 
+
+<img src="vscode_단축키.png" width="1200" height="1200">
 

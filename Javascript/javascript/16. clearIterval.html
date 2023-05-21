@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearIterval</title>
+    <script>
+      // clearIterval : 타이머 함수 중지
+      var count = 0;
+      var timerId = setInterval(function() {
+        count++;
+        if(count > 10) {
+          clearInterval(timerId);
+          count = "<img src='images/apple.gif'>";
+        }
+        document.write(count, "<br>");
+      }, 100);
+    </script>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>

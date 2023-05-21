@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script src="js/12.function.js"></script>
+  </head>
+
+  <body>
+    <p>수강신청은 하셨나요?</p>
+    <p>
+      <input type="button" value="예" onclick="ok()">
+      <input type="button" value="아니오" onclick="no()">
+    </p>
+    <hr>
+    <p>좋아하는 과목은 무엇입니까?</p>
+    <p>
+      <input type="button" value="웹표준" onclick="list1('웹표준')">
+      <input type="button" value="HTML5" onclick="list1('html5')">
+      <input type="button" value="JAVASCRIPT" onclick="list1('javascript')">
+    </p>
+    <hr>
+    <p>우리나라 수도는 어디인가요?</p>
+    <p>
+      (A) 서울
+      (B) 부산
+      (C) 광주
+      (D) 대구
+    </p>
+    <p>
+      정답 :
+      <input id="ans_r" type="text" style="outline: none;">
+      <input  type="button" value="확인" onclick="q()">
+    </p>
+    <hr>
+
+  </body>
+</html>

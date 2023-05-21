@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math()</title>
+    <script>
+      // max
+      var num1 = Math.max(30, 78, 52);
+      document.write("최대값 : " + num1);
+      document.write("<hr>");
+
+      // min
+      var num2 = Math.min(30, 78, 52);
+      document.write("최소값 : " + num2);
+      document.write("<hr>");
+
+      // random
+      var num3 = Math.random();
+      document.write("0 ~ 1 난수 :" + num3 + "<br>");
+      document.write("<hr>");
+
+      var num4 = Math.random() * 3;
+      document.write("0 ~ 3 난수 :" + num4 + "<br>");
+      document.write("<hr>");
+
+      // random images [num1.gif ~ num3.gif]
+      var num5 = Math.ceil(Math.random() * 3);
+      document.write(num5, "<br>");
+      // document.write("<img src='images/num1.gif'>" + "<br>");
+      document.write(`<img src=images/num1.gif><br>`);
+      // document.write("<img src='images/num" + num5 + "_over.gif'>");
+      document.write(`<img src=images/num${num5}_over.gif>`);
+      document.write("<hr>");
+
+    </script>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>
