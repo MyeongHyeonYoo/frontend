@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressbar</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/jQuery.rProgressbar.min.js"></script>
+    <style>
+      div, p {
+        margin: 0; padding: 0;
+      }
+      body {
+        font: 12px/1.5em Arial, sans-serif;
+      }
+      #probar_wrap {
+        margin: 50px;
+        width: 450px;
+        height: 250px;
+        border: 1px solid green;
+      }
+      #probar_line {
+        width: 450px;
+        height: 250px;
+      }
+      .tit {
+        font-size: 14px;
+        color: #777;
+      }
+      .proggress {
+        width: 10px;
+        height: 20px;
+        margin: 10px 0;
+      }
+      .percentCount {
+        float: right;
+        margin-top: -55px;
+        font-size: 13px;
+        color: #777;
+      }
+    </style>
+
+    <script>
+      // CSS, JS 아래 이름 변경하지 말고 사용할 것!
+      // progress -> 진행 바
+      // percentCount -> 진행 퍼센트
+      // 아래(옵션) 홈페이지 참고.
+      $(document).ready(function(){
+        // https://github.com/Sharifur/rProgressbar 옵션
+        $(".tit1").rProgressbar({
+          percentage : 80,
+          fillBackgroundColor : '#333',
+        });
+        $(".tit2").rProgressbar({
+          percentage : 99,
+          backgroundColor : 'orange',
+        });
+        $(".tit3").rProgressbar({
+          percentage : 74,
+          fillBackgroundColor : '#666',
+        });
+        $(".tit4").rProgressbar({
+          percentage : 68,
+          fillBackgroundColor : '#999',
+          height : '30px',
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="probar_wrap">
+      <div id="probar_line">
+
+        <div class="single_progressbar">
+          <p class="tit">HTML</p><div class="tit1">80%</div>
+        </div> <!-- single_progressbar -->
+        
+        <div class="single_progressbar">
+          <p class="tit">CSS</p><div class="tit2">99%</div>
+        </div> <!-- single_progressbar -->
+
+        <div class="single_progressbar">
+          <p class="tit">JAVASCRIPT/JQUERY</p><div class="tit3">74%</div>
+        </div> <!-- single_progressbar -->
+
+        <div class="single_progressbar">
+          <p class="tit">기타</p><div class="tit4">68%</div>
+        </div> <!-- single_progressbar -->
+
+      </div> <!-- probar_line -->
+    </div> <!-- probar_wrap -->
+  </body>
+</html>

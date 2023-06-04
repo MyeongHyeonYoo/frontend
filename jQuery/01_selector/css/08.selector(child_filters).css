@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#web {
+  border-collapse: collapse;
+  text-align: center;
+}
+#web caption {
+  border-top: 2px solid brown;
+  margin-bottom: 20px;
+}
+#web th,
+#web td {
+  border: 1px solid #ccc;
+  width: 120px;
+  height: 25px;
+}
+
+#photo {
+  height: 300px;
+}
+#photo p {
+  float: left;
+  margin:  10px;
+  width: 120px;
+  height: 130px;
+  text-align: center;
+}
+#photo p img {
+  width: 80px;
+  height: 80px;
+}

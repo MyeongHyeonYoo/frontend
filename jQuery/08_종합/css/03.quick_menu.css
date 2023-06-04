@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* reset */
+div,
+p,
+a,
+ul,
+li,
+img {
+  margin: 0;
+  padding: 0;
+  font: 12px/1.5em '맑은 고딕', 'Malgun Gothic',sans-serif;
+  color: #333;
+}
+ul, 
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* login 개인로그인 */
+#login {
+  border: 3px solid #666;
+  width: 300px;
+  height: 180px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #eaeaea;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+#login p {
+  margin: 10px 0;
+}
+
+/* js 모달태그 */
+#layer {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  z-index: 90;
+}
+
+/* #wrap */
+#wrap {
+  width: 1600px;
+  height: 420px;
+  position: relative;
+  margin: 0 auto;
+}
+#quick {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 80px;
+  height: 252px;
+}
+#quick li {
+  width: 80px;
+  height: 84px;
+  border: 2px solid #1c4d9c;
+  box-sizing: border-box;
+  text-align: center;
+}
+#quick li:nth-child(2) {
+  border-top: none;
+  border-bottom: none;
+}
+#quick li:nth-child(1) a{
+  background: url(../images/quick1.png) no-repeat center 15px #fff;
+}
+#quick li:nth-child(2) a{
+  background: url(../images/quick2.png) no-repeat center 15px #fff;
+}
+#quick li:nth-child(3) a{
+  background: url(../images/quick3.png) no-repeat center 15px #fff;
+}
+#quick li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 50px;
+  box-sizing: border-box;
+  color: #1c4d9c;
+  font-weight: bold;
+}
+
+/* js 추가 */
+#quick li a.sel{
+  color: #fff;
+  background-color: #1c4d9c;
+}
+
+/* 빠른 메뉴 */
+#q1_menu {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 500px;
+  height: 210px;
+  background: #fff;
+  border: 1px  solid #1c4d9c;
+  padding: 30px 0 0 10px;
+}
+#q1_menu > ul {
+  float: left;
+  border-right: 1px dotted #666;
+  width: 120px;
+}
+#q1_menu > ul:nth-of-type(4) {
+  border-right: none;
+}
+#q1_menu > ul li {
+  line-height: 3em;
+  text-indent: 1em;
+}
+#q1_menu > ul li:first-child a {
+  color: #000;
+  font-weight: bold;
+}
+
+/* 닫기 */
+.close_btn a {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* reset */
+div,
+p,
+img,
+ul,
+li,
+h3,
+br {
+  margin: 0;
+  padding: 0;
+  font: normal 12px/1.5em '맑은 고딕', sans-serif;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* notice_wrap */
+#notice_wrap {
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+.prev_btn,
+.next_btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+.prev_btn { /* < */
+  left: 0;
+}
+.next_btn { /* > */
+  right: 0;
+}
+
+#notice_w {
+  width: 320px;
+  height: 200px;
+  margin-left: 40px;
+  overflow: hidden;
+}
+#notice li {
+  width: 320px;
+  height: 200px;
+  float: left;
+  padding: 70px 0 0 130px;
+  box-sizing: border-box;
+}
+
+#notice li.no1 {
+  background: url(../images/notice1.gif) no-repeat left center;
+}
+#notice li.no2 {
+  background: url(../images/notice2.jpg) no-repeat left center;
+}
+#notice li.no3 {
+  background: url(../images/notice3.jpg) no-repeat left center;
+}
+#notice li.no4 {
+  background: url(../images/notice4.png) no-repeat left center;
+}
+#notice li.no5 {
+  background: url(../images/notice5.png) no-repeat left center;
+}
+#notice li.no6 {
+  background: url(../images/notice6.jpg) no-repeat left center;
+}
+#notice li h3 {
+  font-weight: bold;
+  color: green;
+}

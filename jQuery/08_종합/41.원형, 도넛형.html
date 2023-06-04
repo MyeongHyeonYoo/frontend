@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 | 도넛형</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.circliful.js"></script>
+    <style>
+      div, p {
+        margin: 0;
+        padding: 0;
+      }
+      #wrap {
+        width: 900px;
+        height: 300px;
+        border: 1px solid green;
+        margin: 50px;
+      }
+      #wrap p {
+        float: left;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+
+    <script>
+      $(document).ready(function(){
+      // https://github.com/0906020115/jqurey-plugin-circliful 옵션
+        $("#circle1").circliful({
+          animation : 1, // 1: 실행 | 0: 중지
+          animationStep : 5, // 애니메이션 속도
+          foregroundBorderWidth : 5, // 전경 선 두께(안쪽 선)
+          foregroundColor : 'orange',
+          backgroundBorderWidth : 8, // 배경 선 두께
+          backgroundColor : '#666', // 배경 선 색상
+          percent : 80, // 퍼센트 수치
+          fontColor : "red", // 퍼센트 글자 색
+          percentageTextSize : 16,
+        });
+        $("#circle2").circliful({
+          animation : 1,
+          animationStep : 7,
+          foregroundBorderWidth : 8,
+          foregroundColor : 'white',
+          backgroundBorderWidth : 10,
+          backgroundColor : 'green',
+          percent : 65,
+        });
+        $("#circle3").circliful({
+          animation : 1,
+          animationStep : 10,
+          foregroundBorderWidth : 10,
+          foregroundColor : 'rgb(255, 51, 102)',
+          backgroundBorderWidth : 15,
+          percent : 85,
+        }); 
+      });
+      
+
+    </script>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      <p id="circle1">HTML5</p>
+      <p id="circle2">CSS</p>
+      <p id="circle3">JQUERY</p>
+    </div>
+  </body>
+</html>

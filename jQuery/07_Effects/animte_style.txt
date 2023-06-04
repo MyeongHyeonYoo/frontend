@@ -1,0 +1,41 @@
+backgroundPositionX
+backgroundPositionY
+borderWidth
+borderBottomWidth
+borderLeftWidth
+borderRightWidth
+borderTopWidth
+borderSpacing
+margin
+marginBottom
+marginLeft
+marginRight
+marginTop
+opacity
+outlineWidth
+padding
+paddingBottom
+paddingLeft
+paddingRight
+paddingTop
+height
+width
+maxHeight
+maxWidth
+minHeight
+minWidth
+fontSize
+----------------
+js로 position은 설정 불가
+css로 position 적용해야 사용 가능.
+bottom
+left
+right
+top
+----------------
+letterSpacing
+wordSpacing
+lineHeight
+textIndent
+backgroundColor(string(red, green, blue...) 안 된다.)
+color(string(red, green, blue...) 안 된다.)

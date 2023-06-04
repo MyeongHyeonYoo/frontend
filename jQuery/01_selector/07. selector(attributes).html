@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector(visibility_filter)</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/07.selector(attributes).js"></script>
+    <style>
+      body {
+        margin: 30px;
+      }
+     a {
+      text-decoration: none;
+      color: black;
+     }
+     #txt {
+      float: left;
+      margin: 20px;
+     }
+     #txt p {
+      float: left;
+      margin: 20px;
+     }
+     #link1 {
+      clear: both;
+     }
+     #link1 a {
+      margin: 20px;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div id="gallery">
+      <img src="images/img3.gif" alt="#" width="120" height="100">이미지1
+      <img src="images/img4.gif" alt="#" width="120" height="100">이미지2
+    </div> <!-- gallery -->
+    <div id="txt">
+      <p id="html_1-html_5">js1</p>
+      <p class="html_1-html_5 css1">js2</p>
+      <p class="html_1 css1">js3</p>
+      <p id="html_1">js4</p>
+      <p class="css1">js5</p>
+      <p id="html_5-html_1">js6</p>
+    </div> <!--txt -->
+    <div id="link1">
+      <a id="page1" href="https://" title="이동1" target="_blank">확인1</a>
+      <a id="page2" href="#page1" title="이동2" target="_blank">확인2</a>
+      <a id="page3" href="#page3" title="이동1" target="_self">확인3</a>
+      <a id="page4" href="https://" title="이동1" target="_blank">확인4</a>
+      <a id="page5" href="#" target="_self">확인5</a>
+    </div> <!-- link1 -->
+  </body>
+</html>
