@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유명현_포트폴리오2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+      html, body {
+        margin: 10px;
+      }
+      hr {
+        display: inline-block; 
+        width: 200px; 
+        margin-bottom: 20px;
+      }
+      button {
+        cursor: pointer;
+      }
+      .num3 {
+        cursor: alias;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="num1">
+    {{ count }}<br>
+    <button v-on:click="add(2)">add</button>
+    <button v-on:click="del(2)">del</button>
+    </div> <!-- num1 -->
+    <hr>
+
+    <div class="num2">
+      {{ txt1 }}<br>
+      <button v-on:mousedown="push_button" v-on:mouseup="pull_button">내용추가</button>
+    </div> <!-- num2 -->
+    <hr>
+
+    <div class="num3">
+      <p v-bind:title="falling_snow">겨울이에요</p>
+    </div> <!-- num3 -->
+    <hr>
+
+    <div class="num4">
+      <a v-bind:href="nate" v-bind:target="window_t" v-bind:title="balloon">네이트 연결</a>
+    </div> <!-- num4 -->
+    <hr>
+
+    <div class="num5">
+      {{ vue_viewport }}<br>
+      {{ vue_upper }}
+    </div> <!-- num5 -->
+    <hr>
+
+    <div class="num6">
+      {{ front_capitalize }}<br>
+      {{ front_return_t }}
+    </div>
+    <hr>
+
+    <div class="num7">
+    {{ vue_text }}<br>
+    {{ vue_length }}
+    </div>
+
+    <script src="js/vue.js"></script>
+  </body>
+</html>
