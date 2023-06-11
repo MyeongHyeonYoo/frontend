@@ -82,7 +82,7 @@
         ```
         ex)
 
-        http://localhost:8080/ (Local, ctrl + 클릭)
+        http://localhost:8080/ (Local, Ctrl + 클릭)
         ```
 ---
 
