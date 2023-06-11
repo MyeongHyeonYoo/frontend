@@ -4,7 +4,7 @@
 
 ---
 
-## 💡 [`Javascript`](https://github.com/MyeongHyeonYoo/frontend/tree/main/Javascript)
+## 💡 [`JavaScript`](https://github.com/MyeongHyeonYoo/frontend/tree/main/JavaScript)
 
 --- 
 

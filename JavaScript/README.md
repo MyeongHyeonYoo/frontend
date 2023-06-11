@@ -1,11 +1,11 @@
 # **Frontend** 
 
-## 💡 `Javascript` 
+## 💡 `JavaScript` 
 
 --- 
 
 **`프런트엔드(Front-end)`** <br>
-- HTML/CSS/Javascript <br>
+- HTML/CSS/JavaScript <br>
     - JQuery / React, Vue, Angular 등 → '**자바스크립트**'의 *라이브러리* or *프레임워크* <br>
         - 기초 문법 똑같다. <br>
 - 사용자(User)의 눈에 보이는 부분 <br>
@@ -90,7 +90,7 @@ const X = person [person : Object인 경우]
 
 **`선언문`** <br>
 - 자바스크립트 코드를 작성할 영역을 선언하는 곳 <br>
-- 이전 Javascript 유형
+- 이전 JavaScript 유형
     ```HTML
     <script type="text/javascript"></script>
 
@@ -148,11 +148,11 @@ const X = person [person : Object인 경우]
 **`주석`** <br>
 
 1. 한 줄 주석 <br>
-    ```Javascript
+    ```JavaScript
     // 주석문
     ```
 2. 여러 줄 주석 <br>
-    ```Javascript
+    ```JavaScript
     /* 주석문 */
     ```
 
@@ -173,7 +173,7 @@ const X = person [person : Object인 경우]
     ```
     크롬 F12 키 → 콘솔 → 오류 확인
     ```
-    ```Javascript
+    ```JavaScript
     document.write("<hr>");
 
     /* <hr> 태그 동작한다. */
@@ -251,7 +251,7 @@ body에 내용을 찍어라(출력) <br>
 - **`변수(Variables)`** <br>
     - 변하는 데이터(Data)를 저장하는 공간 <br>
     - 변수에는 한 번에 1개의 데이터만 저장되고, 새로운 데이터가 입력되면 변경 <br>
-        ```javascript
+        ```JavaScript
         var a, b, c;
         
         var a;
@@ -275,7 +275,7 @@ body에 내용을 찍어라(출력) <br>
 
 cf)
 
-```javascript
+```JavaScript
 window.open()
       .open(url)
       .open(url, target)
@@ -553,15 +553,15 @@ confirm('질의 내용');
 
 - `조건문` <br>
     - `if`문 <br>
-    조건식을 만족할 경우만 중괄호 { } 내의 코드를 실행(조건 다음의 코드 실행 - 중괄호 꼭 있는 것 x) <br>
-        ```javascript
+        조건식을 만족할 경우만 중괄호 { } 내의 코드를 실행(조건 다음의 코드 실행 - 중괄호 꼭 있는 것 x) <br>
+        ```JavaScript
         if (조건식) {
             … ;
         }
         ```
     - `if ~ else`문 <br>
-    조건식을 만족했을 때는 코드1를 수행하고, 그렇지 않을 때는 코드2를 실행 <br>
-        ```javascript
+        조건식을 만족했을 때는 코드1를 수행하고, 그렇지 않을 때는 코드2를 실행 <br>
+        ```JavaScript
         if (조건식) {
             코드1;
         } else {
@@ -570,8 +570,8 @@ confirm('질의 내용');
         // (if 쓰고) else에만 조건문 쓸 수 없다.
         ```
     - `if ~ else if ~ else` <br>
-    2가지 이상의 조건과 정해놓은 조건에 만족하지 않을 때 실행 <br>
-        ```javascript
+        2가지 이상의 조건과 정해놓은 조건에 만족하지 않을 때 실행 <br>
+        ```JavaScript
         if (조건식1) {
             코드1;
         } else if (조건식2) {
@@ -584,8 +584,8 @@ confirm('질의 내용');
         …
         ```
     - `switch ~ case`문 <br>
-    조건과 정확히 일치하는 경우에(case값) 코드 실행 <br>
-        ```javascript
+        조건과 정확히 일치하는 경우에(case값) 코드 실행 <br>
+        ```JavaScript
         switch (조건) {
             case 값1:
             코드1;
@@ -603,15 +603,15 @@ confirm('질의 내용');
 
 - `반복문` <br>
     - `for`문 <br>
-    초깃값에서 조건식에 만족할 때까지 실행문 반복 <br>
-        ```javascript
+        초깃값에서 조건식에 만족할 때까지 실행문 반복 <br>
+        ```JavaScript
         for (초깃값; 조건식; 증감식) {
             실행문;
         }
         ```
     - `while`문 <br>
-    조건식을 만족하는 동안에 실행문을 반복적으로 수행 <br>
-        ```javascript
+        조건식을 만족하는 동안에 실행문을 반복적으로 수행 <br>
+        ```JavaScript
         초깃값;
         while (조건식) { // 조건이 만족할 때까지 명령 실행
             코드;
@@ -620,7 +620,7 @@ confirm('질의 내용');
         ```
     - `do ~ while`문 <br>
         실행문을 먼저 수행하고 조건이 만족하면 실행, 만족하지 않으면 종료 <br>
-        ```javascript
+        ```JavaScript
         초깃값;
         do {
             코드;
@@ -654,7 +654,7 @@ Document.location 도 사용할 수 있다.
 
 **`Date객체`** <br>
 현재 또는 특정 날짜와 시간에 대한 정보를 제공 <br>
-```javascript
+```JavaScript
 // 기본 형식
 
 var 변수명 = new Date();
@@ -693,7 +693,7 @@ var 변수명 = new Date();
 - toString( ) : 날짜를 문자형식으로 표시 <br>
 
 
-```javascript
+```JavaScript
 new Date() // 현재 날짜
 
 new Date(year, month(-1), date); // 특정 날짜
@@ -727,7 +727,7 @@ new Date(year, month(-1), date, hours, minutes, seconds); // 특정 날짜와 �
      2 → 2
     ```
 - random( ) : 0과 1 사이의 난수를 발생 <br>
-    ```javascript
+    ```JavaScript
     // 0 ~ 3 사이의 난수
     Math.random() * 3  // 기본 * 1
     ```
@@ -737,7 +737,7 @@ new Date(year, month(-1), date, hours, minutes, seconds); // 특정 날짜와 �
 ▷ 모두 문자 "a" 입력시 NaN 반환 <br>
 ▷ null → 0 반환 <br>
 
-```javascript
+```JavaScript
 Math.round(숫자)  // 반올림, 정수반환
 Math.ceil(숫자)   // 올림, 정수반환
 Math.round(숫자)  // 내림, 정수반환
@@ -754,7 +754,7 @@ Math.round(숫자)  // 내림, 정수반환
 ---
 
 **`String(문자열) 객체`** <br>
-```javascript
+```JavaScript
 // 생성법
 
 var 변수 = new String("값"); // 보편적인 생성법
@@ -795,7 +795,7 @@ var 변수 = "값"; // 간편한 생성법
 
 **`Array(배열) 객체`** <br>
 하나의 변수에 여러 개의 데이터를 저장 <br>
-```javascript
+```JavaScript
 // 생성법
 
 var 변수 = new Array();
@@ -804,12 +804,12 @@ var 변수 = [값1, 값2, 값3, 값4, 값5 …]
 ```
 
 ① **`new`** 키워드를 사용하여 단일 객체를 정의하고 만든다. <br>
-```javascript
+```JavaScript
 var person = new Object();
 ```
 
 ② 객체 리터럴을 사용하여 단일 객체를 정의 <br>
-```javascript
+```JavaScript
 var person {
     …
 };
@@ -861,8 +861,8 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Ar
 ### HTML 요소 <br>
 HTML 안에 넣는 문자열, 정수는 모두 'String Type' <br>
 - id : document.getElementById("id").메소드 <br>
-id는 1개만 쓸 수 있다. <br>
-    ```javascript
+    id는 1개만 쓸 수 있다. <br>
+    ```JavaScript
     document.getElementById("id").innerHTML = "내용";
     document.getElementById("#id") // # 쓰면 인식 x
 
@@ -870,10 +870,10 @@ id는 1개만 쓸 수 있다. <br>
     ```
 - tag : document.getElementsByTagName("name").메소드 <br>
 - class : document.getElementsByClassName("name").메소드 <br>
-    ```javascript
+    ```JavaScript
     document.getElementsByClassName(".name") // . 쓰면 인식 x
     ```
-    ```javascript
+    ```JavaScript
     // [tag, class]
 
     // Array처럼 인덱스 번호로 접근 [index]
@@ -903,7 +903,7 @@ id(#), class(.) 접근 방식으로 써야 한다. <br>
 ☆ tag, id, class, querySelectorAll 모두 접근 시 [0, 1, 2 …] 배열 인덱스 형식으로 접근하여야 한다.
 ```
 
-```javascript
+```JavaScript
 document.getElementById("id").style.property = style;
 
 
@@ -925,7 +925,7 @@ element.style.backgroundColor = "red";
 함수를 사용하면 실행문들을 메모리에 저장했다가 필요할 때 해당 함수의 이름으로 다시 호출하여 사용할 수 있음 <br>
 
 - 기본형식 <br>
-    ```javascript
+    ```JavaScript
     function 함수명() { // 함수 정의
         실행문;
     }
@@ -933,7 +933,7 @@ element.style.backgroundColor = "red";
     함수명(); // 정의된 함수 호출
     ```
 
-    ```javascript
+    ```JavaScript
     function 함수명(매개변수1, 매개변수2) { // 함수 정의
         실행문;
     }
@@ -995,7 +995,7 @@ window.onload : 문서를 모두 불러오고 나서 발생(event실행)
 특정 시간마다 함수를 호출하고 싶을 때 타이머 함수를 사용 <br>
 - **타이머 함수** 종류 <br>
     - setInterval : 특정 시간마다 함수를 계속해서 호출하고 싶을 때 사용 <br>
-        ```javascript
+        ```JavaScript
         // setInterval: 일정시간마다 실행
 
         var count = 0;
@@ -1007,11 +1007,11 @@ window.onload : 문서를 모두 불러오고 나서 발생(event실행)
         ```
     - clearInterval : 타이머 함수를 멈출 때 사용 <br>
         - setInterval에 변수 설정을 해야 설정 된다. <br>
-            ```javascript
+            ```JavaScript
             clearInterval(timerId); // timerId는 setInterval를 설정한 변수
             ```
 
-            ```javascript
+            ```JavaScript
             // clearIterval : 타이머 함수 중지
 
             var count = 0;
@@ -1026,12 +1026,12 @@ window.onload : 문서를 모두 불러오고 나서 발생(event실행)
             }, 100);
             ```
     - setTimeout : 일정 시간 후에 딱 한 번만 함수를 실행할 때 사용 <br>
-        ```javascript
+        ```JavaScript
         setTimeout(function() {
 
         }, milliseconds);
         ``` 
-        ```javascript
+        ```JavaScript
         // setTimeout : 일정 시간 후에 딱 한 번만 함수를 실행
         
         var count = 7;
