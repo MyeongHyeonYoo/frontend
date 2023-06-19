@@ -1061,5 +1061,20 @@ practice/practice.html 참고
 <img src="./javascript/javascript_escape_sequence.png" width="900" height="900">
 
 ---
+
+<img src="./img/event.jpg" width="900" height="500">
+<img src="./img/date_object_method_get.jpg" width="900" height="500">
+<img src="./img/date_object_method_set.jpg" width="900" height="500">
+<img src="./img/window_object_property.jpg" width="900" height="500">
+<img src="./img/window_object_method.jpg" width="900" height="500">
+<img src="./img/navigator_property.jpg" width="900" height="500">
+<img src="./img/engine.jpg" width="900" height="500">
+<img src="./img/user_agent_string.jpg" width="900" height="500">
+<img src="./img/history_object.jpg" width="900" height="500">
+<img src="./img/location_object.jpg" width="900" height="500">
+<img src="./img/screen_object.jpg" width="900" height="500">
+<img src="./img/width_height_ref.jpg" width="900" height="500">
+
+---
 ---
 ---
